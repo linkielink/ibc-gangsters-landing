@@ -43,8 +43,7 @@ export default function RootLayout({
       <meta property="og:url" content={metadata?.metadataBase?.href ?? ""} />
       <meta property="og:title" content={(metadata.title as string) ?? ""} />
       <meta property="og:description" content={metadata.description ?? ""} />
-      <meta property="og:image" content="https:/ibcgangsters.io/banner.jpg" />
-      <meta property="og:url" content={metadata?.metadataBase?.href ?? ""} />
+      <meta property="og:image" content="https://ibcgangsters.io/banner.jpg" />
       <meta
         property="og:site_name"
         content={(metadata.title as string) ?? ""}
@@ -53,7 +52,7 @@ export default function RootLayout({
       <meta name="twitter:card" content="summary_large_image" />
       <meta name="twitter:title" content={(metadata.title as string) ?? ""} />
       <meta name="twitter:description" content={metadata.description ?? ""} />
-      <meta name="twitter:image" content="https:/ibcgangsters.io/banner.jpg" />
+      <meta name="twitter:image" content="https://ibcgangsters.io/banner.jpg" />
       <body className={inter.className}>{children}</body>
     </html>
   );
