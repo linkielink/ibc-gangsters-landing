@@ -15,7 +15,6 @@ export default function Router() {
             </Layout>
           }
         >
-          <Route path='/collection' element={<CollectionPage />} />
           <Route path='/manifesto' element={<ManifestoPage />} />
           <Route path='/' element={<CollectionPage />} />
           <Route path='' element={<CollectionPage />} />
