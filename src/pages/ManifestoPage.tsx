@@ -17,11 +17,11 @@ export default function ManifestoPage() {
         <meta name='msapplication-TileColor' content='#000000' />
         <meta name='theme-color' content='#ffffff' />
         <meta name='viewport' content='width=device-width, initial-scale=1' />
-        <meta property='og:url' content={'https://ibcgangsters.io'} />
+        <meta property='og:url' content={'https://ibcgangsters.io/manifesto'} />
         <meta property='og:title' content={metadata.title} />
         <meta property='og:description' content={metadata.description} />
         <meta property='og:image' content='https://ibcgangsters.io/banner.jpg' />
-        <meta property='og:site_name' content={(metadata.title as string) ?? ''} />
+        <meta property='og:site_name' content={metadata.title} />
         <meta property='og:type' content='website' />
         <meta name='twitter:card' content='summary_large_image' />
         <meta name='twitter:title' content={metadata.title} />
