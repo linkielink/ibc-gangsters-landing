@@ -10,6 +10,9 @@ export default function Navigation() {
         <li>
           <NavLink to='/manifesto'>Manifesto</NavLink>
         </li>
+        <li>
+          <NavLink to='/collection'>Collection</NavLink>
+        </li>
       </ul>
     </nav>
   )
