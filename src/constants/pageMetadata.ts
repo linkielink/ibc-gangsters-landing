@@ -1,5 +1,5 @@
 const PAGE_METADATA = {
-  main: {
+  collection: {
     title: 'IBC Gangsters',
     description:
       "Yo, Space Fam! We're the first inscribed NFT collection on the Cosmos Hub. Embark on our cosmic journey and join the meme dream team! Gangster 4 Life!",
