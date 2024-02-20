@@ -6,8 +6,6 @@ export default function Collection() {
   const [sortedGangsters, setSortedGangsters] = useState(gangsters)
   const sortGangsters = useCallback(
     (event: ChangeEvent<HTMLSelectElement>) => {
-      if (event.target.value === '') return
-
       const sorted = sortedGangsters.sort((a, b) => {
         if (event.target.value === 'name') {
           return a.name.localeCompare(b.name)
@@ -25,15 +23,17 @@ export default function Collection() {
     <section className='w-full flex flex-col items-center justify-center py-20 px-4 max-w-[1024px] mx-auto'>
       <h1 className='w-full pb-8 text-4xl text-center'>IBC Gangsters</h1>
       <h2 className='w-full pb-8 text-xl text-center'>Inscription Range: #2033 - #3681</h2>
-      <div className='flex justify-end w-full mb-8'>
-        <select
-          className='w-1/4 p-2 text-black border border-black rounded-lg outline-none focus:outline-none'
-          onChange={(event) => sortGangsters(event)}
-        >
-          <option value=''>Sort by</option>
-          <option value='name'>Gangster ID</option>
-          <option value='id'>Inscription ID</option>
-        </select>
+      <div className='flex items-center justify-end w-full gap-2 mb-8'>
+        <p className='text-black'>Sort by:</p>
+        <div className='w-[250px]'>
+          <select
+            className='w-full p-2 text-black border border-black rounded-lg outline-none focus:outline-none'
+            onChange={(event) => sortGangsters(event)}
+          >
+            <option value='name'>Gangster ID</option>
+            <option value='id'>Inscription ID</option>
+          </select>
+        </div>
       </div>
       <div className='grid w-full grid-cols-2 gap-4 md:grid-cols-3 lg:grid-cols-4'>
         {sortedGangsters.map((gangster) => {
