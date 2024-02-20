@@ -1,0 +1,9 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+body {
+  font-family: 'Lucida Console', 'Courier New', monospace;
+  font-weight: 600;
+  letter-spacing: 1px;
+}
