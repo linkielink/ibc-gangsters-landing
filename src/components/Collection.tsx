@@ -23,7 +23,7 @@ export default function Collection() {
 
   return (
     <section className='w-full flex flex-col items-center justify-center py-20 px-4 max-w-[1024px] mx-auto'>
-      <h1 className='w-full pb-8 text-4xl text-center'>IBC Gangsters Manifesto</h1>
+      <h1 className='w-full pb-8 text-4xl text-center'>IBC Gangsters</h1>
       <h2 className='w-full pb-8 text-xl text-center'>Inscription Range: #2033 - #3681</h2>
       <div className='flex justify-end w-full mb-8'>
         <select

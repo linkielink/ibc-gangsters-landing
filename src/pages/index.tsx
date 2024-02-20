@@ -1,9 +1,8 @@
 import { BrowserRouter, Outlet, Route, Routes } from 'react-router-dom'
 
-import HomePage from 'pages/HomePage'
+import CollectionPage from 'pages/CollectionPage'
 import ManifestoPage from 'pages/ManifestoPage'
 import Layout from 'pages/_layout'
-import CollectionPage from './Collection'
 
 export default function Router() {
   return (
@@ -18,8 +17,8 @@ export default function Router() {
         >
           <Route path='/collection' element={<CollectionPage />} />
           <Route path='/manifesto' element={<ManifestoPage />} />
-          <Route path='/' element={<HomePage />} />
-          <Route path='' element={<HomePage />} />
+          <Route path='/' element={<CollectionPage />} />
+          <Route path='' element={<CollectionPage />} />
         </Route>
       </Routes>
     </BrowserRouter>

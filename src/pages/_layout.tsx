@@ -1,4 +1,5 @@
 import Footer from 'components/Footer'
+import Hero from 'components/Hero'
 import Navigation from 'components/Navigation'
 import PageMetadata from 'components/PageMetadata'
 
@@ -7,7 +8,10 @@ export default function Layout({ children }: { children: React.ReactNode }) {
     <>
       <PageMetadata />
       <Navigation />
-      <main className='flex h-full'>{children}</main>
+      <main className='flex flex-wrap h-full'>
+        <Hero />
+        {children}
+      </main>
       <Footer />
     </>
   )
