@@ -42,7 +42,7 @@ export default function Collection() {
               key={gangster.id}
               title={`Buy ${gangster.name} - Inscription #${gangster.id}`}
               href={`https://asteroidprotocol.io/app/inscription/${gangster.hash}`}
-              className='flex flex-col w-full gap-2 p-2 overflow-hidden transition-all duration-500 rounded-lg bg-black/80 hover:bg-black'
+              className='flex flex-col w-full gap-2 p-2 overflow-hidden transition-all duration-500 bg-black rounded-lg opacity-80 hover:opacity-100'
               target='_blank'
             >
               <div className='w-full'>
