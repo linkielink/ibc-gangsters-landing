@@ -3,6 +3,7 @@ import { Metadata } from 'next'
 export const metaData: { [key: string]: Metadata } = {
   collection: {
     title: 'IBC Gangsters',
+    metadataBase: new URL('https://ibcgangsters.io'),
     description:
       "Yo, Space Fam! We're the first inscribed NFT collection on the Cosmos Hub. Embark on our cosmic journey and join the meme dream team! Gangster 4 Life!",
     keywords: [
@@ -32,9 +33,25 @@ export const metaData: { [key: string]: Metadata } = {
         },
       ],
     },
+    twitter: {
+      card: 'summary_large_image',
+      site: '@IBC_Gangsters',
+      title: 'IBC Gangsters',
+      description:
+        "Yo, Space Fam! We're the first inscribed NFT collection on the Cosmos Hub. Embark on our cosmic journey and join the meme dream team! Gangster 4 Life!",
+      images: [
+        {
+          url: 'https://ibcgangsters.io/banner.jpg',
+          width: 1500,
+          height: 500,
+          alt: 'IBC Gangsters',
+        },
+      ],
+    },
   },
   manifesto: {
     title: 'IBC Gangsters Manifesto',
+    metadataBase: new URL('https://ibcgangsters.io'),
     description:
       'Born in the gritty streets of Earth back in 2021, the IBC Gangsters were just faces in the crowd, grinding the 9-5, punching the clock, chasing that green while dreaming of a better life.',
     keywords: [
@@ -55,6 +72,21 @@ export const metaData: { [key: string]: Metadata } = {
       description:
         'Born in the gritty streets of Earth back in 2021, the IBC Gangsters were just faces in the crowd, grinding the 9-5, punching the clock, chasing that green while dreaming of a better life.',
       siteName: 'IBC Gangsters',
+      images: [
+        {
+          url: 'https://ibcgangsters.io/banner.jpg',
+          width: 1500,
+          height: 500,
+          alt: 'IBC Gangsters',
+        },
+      ],
+    },
+    twitter: {
+      card: 'summary_large_image',
+      site: '@IBC_Gangsters',
+      title: 'IBC Gangsters Manifesto',
+      description:
+        'Born in the gritty streets of Earth back in 2021, the IBC Gangsters were just faces in the crowd, grinding the 9-5, punching the clock, chasing that green while dreaming of a better life.',
       images: [
         {
           url: 'https://ibcgangsters.io/banner.jpg',
