@@ -2,8 +2,14 @@
 
 const nextConfig = {
   reactStrictMode: true,
+
   images: {
-    domains: ['asteroids-mainnet.ams3.digitaloceanspaces.com'],
+    remotePatterns: [
+      {
+        protocol: 'https',
+        hostname: 'asteroids-mainnet.ams3.digitaloceanspaces.com',
+      },
+    ],
   },
   async headers() {
     return [
