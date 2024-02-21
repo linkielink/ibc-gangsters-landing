@@ -59,7 +59,7 @@ export default function Collection() {
       <h1 className='w-full pb-8 text-4xl text-center' id='name'>
         IBC Gangsters
       </h1>
-      <h2 className='w-full pb-8 text-xl text-center'>Inscription Range: #2033 - #3681</h2>
+      <h2 className='w-full pb-8 text-xl text-center'>Inscription Range: #2032 - #3680</h2>
       <div className='flex items-center justify-end w-full gap-2 mb-8'>
         <p className='text-black'>Sort by:</p>
         <div className='w-[250px]'>
