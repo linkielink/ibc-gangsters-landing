@@ -77,7 +77,7 @@ export default function Collection() {
           return (
             <a
               key={gangster.id}
-              title={`Buy ${gangster.name} - Inscription #${gangster.id}`}
+              title={`Buy ${gangster.name} - Inscription #${gangster.id - 1}`}
               href={`https://asteroidprotocol.io/app/inscription/${gangster.hash}`}
               className='flex flex-col w-full gap-2 p-2 overflow-hidden bg-black rounded-lg md:transition-all md:duration-500 md:bg-black/80 md:hover:bg-black'
               target='_blank'
@@ -92,7 +92,7 @@ export default function Collection() {
                 />
               </div>
               <div className='w-full text-white'>{gangster.name}</div>
-              <div className='w-full text-sm font-thin text-white/50'>#{gangster.id}</div>
+              <div className='w-full text-sm font-thin text-white/50'>#{gangster.id - 1}</div>
             </a>
           )
         })}

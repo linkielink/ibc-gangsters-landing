@@ -2709,13 +2709,6 @@ export const gangsters: Gangster[] = [
     name: 'IBC Gangsters #387',
   },
   {
-    id: 3649,
-    hash: '62EDCDF2788DE03E700178383A1FDA107FB54E147C678C7F46C3D07B47F476E0',
-    image:
-      'https://asteroids-mainnet.ams3.digitaloceanspaces.com/62EDCDF2788DE03E700178383A1FDA107FB54E147C678C7F46C3D07B47F476E0.jpe',
-    name: 'IBC Gangsters #387',
-  },
-  {
     id: 2339,
     hash: '7B15D79BF9210C3DB183A271B4B926526245D73FDBE664A41AAD71CAEB097C5E',
     image:
@@ -3505,12 +3498,5 @@ export const gangsters: Gangster[] = [
     image:
       'https://asteroids-mainnet.ams3.digitaloceanspaces.com/548E56537C5A9243907D3D48BD0C578E6C478102EC3B30CDABFCF18FEE0B9084.jpe',
     name: 'IBC Gangsters #500',
-  },
-  {
-    id: 3388,
-    hash: 'A8EB0EB9756B29FA4D2931A2685DB64E2854D17BD24AF329E1A0A9D55EE2ED66',
-    image:
-      'https://asteroids-mainnet.ams3.digitaloceanspaces.com/A8EB0EB9756B29FA4D2931A2685DB64E2854D17BD24AF329E1A0A9D55EE2ED66.jpe',
-    name: 'IBC Gangsters #666',
   },
 ]
