@@ -1750,13 +1750,6 @@ export const gangsters: Gangster[] = [
     name: 'IBC Gangsters #250',
   },
   {
-    id: 2035,
-    hash: '81DC4B0C6CB04C0A416BD84737C8C6D1CCACD6C20A278251A3052B314DF6A99F',
-    image:
-      'https://asteroids-mainnet.ams3.digitaloceanspaces.com/81DC4B0C6CB04C0A416BD84737C8C6D1CCACD6C20A278251A3052B314DF6A99F.jpe',
-    name: 'IBC Gangsters #251',
-  },
-  {
     id: 3263,
     hash: 'EFC46CD080126F38BEAE4AF812D06CE7BEE98E362832CC07604E75B4620108F6',
     image:
