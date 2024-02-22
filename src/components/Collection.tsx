@@ -117,7 +117,7 @@ export default function Collection() {
         </div>
         <div className='flex items-center justify-end flex-shrink gap-2'>
           <p className='text-black'>Sort by:</p>
-          <div className='w-[250px]'>
+          <div className='w-[200px]'>
             <select
               className='w-full p-2 text-black border border-black rounded-lg outline-none focus:outline-none'
               onChange={(event) => sortGangsters(event)}
