@@ -6,6 +6,7 @@ import { ChangeEvent, useCallback, useEffect, useMemo, useState } from 'react'
 export default function Collection() {
   const [sortedGangsters, setSortedGangsters] = useState(gangsters)
   const [isVisible, setIsVisible] = useState(false)
+  const [searchString, setSearchString] = useState('')
   const sortGangsters = useCallback(
     (event: ChangeEvent<HTMLSelectElement>) => {
       const sorted = sortedGangsters.sort((a, b) => {
@@ -42,8 +43,11 @@ export default function Collection() {
     return () => window.removeEventListener('scroll', toggleVisibility)
   }, [])
 
-  const filterGangsters = (event: ChangeEvent<HTMLInputElement>) => {
-    const query = event.target.value.toLowerCase()
+  useEffect(() => {
+    filterGangsters(searchString)
+  }, [searchString])
+
+  const filterGangsters = (query: string) => {
     const filtered = gangsters.filter(
       (gangster) =>
         Number(gangster.id - 1)
@@ -55,6 +59,22 @@ export default function Collection() {
 
     setSortedGangsters([...filtered])
   }
+
+  const getHighlightedText = useCallback((text: string, highlight: string) => {
+    const parts = text.split(new RegExp(`(${highlight})`, 'gi'))
+    return (
+      <span>
+        {parts.map((part, i) => (
+          <span
+            key={i}
+            className={part.toLowerCase() === highlight.toLowerCase() ? 'bg-white text-black' : ''}
+          >
+            {part}
+          </span>
+        ))}
+      </span>
+    )
+  }, [])
 
   const collectionHead = useMemo(() => {
     if (sortedGangsters.length === 501) return '501 IBC Gangsters (Total)'
@@ -90,7 +110,7 @@ export default function Collection() {
             placeholder='Gangster ID, Inscription ID, Hash or Name'
             maxLength={64}
             onChange={(event) => {
-              filterGangsters(event)
+              setSearchString(event.target.value.toLowerCase())
             }}
           />
         </div>
@@ -109,34 +129,41 @@ export default function Collection() {
       </div>
 
       <h3 className='w-full pb-4 text-lg'>{collectionHead}</h3>
-      <div className='grid w-full grid-cols-2 gap-4 md:grid-cols-3 lg:grid-cols-4'>
-        {sortedGangsters.map((gangster) => {
-          return (
-            <a
-              key={gangster.id}
-              title={`Buy ${gangster.name} - Inscription #${gangster.id - 1}`}
-              href={`https://asteroidprotocol.io/app/inscription/${gangster.hash}`}
-              className='flex flex-col w-full gap-2 p-2 overflow-hidden bg-black rounded-lg md:transition-all md:duration-500 md:bg-black/80 md:hover:bg-black'
-              target='_blank'
-            >
-              <div className='w-full'>
-                <Image
-                  src={gangster.image}
-                  alt={gangster.name}
-                  width={444}
-                  height={578}
-                  loading='lazy'
-                />
-              </div>
-              <p className='w-full text-white'>{gangster.name}</p>
-              <p className='w-full text-sm font-thin text-white/50'>
-                Inscription #{gangster.id - 1}
-              </p>
-              <p className='w-full text-xs font-thin break-words text-white/30'>{gangster.hash}</p>
-            </a>
-          )
-        })}
-      </div>
+      <section className='min-h-screen'>
+        <div className='grid w-full grid-cols-2 gap-4 md:grid-cols-3 lg:grid-cols-4'>
+          {sortedGangsters.map((gangster) => {
+            return (
+              <a
+                key={gangster.id}
+                title={`Buy ${gangster.name} - Inscription #${gangster.id - 1}`}
+                href={`https://asteroidprotocol.io/app/inscription/${gangster.hash}`}
+                className='flex flex-col w-full gap-2 p-2 overflow-hidden bg-black rounded-lg md:transition-all md:duration-500 md:bg-black/80 md:hover:bg-black'
+                target='_blank'
+              >
+                <div className='w-full'>
+                  <Image
+                    src={gangster.image}
+                    alt={gangster.name}
+                    width={444}
+                    height={578}
+                    loading='lazy'
+                  />
+                </div>
+                <p className='w-full text-white'>
+                  {getHighlightedText(gangster.name, searchString)}
+                </p>
+                <p className='w-full text-sm font-thin text-white/50'>
+                  Inscription #
+                  {getHighlightedText(Number(gangster.id - 1).toString(), searchString)}
+                </p>
+                <p className='w-full text-xs font-thin break-words text-white/30'>
+                  {getHighlightedText(gangster.hash, searchString)}
+                </p>
+              </a>
+            )
+          })}
+        </div>
+      </section>
     </section>
   )
 }
