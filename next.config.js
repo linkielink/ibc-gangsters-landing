@@ -21,14 +21,6 @@ const nextConfig = {
             value: 'origin-when-cross-origin',
           },
           {
-            key: 'Pragma',
-            value: 'no-cache',
-          },
-          {
-            key: 'Expires',
-            value: new Date().toString(),
-          },
-          {
             key: 'X-Content-Type-Options',
             value: 'nosniff',
           },
