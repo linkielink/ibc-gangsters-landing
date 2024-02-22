@@ -1,7 +1,7 @@
 'use client'
 import { gangsters } from 'data/gangsters'
 import Image from 'next/image'
-import { ChangeEvent, useCallback, useEffect, useState } from 'react'
+import { ChangeEvent, useCallback, useEffect, useMemo, useState } from 'react'
 
 export default function Collection() {
   const [sortedGangsters, setSortedGangsters] = useState(gangsters)
@@ -42,6 +42,27 @@ export default function Collection() {
     return () => window.removeEventListener('scroll', toggleVisibility)
   }, [])
 
+  const filterGangsters = (event: ChangeEvent<HTMLInputElement>) => {
+    const query = event.target.value.toLowerCase()
+    const filtered = gangsters.filter(
+      (gangster) =>
+        Number(gangster.id - 1)
+          .toString()
+          .includes(query) ||
+        gangster.hash.toLowerCase().includes(query) ||
+        gangster.name.toLowerCase().includes(query),
+    )
+
+    setSortedGangsters([...filtered])
+  }
+
+  const collectionHead = useMemo(() => {
+    if (sortedGangsters.length === 501) return '501 IBC Gangsters (Total)'
+    if (sortedGangsters.length === 0) return 'No IBC Gangster Found'
+    if (sortedGangsters.length === 1) return '1 IBC Gangster (Filtered)'
+    return `${sortedGangsters.length} IBC Gangsters (Filtered)`
+  }, [sortedGangsters.length])
+
   return (
     <section className='w-full flex flex-col items-center justify-center py-20 px-4 max-w-[1024px] mx-auto relative'>
       {isVisible && (
@@ -60,18 +81,34 @@ export default function Collection() {
         IBC Gangsters
       </h1>
       <h2 className='w-full pb-8 text-xl text-center'>Inscription Range: #2032 - #3680</h2>
-      <div className='flex items-center justify-end w-full gap-2 mb-8'>
-        <p className='text-black'>Sort by:</p>
-        <div className='w-[250px]'>
-          <select
-            className='w-full p-2 text-black border border-black rounded-lg outline-none focus:outline-none'
-            onChange={(event) => sortGangsters(event)}
-          >
-            <option value='name'>Gangster ID</option>
-            <option value='id'>Inscription ID</option>
-          </select>
+      <div className='flex flex-col justify-between w-full gap-4 mb-4 md:gap-10 md:flex-row'>
+        <div className='relative flex items-center flex-grow gap-2'>
+          <p className='absolute px-2 text-black left'>Search by</p>
+          <input
+            type='text'
+            className='w-full p-2 text-black border border-black rounded-lg outline-none pl-28 focus:outline-none'
+            placeholder='Gangster ID, Inscription ID, Hash or Name'
+            maxLength={64}
+            onChange={(event) => {
+              filterGangsters(event)
+            }}
+          />
+        </div>
+        <div className='flex items-center justify-end flex-shrink gap-2'>
+          <p className='text-black'>Sort by:</p>
+          <div className='w-[250px]'>
+            <select
+              className='w-full p-2 text-black border border-black rounded-lg outline-none focus:outline-none'
+              onChange={(event) => sortGangsters(event)}
+            >
+              <option value='name'>Gangster ID</option>
+              <option value='id'>Inscription ID</option>
+            </select>
+          </div>
         </div>
       </div>
+
+      <h3 className='w-full pb-4 text-lg'>{collectionHead}</h3>
       <div className='grid w-full grid-cols-2 gap-4 md:grid-cols-3 lg:grid-cols-4'>
         {sortedGangsters.map((gangster) => {
           return (
@@ -91,8 +128,11 @@ export default function Collection() {
                   loading='lazy'
                 />
               </div>
-              <div className='w-full text-white'>{gangster.name}</div>
-              <div className='w-full text-sm font-thin text-white/50'>#{gangster.id - 1}</div>
+              <p className='w-full text-white'>{gangster.name}</p>
+              <p className='w-full text-sm font-thin text-white/50'>
+                Inscription #{gangster.id - 1}
+              </p>
+              <p className='w-full text-xs font-thin break-words text-white/30'>{gangster.hash}</p>
             </a>
           )
         })}
