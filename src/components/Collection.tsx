@@ -17,9 +17,10 @@ export default function Collection() {
         }
       })
 
+      filterGangsters(searchString)
       setSortedGangsters([...sorted])
     },
-    [sortedGangsters],
+    [sortedGangsters, searchString],
   )
 
   const scrollToTop = () => {
@@ -103,11 +104,11 @@ export default function Collection() {
       <h2 className='w-full pb-8 text-xl text-center'>Inscription Range: #2032 - #3680</h2>
       <div className='flex flex-col justify-between w-full gap-4 mb-4 md:gap-10 md:flex-row'>
         <div className='relative flex items-center flex-grow gap-2'>
-          <p className='absolute px-2 text-black left'>Search by</p>
+          <p className='absolute px-2 text-black left'>Search:</p>
           <input
             type='text'
-            className='w-full p-2 text-black border border-black rounded-lg outline-none pl-28 focus:outline-none'
-            placeholder='Gangster ID, Inscription ID, Hash or Name'
+            className='w-full p-2 border border-black rounded-lg outline-none text-black/60 pl-22 focus:outline-none'
+            placeholder='...by Gangster ID, Inscription ID, Hash or Name'
             maxLength={64}
             onChange={(event) => {
               setSearchString(event.target.value.toLowerCase())
