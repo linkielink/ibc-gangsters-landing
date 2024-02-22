@@ -23,7 +23,7 @@ module.exports = {
     plugin(function ({ addBase, addUtilities, theme }) {
       addUtilities({
         '.bg-hero': {
-          backgroundImage: 'url("/images/hero.jpg")',
+          backgroundImage: 'url("/images/hero.webp"),url("/images/hero.jpg")',
           backgroundRepeat: 'no-repeat',
           backgroundPosition: 'center ',
           backgroundSize: 'cover',
