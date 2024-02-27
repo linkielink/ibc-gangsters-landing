@@ -13,13 +13,18 @@ export default function Navigation() {
           </a>
         </li>
         <li className='w-full md:w-auto'>
+          <a href='/treasury' className='hover:underline'>
+            Treasury
+          </a>
+        </li>
+        <li className='w-full md:w-auto'>
           <a
             href='https://twitter.com/IBC_Gangsters'
             target='_blank'
             rel='noreferrer'
             className='hover:underline'
           >
-            IBC Gangsters on X
+            IBCG on X
           </a>
         </li>
       </ul>

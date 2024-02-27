@@ -1,7 +1,7 @@
 'use client'
 import { gangsters } from 'data/gangsters'
-import Image from 'next/image'
 import { ChangeEvent, useCallback, useEffect, useMemo, useState } from 'react'
+import ItemCard from './ItemCard'
 
 export default function Collection() {
   const [sortedGangsters, setSortedGangsters] = useState(gangsters)
@@ -132,37 +132,19 @@ export default function Collection() {
       <h3 className='w-full pb-4 text-lg'>{collectionHead}</h3>
       <section className='min-h-screen'>
         <div className='grid w-full grid-cols-2 gap-4 md:grid-cols-3 lg:grid-cols-4'>
-          {sortedGangsters.map((gangster) => {
-            return (
-              <a
-                key={gangster.id}
-                title={`Buy ${gangster.name} - Inscription #${gangster.id - 1}`}
-                href={`https://asteroidprotocol.io/app/inscription/${gangster.hash}`}
-                className='flex flex-col w-full gap-2 p-2 overflow-hidden bg-black rounded-lg md:transition-all md:duration-500 md:bg-black/80 md:hover:bg-black'
-                target='_blank'
-              >
-                <div className='w-full'>
-                  <Image
-                    src={gangster.image}
-                    alt={gangster.name}
-                    width={444}
-                    height={578}
-                    loading='lazy'
-                  />
-                </div>
-                <p className='w-full text-white'>
-                  {getHighlightedText(gangster.name, searchString)}
-                </p>
-                <p className='w-full text-sm font-thin text-white/50'>
-                  Inscription #
-                  {getHighlightedText(Number(gangster.id - 1).toString(), searchString)}
-                </p>
-                <p className='w-full text-xs font-thin break-words text-white/30'>
-                  {getHighlightedText(gangster.hash, searchString)}
-                </p>
-              </a>
-            )
-          })}
+          {sortedGangsters.map((gangster) => (
+            <ItemCard
+              key={gangster.id}
+              title={`Buy ${gangster.name} - Inscription #${gangster.id - 1}`}
+              href={`https://asteroidprotocol.io/app/inscription/${gangster.hash}`}
+              id={Number(gangster.id - 1).toString()}
+              itemName={gangster.name}
+              imageUrl={gangster.image}
+              hash={gangster.hash}
+              searchString={searchString}
+              getHighlightedText={getHighlightedText}
+            />
+          ))}
         </div>
       </section>
     </section>

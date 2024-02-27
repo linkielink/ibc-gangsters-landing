@@ -1,5 +1,4 @@
 import Footer from 'components/Footer'
-import Hero from 'components/Hero'
 import Navigation from 'components/Navigation'
 import { metaData } from 'constants/pageMetadata'
 import Head from 'next/head'
@@ -26,10 +25,7 @@ export default function RootLayout({
       </Head>
       <body className='p-0 pb-10 m-0 scrollbar-hide pt-25'>
         <Navigation />
-        <main className='flex flex-wrap h-full'>
-          <Hero />
-          {children}
-        </main>
+        <main className='flex flex-wrap h-full'>{children}</main>
         <Footer />
       </body>
     </html>
