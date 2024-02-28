@@ -97,4 +97,40 @@ export const metaData: { [key: string]: Metadata } = {
       ],
     },
   },
+  treasury: {
+    title: 'IBC Gangsters Treasury',
+    metadataBase: new URL('https://ibcgangsters.io'),
+    description: 'Checkout the stash, the IBC Gangsters aquired over the years.',
+    keywords: ['ibc', 'ibc gangsters', 'inscription', 'cosmos hub', 'cosmos', 'nft', 'treasury'],
+    openGraph: {
+      type: 'website',
+      url: 'https://ibcgangsters.io/treasury',
+      title: 'IBC Gangsters Treasury',
+      locale: 'en_US',
+      description: 'Checkout the stash, the IBC Gangsters aquired over the years.',
+      siteName: 'IBC Gangsters',
+      images: [
+        {
+          url: 'https://ibcgangsters.io/banner-treasury.jpg',
+          width: 1500,
+          height: 500,
+          alt: 'IBC Gangsters Treasury',
+        },
+      ],
+    },
+    twitter: {
+      card: 'summary_large_image',
+      site: '@IBC_Gangsters',
+      title: 'IBC Gangsters Treasury',
+      description: 'Checkout the stash, the IBC Gangsters aquired over the years.',
+      images: [
+        {
+          url: 'https://ibcgangsters.io/banner-treasury.jpg',
+          width: 1500,
+          height: 500,
+          alt: 'IBC Gangsters Treasury',
+        },
+      ],
+    },
+  },
 }

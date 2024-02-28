@@ -7,7 +7,7 @@ export const metadata = metaData.treasury
 export default function TreasuryPage() {
   return (
     <>
-      <Hero />
+      <Hero backgroundClass='bg-treasury' />
       <Treasury />
     </>
   )

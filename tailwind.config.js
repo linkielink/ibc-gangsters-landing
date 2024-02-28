@@ -30,6 +30,18 @@ module.exports = {
           backgroundPosition: 'center ',
           backgroundSize: 'cover',
         },
+        '.bg-treasury': {
+          backgroundImage: 'url("/images/treasury.webp"),url("/images/treasury.jpg")',
+          backgroundRepeat: 'no-repeat',
+          backgroundPosition: 'center ',
+          backgroundSize: 'cover',
+        },
+        '.bg-manifesto': {
+          backgroundImage: 'url("/images/manifesto.webp"),url("/images/manifesto.jpg")',
+          backgroundRepeat: 'no-repeat',
+          backgroundPosition: 'center ',
+          backgroundSize: 'cover',
+        },
       })
     }),
   ],

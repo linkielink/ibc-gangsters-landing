@@ -25,9 +25,9 @@ export default function Treasury() {
   return (
     <section className='w-full flex flex-col items-center justify-center py-20 px-4 max-w-[1024px] mx-auto relative'>
       <h1 className='w-full pb-8 text-4xl text-center' id='name'>
-        IBCG Treasury
+        IBC Gangsters Treasury
       </h1>
-      <h2 className='w-full pb-8 text-xl text-center'>
+      <h2 className='w-full px-2 pb-8 text-xl text-center break-words'>
         Multisig Address:{' '}
         <a
           href='https://asteroidprotocol.io/app/wallet/cosmos16xvaqwcr8rhcwawwq40mj6ttqeeydvvv2fm7gp'

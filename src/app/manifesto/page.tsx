@@ -7,7 +7,7 @@ export const metadata = metaData.manifesto
 export default function ManifestoPage() {
   return (
     <>
-      <Hero />
+      <Hero backgroundClass='bg-manifesto' />
       <Manifesto />
     </>
   )
