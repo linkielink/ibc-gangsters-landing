@@ -78,7 +78,7 @@ export default function Collection() {
   }, [])
 
   const collectionHead = useMemo(() => {
-    if (sortedGangsters.length === 501) return '501 IBC Gangsters (Total)'
+    if (sortedGangsters.length === 500) return '500 IBC Gangsters (Total)'
     if (sortedGangsters.length === 0) return 'No IBC Gangster Found'
     if (sortedGangsters.length === 1) return '1 IBC Gangster (Filtered)'
     return `${sortedGangsters.length} IBC Gangsters (Filtered)`
