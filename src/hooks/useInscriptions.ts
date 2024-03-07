@@ -16,7 +16,7 @@ export default function useInscriptions() {
             query {
               inscription(
                 offset: 0
-                limit: 500
+                limit: 1000
                 order_by: [{ date_created: desc }]
                 where: { current_owner: { _eq: "cosmos16xvaqwcr8rhcwawwq40mj6ttqeeydvvv2fm7gp" } }
               ) {
