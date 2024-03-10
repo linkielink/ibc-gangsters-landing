@@ -23,7 +23,7 @@ export default function RootLayout({
         <meta name='theme-color' content='#ffffff' />
         <meta name='viewport' content='width=device-width, initial-scale=1' />
       </Head>
-      <body className='p-0 pb-10 m-0 scrollbar-hide md:pt-25'>
+      <body className='p-0 pb-10 m-0 text-white bg-black scrollbar-hide md:pt-25'>
         <Navigation />
         <main className='flex flex-wrap h-full'>{children}</main>
         <Footer />

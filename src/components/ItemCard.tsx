@@ -27,7 +27,7 @@ export default function ItemCard(props: Props) {
     <a
       title={title}
       href={href}
-      className='flex flex-col w-full gap-2 p-2 overflow-hidden bg-black rounded-lg md:transition-all md:duration-500 md:bg-black/80 md:hover:bg-black'
+      className='flex flex-col w-full gap-2 p-2 overflow-hidden bg-black rounded-lg md:transition-all md:duration-500 md:bg-white/10 md:hover:bg-white/20'
       target='_blank'
     >
       <div className='w-full'>

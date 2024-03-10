@@ -1,6 +1,6 @@
 'use client'
 import { gangsters } from 'data/gangsters'
-import { ChangeEvent, useCallback, useEffect, useMemo, useState } from 'react'
+import React, { ChangeEvent, useCallback, useEffect, useMemo, useState } from 'react'
 import ItemCard from './ItemCard'
 
 export default function Collection() {
@@ -63,6 +63,7 @@ export default function Collection() {
 
   const getHighlightedText = useCallback((text: string, highlight: string) => {
     const parts = text.split(new RegExp(`(${highlight})`, 'gi'))
+    if (highlight.trim() === '') return <React.Fragment>{text}</React.Fragment>
     return (
       <span>
         {parts.map((part, i) => (
@@ -93,7 +94,7 @@ export default function Collection() {
             e.preventDefault()
             scrollToTop()
           }}
-          className='fixed flex items-center justify-center w-10 h-10 pb-2 text-3xl text-white transition-all duration-500 bg-black/50 hover:bg-black right-3 bottom-14'
+          className='fixed flex items-center justify-center w-10 h-10 pb-2 text-3xl text-white transition-all duration-500 bg-white/50 hover:bg-white right-3 bottom-14'
         >
           &uarr;
         </a>
@@ -107,7 +108,7 @@ export default function Collection() {
           <p className='absolute px-2 text-black left'>Search:</p>
           <input
             type='text'
-            className='w-full p-2 border border-black rounded-lg outline-none text-black/60 pl-22 focus:outline-none'
+            className='w-full p-2 border border-white rounded-lg outline-none text-black/60 pl-22 focus:outline-none'
             placeholder='...by Gangster ID, Inscription ID, Hash or Name'
             maxLength={64}
             onChange={(event) => {
@@ -116,10 +117,10 @@ export default function Collection() {
           />
         </div>
         <div className='flex items-center justify-end flex-shrink gap-2'>
-          <p className='text-black'>Sort by:</p>
+          <p className='text-white'>Sort by:</p>
           <div className='w-[200px]'>
             <select
-              className='w-full p-2 text-black border border-black rounded-lg outline-none focus:outline-none'
+              className='w-full p-2 text-black border border-white rounded-lg outline-none focus:outline-none'
               onChange={(event) => sortGangsters(event)}
             >
               <option value='name'>Gangster ID</option>
