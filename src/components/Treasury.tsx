@@ -14,9 +14,12 @@ export default function Treasury() {
   const filteredInscriptions = useMemo(() => {
     const returnData: Inscription[] = []
     inscriptionData.inscription.forEach((ins) => {
-      if (ins.id === 3388 || !ins.name.includes('IBC Gangsters')) {
-        returnData.push(ins)
+      if (ins.name.includes('IBC Gangsters')) {
+        const gangsterID = ins.name.split('#')[1]
+        if (gangsterID && Number(gangsterID) <= 500) return
       }
+
+      returnData.push(ins)
     })
 
     return { inscription: returnData }
