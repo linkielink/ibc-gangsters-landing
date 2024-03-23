@@ -74,7 +74,7 @@ export const metaData: { [key: string]: Metadata } = {
       siteName: 'IBC Gangsters',
       images: [
         {
-          url: 'https://ibcgangsters.io/banner.jpg',
+          url: 'https://ibcgangsters.io/banner-manifesto.jpg',
           width: 1500,
           height: 500,
           alt: 'IBC Gangsters',
@@ -89,7 +89,7 @@ export const metaData: { [key: string]: Metadata } = {
         'Born in the gritty streets of Earth back in 2021, the IBC Gangsters were just faces in the crowd, grinding the 9-5, punching the clock, chasing that green while dreaming of a better life.',
       images: [
         {
-          url: 'https://ibcgangsters.io/banner.jpg',
+          url: 'https://ibcgangsters.io/banner-manifesto.jpg',
           width: 1500,
           height: 500,
           alt: 'IBC Gangsters',
