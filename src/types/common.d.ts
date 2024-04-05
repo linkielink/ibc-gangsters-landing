@@ -4,3 +4,7 @@ interface Gangster {
   image: string
   name: string
 }
+interface Coin {
+  denom: string
+  amount: string
+}

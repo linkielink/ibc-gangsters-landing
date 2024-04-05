@@ -2,6 +2,7 @@
 
 import BigNumber from 'bignumber.js'
 import { addresses } from 'constants/contants'
+import useBalance from 'hooks/useBalance'
 import useInscriptions from 'hooks/useInscriptions'
 import useTokens from 'hooks/useTokens'
 import { useMemo } from 'react'
@@ -10,6 +11,7 @@ import ItemCard from './ItemCard'
 export default function Treasury() {
   const tokenData = useTokens()
   const inscriptionData = useInscriptions()
+  const atomBalance = useBalance('uatom')
 
   const filteredInscriptions = useMemo(() => {
     const returnData: Inscription[] = []
@@ -43,11 +45,21 @@ export default function Treasury() {
       <h3 className='w-full pb-4 text-lg'>The IBC Gangsters Stash</h3>
       <section className='min-h-screen'>
         <div className='grid w-full grid-cols-2 gap-4 md:grid-cols-3 lg:grid-cols-4'>
+          {atomBalance && (
+            <ItemCard
+              itemName='ATOM'
+              href={`https://www.mintscan.io/cosmos/address/${addresses.multisig}`}
+              imageUrl='/images/atom.jpg'
+              title='ATOM'
+              hash='Cosmos Staking Coin'
+              balance={new BigNumber(atomBalance.amount).shiftedBy(-6).toNumber()}
+            />
+          )}
           <>
             {tokenData.token_holder.map((holder) => (
               <ItemCard
                 key={holder.token.transaction.hash}
-                itemName={`${holder.token.ticker} Tokens`}
+                itemName={`${holder.token.ticker}`}
                 href={`https://asteroidprotocol.io/app/market/${holder.token.ticker}`}
                 imageUrl={holder.token.content_path}
                 title={`Token: ${holder.token.ticker}`}
