@@ -3,10 +3,10 @@ import Image from 'next/image'
 interface Props {
   id?: string
   itemName: string
-  title: string
+  title?: string
   href: string
   imageUrl: string
-  hash: string
+  hash?: string
   searchString?: string
   getHighlightedText?: (text: string, highlight: string) => JSX.Element
   balance?: number
@@ -33,9 +33,11 @@ export default function ItemCard(props: Props) {
       <div className='w-full'>
         <Image src={imageUrl} alt={itemName} width={444} height={578} loading='lazy' />
       </div>
-      <p className='w-full text-white'>
-        {getHighlightedText ? getHighlightedText(itemName, searchString ?? '') : itemName}
-      </p>
+      {title && (
+        <p className='w-full text-white'>
+          {getHighlightedText ? getHighlightedText(itemName, searchString ?? '') : itemName}
+        </p>
+      )}
       {formattedBalance && (
         <p className='w-full text-sm font-thin text-white/50'>Balance: {formattedBalance}</p>
       )}
@@ -44,9 +46,11 @@ export default function ItemCard(props: Props) {
           Inscription #{getHighlightedText ? getHighlightedText(id, searchString ?? '') : id}
         </p>
       )}
-      <p className='w-full text-xs font-thin break-words text-white/30'>
-        {getHighlightedText ? getHighlightedText(hash, searchString ?? '') : hash}
-      </p>
+      {hash && (
+        <p className='w-full text-xs font-thin break-words text-white/30'>
+          {getHighlightedText ? getHighlightedText(hash, searchString ?? '') : hash}
+        </p>
+      )}
     </a>
   )
 }

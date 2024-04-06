@@ -1,7 +1,7 @@
 export default function Manifesto() {
   return (
     <section className='w-full px-3 py-20 max-w-[1024px] mx-auto'>
-      <h1 className='w-full text-center text-4xl pb-8'>IBC Gangsters Manifesto</h1>
+      <h1 className='w-full pb-8 text-4xl text-center'>IBC Gangsters Manifesto</h1>
       <p className='my-8'>
         Born in the gritty streets of Earth back in 2021, the IBC Gangsters were just faces in the
         crowd, grinding the 9-5, punching the clock, chasing that green while dreaming of a better

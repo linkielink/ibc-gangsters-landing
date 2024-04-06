@@ -1,7 +1,7 @@
 'use client'
+import ItemCard from 'components/ItemCard'
 import { gangsters } from 'data/gangsters'
 import React, { ChangeEvent, useCallback, useEffect, useMemo, useState } from 'react'
-import ItemCard from './ItemCard'
 
 export default function Collection() {
   const [sortedGangsters, setSortedGangsters] = useState(gangsters)
