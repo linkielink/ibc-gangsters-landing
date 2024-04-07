@@ -19,6 +19,46 @@ export default function Batch(props: Props) {
     '8': undefined,
     '9': undefined,
   }
+
+  const inAndExcludes: Record<string, { gone: string[]; replacement: string[] }> = {
+    '1': {
+      gone: ['001', '111', '151', '301'],
+      replacement: ['020', '030', '040', '050'],
+    },
+    '2': {
+      gone: ['002', '042', '212', '222', '252'],
+      replacement: ['060', '070', '080', '090', '100'],
+    },
+    '3': {
+      gone: ['003', '333'],
+      replacement: ['110', '120'],
+    },
+    '4': {
+      gone: [],
+      replacement: [],
+    },
+    '5': {
+      gone: [],
+      replacement: [],
+    },
+    '6': {
+      gone: [],
+      replacement: [],
+    },
+    '7': {
+      gone: [],
+      replacement: [],
+    },
+    '8': {
+      gone: [],
+      replacement: [],
+    },
+    '9': {
+      gone: [],
+      replacement: [],
+    },
+  }
+
   const { batchId } = props
 
   const filtered = useMemo(() => {
@@ -28,7 +68,15 @@ export default function Batch(props: Props) {
 
     return sorted.reduce((filteredGangsters, g) => {
       const gangsterID = g.name.replace('IBC Gangsters #', '')
-      if (gangsterID.slice(-1) === batchId) {
+      console.log(
+        inAndExcludes[batchId].gone.includes(gangsterID),
+        inAndExcludes[batchId],
+        gangsterID,
+      )
+      if (
+        (gangsterID.slice(-1) === batchId && !inAndExcludes[batchId].gone.includes(gangsterID)) ||
+        inAndExcludes[batchId].replacement.includes(gangsterID)
+      ) {
         filteredGangsters.push(g)
         return filteredGangsters
       }
@@ -42,13 +90,14 @@ export default function Batch(props: Props) {
       <section className='w-full flex flex-col items-center justify-center py-10 px-4 max-w-[1024px] mx-auto relative'>
         <h2 className='w-full pb-4 text-lg'>{title}</h2>
         <section className='min-h-screen'>
-          <div className='grid w-full grid-cols-3 gap-4 md:grid-cols-5 lg:grid-cols-6'>
+          <div className='grid w-full grid-cols-2 gap-4 md:grid-cols-4 lg:grid-cols-5'>
             {filtered.map((gangster) => (
               <ItemCard
                 key={gangster.id}
                 href={`https://asteroidprotocol.io/app/inscription/${gangster.hash}`}
                 itemName={gangster.name}
                 imageUrl={gangster.image}
+                type='batchView'
               />
             ))}
           </div>

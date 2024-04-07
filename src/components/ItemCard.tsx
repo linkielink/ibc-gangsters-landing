@@ -10,11 +10,22 @@ interface Props {
   searchString?: string
   getHighlightedText?: (text: string, highlight: string) => JSX.Element
   balance?: number
+  type?: 'batchView'
 }
 
 export default function ItemCard(props: Props) {
-  const { id, itemName, title, href, imageUrl, searchString, hash, getHighlightedText, balance } =
-    props
+  const {
+    id,
+    itemName,
+    title,
+    href,
+    imageUrl,
+    searchString,
+    hash,
+    getHighlightedText,
+    balance,
+    type,
+  } = props
 
   const formattedBalance = balance
     ? balance.toLocaleString(undefined, {
@@ -27,7 +38,7 @@ export default function ItemCard(props: Props) {
     <a
       title={title}
       href={href}
-      className='flex flex-col w-full gap-2 p-2 overflow-hidden bg-black rounded-lg md:transition-all md:duration-500 md:bg-white/10 md:hover:bg-white/20'
+      className='relative flex flex-col w-full gap-2 p-2 overflow-hidden bg-black rounded-lg md:transition-all md:duration-500 md:bg-white/10 md:hover:bg-white/20'
       target='_blank'
     >
       <div className='w-full'>
