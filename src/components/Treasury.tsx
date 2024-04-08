@@ -28,7 +28,7 @@ export default function Treasury() {
   }, [inscriptionData])
 
   return (
-    <section className='w-full flex flex-col items-center justify-center py-20 px-4  max-w-[1024px]mx-auto relative'>
+    <section className='w-full flex flex-col items-center justify-center py-20 px-4  max-w-[1024px] mx-auto relative'>
       <h1 className='w-full pb-8 text-4xl text-center' id='name'>
         IBC Gangsters Treasury
       </h1>
