@@ -8,6 +8,7 @@ interface Props {
 }
 
 export default function Batch(props: Props) {
+  // console.log(`### BATCH ${props.batchId} ###`)
   const dates: Record<string, string | undefined> = {
     '1': '4/24/24',
     '2': undefined,
@@ -68,11 +69,6 @@ export default function Batch(props: Props) {
 
     return sorted.reduce((filteredGangsters, g) => {
       const gangsterID = g.name.replace('IBC Gangsters #', '')
-      console.log(
-        inAndExcludes[batchId].gone.includes(gangsterID),
-        inAndExcludes[batchId],
-        gangsterID,
-      )
       if (
         (gangsterID.slice(-1) === batchId && !inAndExcludes[batchId].gone.includes(gangsterID)) ||
         inAndExcludes[batchId].replacement.includes(gangsterID)
@@ -85,21 +81,28 @@ export default function Batch(props: Props) {
   }, [gangsters])
   const date = dates[batchId]
   const title = date ? `Batch #${batchId} - ${date}` : `Batch #${batchId}`
+
   return (
     <div className='w-full'>
       <section className='w-full flex flex-col items-center justify-center py-10 px-4 max-w-[1024px] mx-auto relative'>
         <h2 className='w-full pb-4 text-lg'>{title}</h2>
         <section className='min-h-screen'>
           <div className='grid w-full grid-cols-2 gap-4 md:grid-cols-4 lg:grid-cols-5'>
-            {filtered.map((gangster) => (
-              <ItemCard
-                key={gangster.id}
-                href={`https://asteroidprotocol.io/app/inscription/${gangster.hash}`}
-                itemName={gangster.name}
-                imageUrl={gangster.image}
-                type='batchView'
-              />
-            ))}
+            {filtered.map((gangster) => {
+              // console.log(
+              //  `${gangster.name} Memo:`,
+              //  `urn:marketplace:cosmoshub-4@v1;list.inscription$h=${gangster.hash},amt=4.24,mindep=0.0001,to=100`,
+              //)
+              return (
+                <ItemCard
+                  key={gangster.id}
+                  href={`https://asteroidprotocol.io/app/inscription/${gangster.hash}`}
+                  itemName={gangster.name}
+                  imageUrl={gangster.image}
+                  type='batchView'
+                />
+              )
+            })}
           </div>
         </section>
       </section>
