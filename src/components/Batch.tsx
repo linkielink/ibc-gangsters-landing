@@ -44,7 +44,7 @@ export default function Batch(props: Props) {
 
   return (
     <div className='w-full'>
-      <section className='w-full flex flex-col items-center justify-center py-10 px-4 max-w-[1024px] mx-auto relative'>
+      <section className='w-full flex flex-col items-center justify-center py-20 px-4 max-w-[1024px] mx-auto relative'>
         <h1 className='w-full pb-4 pb-8 text-4xl text-center'>{title}</h1>
         <section className='min-h-screen'>
           <div className='grid w-full grid-cols-2 gap-4 md:grid-cols-4 lg:grid-cols-5'>
