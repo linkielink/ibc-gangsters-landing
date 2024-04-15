@@ -40,12 +40,12 @@ export default function Batch(props: Props) {
     }, [] as Gangster[])
   }, [gangsters])
   const date = dates[batchId]
-  const title = date ? `Batch #${batchId} - ${date}` : `Batch #${batchId}`
+  const title = date ? `${date}` : `Batch #${batchId}`
 
   return (
     <div className='w-full'>
       <section className='w-full flex flex-col items-center justify-center py-10 px-4 max-w-[1024px] mx-auto relative'>
-        <h2 className='w-full pb-4 text-lg'>{title}</h2>
+        <h1 className='w-full pb-4 text-lg text-center'>{title}</h1>
         <section className='min-h-screen'>
           <div className='grid w-full grid-cols-2 gap-4 md:grid-cols-4 lg:grid-cols-5'>
             {filtered.map((gangster) => {
