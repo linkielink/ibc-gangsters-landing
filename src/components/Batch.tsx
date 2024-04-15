@@ -11,52 +11,12 @@ export default function Batch(props: Props) {
   // console.log(`### BATCH ${props.batchId} ###`)
   const dates: Record<string, string | undefined> = {
     '1': '4/24/24',
-    '2': undefined,
-    '3': undefined,
-    '4': undefined,
-    '5': undefined,
-    '6': undefined,
-    '7': undefined,
-    '8': undefined,
-    '9': undefined,
   }
 
   const inAndExcludes: Record<string, { gone: string[]; replacement: string[] }> = {
     '1': {
       gone: ['001', '111', '151', '301'],
       replacement: ['020', '030', '040', '050'],
-    },
-    '2': {
-      gone: ['002', '042', '212', '222', '252'],
-      replacement: ['060', '070', '080', '090', '100'],
-    },
-    '3': {
-      gone: ['003', '333'],
-      replacement: ['110', '120'],
-    },
-    '4': {
-      gone: [],
-      replacement: [],
-    },
-    '5': {
-      gone: [],
-      replacement: [],
-    },
-    '6': {
-      gone: [],
-      replacement: [],
-    },
-    '7': {
-      gone: [],
-      replacement: [],
-    },
-    '8': {
-      gone: [],
-      replacement: [],
-    },
-    '9': {
-      gone: [],
-      replacement: [],
     },
   }
 
