@@ -51,13 +51,10 @@ export default function Collection() {
   const filterGangsters = (query: string) => {
     const filtered = gangsters.filter(
       (gangster) =>
-        Number(gangster.id - 1)
-          .toString()
-          .includes(query) ||
+        gangster.id.toString().includes(query) ||
         gangster.hash.toLowerCase().includes(query) ||
         gangster.name.toLowerCase().includes(query),
     )
-
     setSortedGangsters([...filtered])
   }
 
@@ -102,7 +99,7 @@ export default function Collection() {
       <h1 className='w-full pb-8 text-4xl text-center' id='name'>
         IBC Gangsters
       </h1>
-      <h2 className='w-full pb-8 text-xl text-center'>Inscription Range: #2032 - #3680</h2>
+      <h2 className='w-full pb-8 text-xl text-center'>Inscription Range: #1868 - #3467</h2>
       <div className='flex flex-col justify-between w-full gap-4 mb-4 md:gap-10 md:flex-row'>
         <div className='relative flex items-center flex-grow gap-2'>
           <p className='absolute px-2 text-black left'>Search:</p>
@@ -131,16 +128,17 @@ export default function Collection() {
       </div>
 
       <h3 className='w-full pb-4 text-lg'>{collectionHead}</h3>
-      <section className='min-h-screen'>
+      <section className='w-full min-h-screen'>
         <div className='grid w-full grid-cols-2 gap-4 md:grid-cols-3 lg:grid-cols-4'>
           {sortedGangsters.map((gangster) => (
             <ItemCard
               key={gangster.id}
-              title={`Buy ${gangster.name} - Inscription #${gangster.id - 1}`}
+              title={`${gangster.name} - Inscription #${gangster.id}`}
               href={`https://asteroidprotocol.io/app/inscription/${gangster.hash}`}
-              id={Number(gangster.id - 1).toString()}
+              id={gangster.id.toString()}
               itemName={gangster.name}
-              imageUrl={gangster.image}
+              imageUrl={gangster.imageUrl}
+              traits={gangster.traits}
               hash={gangster.hash}
               searchString={searchString}
               getHighlightedText={getHighlightedText}

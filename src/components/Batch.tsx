@@ -58,8 +58,7 @@ export default function Batch(props: Props) {
                   key={gangster.id}
                   href={`https://asteroidprotocol.io/app/inscription/${gangster.hash}`}
                   itemName={gangster.name}
-                  imageUrl={gangster.image}
-                  type='batchView'
+                  imageUrl={gangster.imageUrl}
                 />
               )
             })}
