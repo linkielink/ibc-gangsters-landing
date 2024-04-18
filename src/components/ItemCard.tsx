@@ -33,6 +33,19 @@ function KeyValue({
   )
 }
 
+const cardBackgrounds: Record<string, string> = {
+  ibc: 'gradient-ibc',
+  luna: 'gradient-luna',
+  saga: 'gradient-saga',
+  cosmos: 'gradient-cosmos',
+  juno: 'gradient-juno',
+  osmosis: 'gradient-osmosis',
+  migaloo: 'gradient-migaloo',
+  akash: 'gradient-akash',
+  stride: 'gradient-stride',
+  stargaze: 'gradient-stargaze',
+}
+
 export default function ItemCard(props: Props) {
   const {
     id,
@@ -65,7 +78,13 @@ export default function ItemCard(props: Props) {
           )}
         >
           {traits && (
-            <div className='absolute flex flex-col gap-3 p-2 py-4 opacity-0 inset-0 w-full h-full [transform:rotateY(180deg)] bg-black md:bg-white/10 group-hover:opacity-100 delay-200 duration-75 transform-[opacity]'>
+            <div
+              className={classNames(
+                'absolute flex flex-col gap-3 p-2 py-4 opacity-0 inset-0 w-full h-full',
+                '[transform:rotateY(180deg)] group-hover:opacity-100 delay-200 duration-75 transform-[opacity]',
+                cardBackgrounds[traits.syndicate.split(' ')[0].toLowerCase()],
+              )}
+            >
               <KeyValue
                 keyName={traits.nickname ? 'Nickname' : 'Name'}
                 value={traits.nickname ? traits.nickname : itemName}
