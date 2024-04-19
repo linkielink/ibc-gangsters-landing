@@ -47,7 +47,7 @@ export default function Navigation() {
   const navItems = [
     { name: 'Collection', link: '/' },
     { name: 'Manifesto', link: '/manifesto' },
-    { name: 'Roadmap', link: '/roadmap' },
+    { name: 'Game Plan', link: '/game-plan' },
     { name: 'Treasury', link: '/treasury' },
     { name: 'IBCG on X', link: 'https://twitter.com/IBC_Gangsters' },
   ]

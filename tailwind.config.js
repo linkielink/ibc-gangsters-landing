@@ -51,6 +51,7 @@ module.exports = {
         akash: '#770000',
         stride: '#9d1d56',
         stargaze: '#69bfae',
+        done: '#00bb05',
       },
     },
   },
@@ -162,6 +163,10 @@ module.exports = {
         '.glow-stargaze': {
           border: `1px solid ${theme('colors.stargaze')}`,
           boxShadow: `0 0 4px 0 ${theme('colors.stargaze')}`,
+        },
+        '.glow-done': {
+          border: `1px solid ${theme('colors.done')}`,
+          boxShadow: `0 0 4px 0 ${theme('colors.done')}`,
         },
       })
     }),

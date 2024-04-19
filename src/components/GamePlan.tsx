@@ -3,13 +3,13 @@ import TextImage from './TextImage'
 
 function ArrowDown({ done }: { done?: boolean }) {
   return (
-    <p className={classNames('w-full text-[50px] text-center', done ? 'text-migaloo' : 'text-ibc')}>
+    <p className={classNames('w-full text-[50px] text-center', done ? 'text-done' : 'text-ibc')}>
       ↓
     </p>
   )
 }
 
-export default function Roadmap() {
+export default function GamePlan() {
   return (
     <section className='flex flex-wrap w-full px-3 py-20 max-w-[1024px] mx-auto gap-8'>
       <h1 className='w-full text-4xl text-center'>The Road Ahead</h1>
@@ -19,18 +19,22 @@ export default function Roadmap() {
         content={
           <>
             <p className='pb-4 text-sm'>
-              Born tn the gritty streets of Earth, a crew of hustlers and dreamers gather in a dimly
+              Born in the gritty streets of Earth, a crew of hustlers and dreamers gather in a dimly
               lit hideout amidst the vastness of the ROIDS solar system. Hungry for more outta life,
               they start stirrin&apos; up trouble. From cookin&apos; up a token to launchin&apos;
-              the IBC Gangster Collection, they hustle day and night to leave their mark on the
+              the IBC Gangsters Collection, they hustle day and night to leave their mark on the
               world. The ride&apos;s just beginning, and they&apos;re primed to make waves.
             </p>
             <ul className='flex flex-wrap gap-2 pl-4 text-sm list-disc'>
-              <li>Start Printin&apos; Money &ndash; Cook Up the IBCG Token</li>
-              <li>Bust Into the Art Scene &ndash; Craft the IBC Gangster Collection</li>
-              <li>Spread the Word &ndash; Hit Up Twitter and Telegram</li>
-              <li>Set Up Headquarters &ndash; Launch the Website</li>
-              <li>Map Out the Hustle &ndash; Create a Game Plan</li>
+              <li className='text-done'>
+                Start Printin&apos; Money &ndash; Cook Up the IBCG Token
+              </li>
+              <li className='text-done'>
+                Bust Into the Art Scene &ndash; Craft the IBC Gangsters Collection
+              </li>
+              <li className='text-done'>Spread the Word &ndash; Hit Up Twitter and Telegram</li>
+              <li className='text-done'>Set Up Headquarters &ndash; Launch the Website</li>
+              <li className='text-done'>Map Out the Hustle &ndash; Create a Game Plan</li>
             </ul>
           </>
         }
@@ -51,7 +55,9 @@ export default function Roadmap() {
               playin&apos; the long game to reach the top.
             </p>
             <ul className='flex flex-wrap gap-2 pl-4 text-sm list-disc'>
-              <li>Secure the loot and Grow the Dough &ndash; Set Up the Treasury</li>
+              <li className='text-done'>
+                Secure the loot and Grow the Dough &ndash; Set Up the Treasury
+              </li>
               <li>Bring in the New Blood &ndash; Push Out the First Batch of NFTs</li>
             </ul>
           </>

@@ -16,7 +16,7 @@ export default function TextImage(props: Props) {
       className={classNames(
         'flex flex-col md:flex-row items-start justify-start gap-4 p-4 bg-white/5 rounded',
         direction === 'ltr' ? 'md:flex-row-reverse' : 'md:flex-row',
-        done ? 'glow-migaloo' : 'glow-ibc',
+        done ? 'glow-done' : 'glow-ibc',
       )}
     >
       <div className='w-full md:w-1/2'>

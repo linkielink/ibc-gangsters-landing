@@ -1,10 +1,10 @@
 import Hero from 'components/Hero'
-import Roadmap from 'components/Roadmap'
+import Roadmap from 'components/GamePlan'
 import { metaData } from 'constants/pageMetadata'
 
-export const metadata = metaData.roadmap
+export const metadata = metaData.gamePlan
 
-export default function RoadmapPage() {
+export default function GamePlanPage() {
   return (
     <>
       <Hero backgroundClass='bg-roadmap' />

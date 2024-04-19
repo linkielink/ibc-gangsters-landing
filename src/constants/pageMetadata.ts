@@ -134,13 +134,13 @@ export const metaData: { [key: string]: Metadata } = {
     },
   },
   roadmap: {
-    title: 'IBC Gangsters Roadmap',
+    title: 'IBC Gangsters Game Plan',
     metadataBase: new URL('https://ibcgangsters.io'),
     description: 'Checkout the stash, the IBC Gangsters aquired over the years.',
     keywords: ['ibc', 'ibc gangsters', 'inscription', 'cosmos hub', 'cosmos', 'nft', 'roadmap'],
     openGraph: {
       type: 'website',
-      url: 'https://ibcgangsters.io/roadmap',
+      url: 'https://ibcgangsters.io/game-plan',
       title: 'The Road Ahead',
       locale: 'en_US',
       description:
@@ -151,7 +151,7 @@ export const metaData: { [key: string]: Metadata } = {
           url: 'https://ibcgangsters.io/banner-roadmap.jpg',
           width: 1500,
           height: 500,
-          alt: 'IBC Gangsters Roadmap',
+          alt: 'IBC Gangsters Game Plan',
         },
       ],
     },
@@ -166,7 +166,7 @@ export const metaData: { [key: string]: Metadata } = {
           url: 'https://ibcgangsters.io/banner-roadmap.jpg',
           width: 1500,
           height: 500,
-          alt: 'IBC Gangsters Roadmap',
+          alt: 'IBC Gangsters Game Plan',
         },
       ],
     },
