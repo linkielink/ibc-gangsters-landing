@@ -103,7 +103,7 @@ export default function ItemCard(props: Props) {
           )}
           <div
             className={classNames(
-              'flex relative flex-col bg-black md:bg-white/10 w-full gap-2 p-2',
+              'flex relative flex-col bg-white/10 w-full gap-2 p-2',
               '[transform:rotateY(0deg)] [backface-visibility:hidden] group-hover:opacity-0 delay-200 duration-75 transform-[opacity]',
             )}
           >
