@@ -21,12 +21,12 @@ export default function Roadmap() {
             <p className='pb-4 text-sm'>
               Born tn the gritty streets of Earth, a crew of hustlers and dreamers gather in a dimly
               lit hideout amidst the vastness of the ROIDS solar system. Hungry for more outta life,
-              they start stirrin' up trouble. From cookin' up a token to launchin' the IBC Gangster
-              Collection, they hustle day and night to leave their mark on the world. The ride's
-              just beginning, and they're primed to make waves.
+              they start stirrin&apos; up trouble. From cookin&apos; up a token to launchin&apos;
+              the IBC Gangster Collection, they hustle day and night to leave their mark on the
+              world. The ride&apos;s just beginning, and they&apos;re primed to make waves.
             </p>
             <ul className='flex flex-wrap gap-2 pl-4 text-sm list-disc'>
-              <li>Start Printin' Money &ndash; Cook Up the IBCG Token</li>
+              <li>Start Printin&apos; Money &ndash; Cook Up the IBCG Token</li>
               <li>Bust Into the Art Scene &ndash; Craft the IBC Gangster Collection</li>
               <li>Spread the Word &ndash; Hit Up Twitter and Telegram</li>
               <li>Set Up Headquarters &ndash; Launch the Website</li>
@@ -44,10 +44,11 @@ export default function Roadmap() {
         content={
           <>
             <p className='pb-4 text-sm'>
-              As the squad gains steam, they're tightenin' up operations, divvying tasks like pros,
-              and working like a well-oiled machine. With a Treasury set up for future investments
-              and new recruits comin' in, they're hustlin' hard and showin' the world they mean
-              business. It's all about progress and playin' the long game to reach the top.
+              As the squad gains steam, they&apos;re tightenin&apos; up operations, divvying tasks
+              like pros, and working like a well-oiled machine. With a Treasury set up for future
+              investments and new recruits comin&apos; in, they&apos;re hustlin&apos; hard and
+              showin&apos; the world they mean business. It&apos;s all about progress and
+              playin&apos; the long game to reach the top.
             </p>
             <ul className='flex flex-wrap gap-2 pl-4 text-sm list-disc'>
               <li>Secure the loot and Grow the Dough &ndash; Set Up the Treasury</li>
@@ -64,11 +65,11 @@ export default function Roadmap() {
         content={
           <>
             <p className='pb-4 text-sm'>
-              With a firm grip on the streets, the gangsters aim to grow their empire, hustlin' hard
-              from shakin' down blocks to traffickin' art. They keep their pockets full, their crew
-              happy, and their eyes on the prize. Cleanin' their dirty money and stackin' their
-              liquidity pool, they're ready for whatever comes their way. Tough streets? They laugh
-              in their face.
+              With a firm grip on the streets, the gangsters aim to grow their empire, hustlin&apos;
+              hard from shakin&apos; down blocks to traffickin&apos; art. They keep their pockets
+              full, their crew happy, and their eyes on the prize. Cleanin&apos; their dirty money
+              and stackin&apos; their liquidity pool, they&apos;re ready for whatever comes their
+              way. Tough streets? They laugh in their face.
             </p>
             <ul className='flex flex-wrap gap-2 pl-4 text-sm list-disc'>
               <li>Art Trafficking &ndash; Fill the Vault with Valuable Art</li>
@@ -94,10 +95,11 @@ export default function Roadmap() {
           <>
             <p className='pb-4 text-sm'>
               With power in their grasp and streets under their thumb, the gangsters face threats
-              from all sides – rival gangs, old allies turnin' sour. But they ain't backin' down.
-              Setting up a digital mob, they're keepin' operations smooth and enemies at bay.
-              Launchin' new NFTs, they're showin' they're here to stay. It's risky, but they ain't
-              flinchin'. Never have, never will.
+              from all sides &ndash; rival gangs, old allies turnin&apos; sour. But they ain&apos;t
+              backin&apos; down. Setting up a digital mob, they&apos;re keepin&apos; operations
+              smooth and enemies at bay. Launchin&apos; new NFTs, they&apos;re showin&apos;
+              they&apos;re here to stay. It&apos;s risky, but they ain&apos;t flinchin&apos;. Never
+              have, never will.
             </p>
             <ul className='flex flex-wrap gap-2 pl-4 text-sm list-disc'>
               <li>Round up the digital crew and spark change &ndash; Hustle Hierarchy Shake-Up</li>
@@ -115,9 +117,9 @@ export default function Roadmap() {
           <>
             <p className='pb-4 text-sm'>
               With their enemies vanquished, the crew stands at the dawn of a new era. The streets
-              are theirs for the takin' and the future's lookin' bright. Only time will tell what
-              adventures lie ahead. But one thing's for sure – they ain't goin' down without a
-              fight.
+              are theirs for the takin&apos; and the future&apos;s lookin&apos; bright. Only time
+              will tell what adventures lie ahead. But one thing&apos;s for sure &ndash; they
+              ain&apos;t goin&apos; down without a fight.
             </p>
           </>
         }

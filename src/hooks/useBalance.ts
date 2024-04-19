@@ -17,7 +17,7 @@ export default function useBalance(denom: string) {
       }
     }
     getData()
-  }, [])
+  }, [denom, url])
 
   return data
 }
