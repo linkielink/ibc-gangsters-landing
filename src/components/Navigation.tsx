@@ -50,7 +50,7 @@ export default function Navigation() {
     { name: 'Treasury', link: '/treasury' },
     { name: 'IBC Gangsters on X', link: 'https://twitter.com/IBC_Gangsters' },
   ]
-  const barClasses = 'w-10 h-0.5 bg-white my-3 transition-all duration-500'
+  const barClasses = 'w-5 h-0.5 bg-white my-1 transition-all duration-500'
 
   return (
     <nav className='fixed top-0 left-0 z-10 flex items-center w-full text-xl text-white bg-black md:h-25 md:flex'>
@@ -59,7 +59,7 @@ export default function Navigation() {
         className='hidden md:flex'
         onClick={() => setIsOpen(false)}
       />
-      <div className='relative w-full pt-20 md:hidden'>
+      <div className='relative w-full pt-12 md:hidden'>
         <div
           className='absolute w-10 left-4 top-3'
           role='button'
@@ -69,7 +69,7 @@ export default function Navigation() {
             className={classNames(
               barClasses,
               isOpen
-                ? '-rotate-45 -translate-x-1 translate-y-2'
+                ? '-rotate-45 -translate-x-1 translate-y-1'
                 : 'rotate-0 translate-x-0 translate-y-0',
             )}
           />
@@ -78,7 +78,7 @@ export default function Navigation() {
             className={classNames(
               barClasses,
               isOpen
-                ? 'rotate-45 -translate-x-1 -translate-y-5'
+                ? 'rotate-45 -translate-x-1 -translate-y-2'
                 : 'rotate-0 translate-x-0 translate-y-0',
             )}
           />

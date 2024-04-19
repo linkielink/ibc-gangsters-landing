@@ -133,4 +133,42 @@ export const metaData: { [key: string]: Metadata } = {
       ],
     },
   },
+  roadmap: {
+    title: 'IBC Gangsters Roadmap',
+    metadataBase: new URL('https://ibcgangsters.io'),
+    description: 'Checkout the stash, the IBC Gangsters aquired over the years.',
+    keywords: ['ibc', 'ibc gangsters', 'inscription', 'cosmos hub', 'cosmos', 'nft', 'roadmap'],
+    openGraph: {
+      type: 'website',
+      url: 'https://ibcgangsters.io/roadmap',
+      title: 'The Road Ahead',
+      locale: 'en_US',
+      description:
+        "The streets are theirs for the takin' and the future's lookin' bright. Only time will tell what adventures lie ahead. But one thing's for sure – they ain't goin' down without a fight.",
+      siteName: 'IBC Gangsters',
+      images: [
+        {
+          url: 'https://ibcgangsters.io/banner-roadmap.jpg',
+          width: 1500,
+          height: 500,
+          alt: 'IBC Gangsters Roadmap',
+        },
+      ],
+    },
+    twitter: {
+      card: 'summary_large_image',
+      site: '@IBC_Gangsters',
+      title: 'The Road Ahead',
+      description:
+        "The streets are theirs for the takin' and the future's lookin' bright. Only time will tell what adventures lie ahead. But one thing's for sure – they ain't goin' down without a fight.",
+      images: [
+        {
+          url: 'https://ibcgangsters.io/banner-roadmap.jpg',
+          width: 1500,
+          height: 500,
+          alt: 'IBC Gangsters Roadmap',
+        },
+      ],
+    },
+  },
 }

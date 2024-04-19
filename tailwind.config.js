@@ -61,19 +61,25 @@ module.exports = {
         '.bg-hero': {
           backgroundImage: 'url("/images/hero.webp"),url("/images/hero.jpg")',
           backgroundRepeat: 'no-repeat',
-          backgroundPosition: 'center ',
+          backgroundPosition: 'center',
           backgroundSize: 'cover',
         },
         '.bg-treasury': {
           backgroundImage: 'url("/images/treasury.webp"),url("/images/treasury.jpg")',
           backgroundRepeat: 'no-repeat',
-          backgroundPosition: 'center ',
+          backgroundPosition: 'center',
           backgroundSize: 'cover',
         },
         '.bg-manifesto': {
           backgroundImage: 'url("/images/manifesto.webp"),url("/images/manifesto.jpg")',
           backgroundRepeat: 'no-repeat',
-          backgroundPosition: 'center ',
+          backgroundPosition: 'center',
+          backgroundSize: 'cover',
+        },
+        '.bg-roadmap': {
+          backgroundImage: 'url("/images/roadmap.webp"),url("/images/roadmap.jpg")',
+          backgroundRepeat: 'no-repeat',
+          backgroundPosition: 'center bottom',
           backgroundSize: 'cover',
         },
         '.gradient-ibc': {
