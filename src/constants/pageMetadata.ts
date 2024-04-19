@@ -133,7 +133,7 @@ export const metaData: { [key: string]: Metadata } = {
       ],
     },
   },
-  roadmap: {
+  gamePlan: {
     title: 'IBC Gangsters Game Plan',
     metadataBase: new URL('https://ibcgangsters.io'),
     description: 'Checkout the stash, the IBC Gangsters aquired over the years.',
