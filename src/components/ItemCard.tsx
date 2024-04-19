@@ -34,16 +34,16 @@ function KeyValue({
 }
 
 const cardBackgrounds: Record<string, string> = {
-  ibc: 'gradient-ibc',
-  luna: 'gradient-luna',
-  saga: 'gradient-saga',
-  cosmos: 'gradient-cosmos',
-  juno: 'gradient-juno',
-  osmosis: 'gradient-osmosis',
-  migaloo: 'gradient-migaloo',
-  akash: 'gradient-akash',
-  stride: 'gradient-stride',
-  stargaze: 'gradient-stargaze',
+  ibc: 'ibc',
+  luna: 'luna',
+  saga: 'saga',
+  cosmos: 'cosmos',
+  juno: 'juno',
+  osmosis: 'osmosis',
+  migaloo: 'migaloo',
+  akash: 'akash',
+  stride: 'stride',
+  stargaze: 'stargaze',
 }
 
 export default function ItemCard(props: Props) {
@@ -67,13 +67,15 @@ export default function ItemCard(props: Props) {
       })
     : undefined
 
+  const syndicate = traits ? traits.syndicate.split(' ')[0].toLowerCase() : ''
   return (
     <a title={title} href={href} className='w-full' target='_blank'>
       <div className={classNames('w-full', traits && 'group [perspective:1000px]')}>
         <div
           className={classNames(
             'relative flex w-full overflow-hidden rounded-lg md:transition-all md:duration-500',
-            traits && '[transform-style:preserve-3d] group-hover:[transform:rotateY(180deg)]',
+            traits &&
+              `[transform-style:preserve-3d] group-hover:[transform:rotateY(180deg)] glow-${syndicate}`,
             !traits && 'hover:bg-white/20',
           )}
         >
@@ -81,8 +83,8 @@ export default function ItemCard(props: Props) {
             <div
               className={classNames(
                 'absolute flex flex-col gap-3 p-2 py-4 opacity-0 inset-0 w-full h-full',
-                '[transform:rotateY(180deg)] group-hover:opacity-100 delay-200 duration-75 transform-[opacity]',
-                cardBackgrounds[traits.syndicate.split(' ')[0].toLowerCase()],
+                '[transform:rotateY(180deg)] group-hover:opacity-100 md:delay-200 md:duration-75 md:transition-[opacity]',
+                `gradient-${syndicate}`,
               )}
             >
               <KeyValue

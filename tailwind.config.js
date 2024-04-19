@@ -7,6 +7,28 @@ module.exports = {
     './src/components/**/*.{js,ts,jsx,tsx,mdx}',
     './src/app/**/*.{js,ts,jsx,tsx,mdx}',
   ],
+  safelist: [
+    'gradient-ibc',
+    'gradient-luna',
+    'gradient-saga',
+    'gradient-cosmos',
+    'gradient-juno',
+    'gradient-osmosis',
+    'gradient-migaloo',
+    'gradient-akash',
+    'gradient-stride',
+    'gradient-stargaze',
+    'glow-ibc',
+    'glow-luna',
+    'glow-saga',
+    'glow-cosmos',
+    'glow-juno',
+    'glow-osmosis',
+    'glow-migaloo',
+    'glow-akash',
+    'glow-stride',
+    'glow-stargaze',
+  ],
   theme: {
     extend: {
       height: {
@@ -17,6 +39,18 @@ module.exports = {
         22: '88px',
         25: '100px',
         28: '112px',
+      },
+      colors: {
+        ibc: '#666666',
+        luna: '#baa800',
+        saga: '#DDDDDD',
+        cosmos: '#1c138b',
+        juno: '#540000',
+        osmosis: '#61005b',
+        migaloo: '#007409',
+        akash: '#770000',
+        stride: '#9d1d56',
+        stargaze: '#69bfae',
       },
     },
   },
@@ -55,12 +89,12 @@ module.exports = {
           background: 'linear-gradient(315deg, rgba(30,30,30,1) 30%, rgba(10,10,10,1) 70%)',
         },
         '.gradient-cosmos': {
-          background: 'rgb(3,0,40)',
-          background: 'linear-gradient(315deg, rgba(6,0,78,1) 30%, rgba(3,0,40,1) 70%)',
+          background: 'rgb(28,19,139)',
+          background: 'linear-gradient(315deg, rgba(28,19,139,1) 30%, rgba(3,0,40,1) 70%)',
         },
         '.gradient-juno': {
           background: 'rgb(27,0,0)',
-          background: 'linear-gradient(315deg, rgba(43,0,0,1) 30%, rgba(27,0,0,1) 70%)',
+          background: 'linear-gradient(315deg, rgba(84,0,0) 30%, rgba(27,0,0,1) 70%)',
         },
         '.gradient-osmosis': {
           background: 'rgb(66,25,128)',
@@ -82,6 +116,46 @@ module.exports = {
           background: 'rgb(83,121,179)',
           background:
             'linear-gradient(315deg, rgba(208,200,130,1) 0%, rgba(105,191,174,1) 63%, rgba(83,121,179,1) 100%)',
+        },
+        '.glow-ibc': {
+          border: `1px solid ${theme('colors.ibc')}`,
+          boxShadow: `0 0 4px 0 ${theme('colors.ibc')}`,
+        },
+        '.glow-luna': {
+          border: `1px solid${theme('colors.luna')}`,
+          boxShadow: `0 0 4px 0${theme('colors.luna')}`,
+        },
+        '.glow-saga': {
+          border: `1px solid${theme('colors.saga')}`,
+          boxShadow: `0 0 4px 0${theme('colors.saga')}`,
+        },
+        '.glow-cosmos': {
+          border: `1px solid ${theme('colors.cosmos')}`,
+          boxShadow: `0 0 4px 0 ${theme('colors.cosmos')}`,
+        },
+        '.glow-juno': {
+          border: `1px solid${theme('colors.juno')}`,
+          boxShadow: `0 0 4px 0${theme('colors.juno')}`,
+        },
+        '.glow-osmosis': {
+          border: `1px solid ${theme('colors.osmosis')}`,
+          boxShadow: `0 0 4px 0 ${theme('colors.osmosis')}`,
+        },
+        '.glow-migaloo': {
+          border: `1px solid ${theme('colors.migaloo')}`,
+          boxShadow: `0 0 4px 0 ${theme('colors.migaloo')}`,
+        },
+        '.glow-akash': {
+          border: `1px solid ${theme('colors.akash')}`,
+          boxShadow: `0 0 4px 0 ${theme('colors.akash')}`,
+        },
+        '.glow-stride': {
+          border: `1px solid ${theme('colors.stride')}`,
+          boxShadow: `0 0 4px 0 ${theme('colors.stride')}`,
+        },
+        '.glow-stargaze': {
+          border: `1px solid ${theme('colors.stargaze')}`,
+          boxShadow: `0 0 4px 0 ${theme('colors.stargaze')}`,
         },
       })
     }),
