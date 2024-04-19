@@ -129,7 +129,7 @@ export default function Collection() {
 
       <h3 className='w-full pb-4 text-lg'>{collectionHead}</h3>
       <section className='w-full min-h-screen'>
-        <div className='grid w-full grid-cols-2 gap-4 md:grid-cols-3 lg:grid-cols-4'>
+        <div className='grid w-full grid-cols-1 gap-4 md:grid-cols-3 lg:grid-cols-4'>
           {sortedGangsters.map((gangster) => (
             <ItemCard
               key={gangster.id}
