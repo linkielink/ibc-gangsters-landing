@@ -70,7 +70,7 @@ export default function ItemCard(props: Props) {
   const syndicate = traits ? traits.syndicate.split(' ')[0].toLowerCase() : ''
   return (
     <a title={title} href={href} className='w-full' target='_blank'>
-      <div className={classNames('w-full', traits && 'group [perspective:1000px]')}>
+      <div className={classNames('w-full flex h-full', traits && 'group [perspective:1000px]')}>
         <div
           className={classNames(
             'relative flex w-full overflow-hidden rounded-lg md:transition-all md:duration-500',

@@ -47,8 +47,9 @@ export default function Navigation() {
   const navItems = [
     { name: 'Collection', link: '/' },
     { name: 'Manifesto', link: '/manifesto' },
+    { name: 'Roadmap', link: '/roadmap' },
     { name: 'Treasury', link: '/treasury' },
-    { name: 'IBC Gangsters on X', link: 'https://twitter.com/IBC_Gangsters' },
+    { name: 'IBCG on X', link: 'https://twitter.com/IBC_Gangsters' },
   ]
   const barClasses = 'w-5 h-0.5 bg-white my-1 transition-all duration-500'
 
