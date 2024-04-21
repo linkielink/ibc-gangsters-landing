@@ -136,7 +136,8 @@ export const metaData: { [key: string]: Metadata } = {
   gamePlan: {
     title: 'IBC Gangsters Game Plan',
     metadataBase: new URL('https://ibcgangsters.io'),
-    description: 'Checkout the stash, the IBC Gangsters aquired over the years.',
+    description:
+      "The streets are theirs for the takin' and the future's lookin' bright. Only time will tell what adventures lie ahead. But one thing's for sure – they ain't goin' down without a fight.",
     keywords: ['ibc', 'ibc gangsters', 'inscription', 'cosmos hub', 'cosmos', 'nft', 'roadmap'],
     openGraph: {
       type: 'website',
@@ -174,7 +175,8 @@ export const metaData: { [key: string]: Metadata } = {
   arrivals: {
     title: 'IBC Gangsters Arrivals',
     metadataBase: new URL('https://ibcgangsters.io'),
-    description: 'Checkout the stash, the IBC Gangsters aquired over the years.',
+    description:
+      "You thought the IBC Gangsters would take over overnight? Nah, it ain't that easy. Syndicates grow slow and build rep. If you thought it was quick and easy, you're way off.",
     keywords: [
       'ibc',
       'ibc gangsters',
@@ -191,7 +193,7 @@ export const metaData: { [key: string]: Metadata } = {
       title: 'Arrivals',
       locale: 'en_US',
       description:
-        "The streets are theirs for the takin' and the future's lookin' bright. Only time will tell what adventures lie ahead. But one thing's for sure – they ain't goin' down without a fight.",
+        "You thought the IBC Gangsters would take over overnight? Nah, it ain't that easy. Syndicates grow slow and build rep. If you thought it was quick and easy, you're way off.",
       siteName: 'IBC Gangsters',
       images: [
         {
@@ -205,7 +207,7 @@ export const metaData: { [key: string]: Metadata } = {
     twitter: {
       card: 'summary_large_image',
       site: '@IBC_Gangsters',
-      title: 'The Road Ahead',
+      title: 'Arrivals',
       description:
         "You thought the IBC Gangsters would take over overnight? Nah, it ain't that easy. Syndicates grow slow and build rep. If you thought it was quick and easy, you're way off.",
       images: [
