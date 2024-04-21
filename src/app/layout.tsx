@@ -1,3 +1,4 @@
+import { Analytics } from '@vercel/analytics/react'
 import Footer from 'components/Footer'
 import Navigation from 'components/Navigation'
 import { metaData } from 'constants/pageMetadata'
@@ -27,6 +28,7 @@ export default function RootLayout({
         <Navigation />
         <main className='flex flex-wrap h-full'>{children}</main>
         <Footer />
+        <Analytics />
       </body>
     </html>
   )

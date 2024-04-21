@@ -1,12 +1,12 @@
 'use client'
 
 import BigNumber from 'bignumber.js'
+import ItemCard from 'components/ItemCard'
 import { addresses } from 'constants/contants'
 import useBalance from 'hooks/useBalance'
 import useInscriptions from 'hooks/useInscriptions'
 import useTokens from 'hooks/useTokens'
 import { useMemo } from 'react'
-import ItemCard from './ItemCard'
 
 export default function Treasury() {
   const tokenData = useTokens()

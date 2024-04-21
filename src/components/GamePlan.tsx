@@ -1,5 +1,5 @@
 import classNames from 'classnames'
-import TextImage from './TextImage'
+import TextImage from 'components/TextImage'
 
 function ArrowDown({ done }: { done?: boolean }) {
   return (
