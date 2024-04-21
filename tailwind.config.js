@@ -83,6 +83,12 @@ module.exports = {
           backgroundPosition: 'center bottom',
           backgroundSize: 'cover',
         },
+        '.bg-arrivals': {
+          backgroundImage: 'url("/images/arrivals.webp"),url("/images/arrivals.jpg")',
+          backgroundRepeat: 'no-repeat',
+          backgroundPosition: 'center',
+          backgroundSize: 'cover',
+        },
         '.gradient-ibc': {
           background: 'rgb(30,30,30)',
           background: 'linear-gradient(315deg, rgba(50,50,50,1) 30%, rgba(30,30,30,1) 70%)',

@@ -171,4 +171,51 @@ export const metaData: { [key: string]: Metadata } = {
       ],
     },
   },
+  arrivals: {
+    title: 'IBC Gangsters Arrivals',
+    metadataBase: new URL('https://ibcgangsters.io'),
+    description: 'Checkout the stash, the IBC Gangsters aquired over the years.',
+    keywords: [
+      'ibc',
+      'ibc gangsters',
+      'inscription',
+      'cosmos hub',
+      'cosmos',
+      'nft',
+      'releases',
+      'arrivals',
+    ],
+    openGraph: {
+      type: 'website',
+      url: 'https://ibcgangsters.io/arrivals',
+      title: 'Arrivals',
+      locale: 'en_US',
+      description:
+        "The streets are theirs for the takin' and the future's lookin' bright. Only time will tell what adventures lie ahead. But one thing's for sure – they ain't goin' down without a fight.",
+      siteName: 'IBC Gangsters',
+      images: [
+        {
+          url: 'https://ibcgangsters.io/banner-arrivals.jpg',
+          width: 1500,
+          height: 500,
+          alt: 'IBC Gangsters Arrivals',
+        },
+      ],
+    },
+    twitter: {
+      card: 'summary_large_image',
+      site: '@IBC_Gangsters',
+      title: 'The Road Ahead',
+      description:
+        "You thought the IBC Gangsters would take over overnight? Nah, it ain't that easy. Syndicates grow slow and build rep. If you thought it was quick and easy, you're way off.",
+      images: [
+        {
+          url: 'https://ibcgangsters.io/banner-arrivals.jpg',
+          width: 1500,
+          height: 500,
+          alt: 'IBC Gangsters Arrivals',
+        },
+      ],
+    },
+  },
 }
