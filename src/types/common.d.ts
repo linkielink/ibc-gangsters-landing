@@ -20,3 +20,16 @@ interface Coin {
   denom: string
   amount: string
 }
+
+interface GamePlanItem {
+  imageUrl: string
+  title: string
+  intro: string
+  steps?: GamePlanStep[]
+  direction: 'ltr' | 'rtl'
+}
+
+interface GamePlanStep {
+  description: string
+  done: boolean
+}

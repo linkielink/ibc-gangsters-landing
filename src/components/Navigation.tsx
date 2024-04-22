@@ -36,7 +36,7 @@ const NavigationBody = (props: Props) => {
             </li>
           )
         })}
-        <li className='flex items-center pt-4 pr-8 md:pr-0'>
+        <li className='flex items-center pt-4 pr-8 md:p-0'>
           <a
             href='https://twitter.com/IBC_Gangsters'
             title='IBC Gangsters on X'
@@ -60,7 +60,7 @@ const NavigationBody = (props: Props) => {
             </svg>
           </a>
         </li>
-        <li className='flex items-center pt-4 md:pr-0'>
+        <li className='flex items-center pt-4 md:p-0'>
           <a
             href='https://t.me/IBCGangsters'
             title='IBC Gangsters on Telegram'
