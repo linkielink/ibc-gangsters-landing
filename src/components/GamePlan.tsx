@@ -40,7 +40,7 @@ const gamePlan: GamePlanItem[] = [
     intro:
       "With a firm grip on the streets, the gangsters aim to grow their empire, hustlin' hard from shakin' down blocks to traffickin' art. They keep their pockets full, their crew happy, and their eyes on the prize. Cleanin' their dirty money and stackin' their liquidity pool, they're ready for whatever comes their way. Tough streets? They laugh in their face.",
     steps: [
-      { description: 'Art Trafficking – Fill the Vault with Valuable Art', done: false },
+      { description: 'Art Trafficking – Fill the Vault with Valuable Art', done: true },
       {
         description:
           'Clean up the dirty money and create a pool of liquidity – Laundered Liquidity Pool',
