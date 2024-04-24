@@ -29,7 +29,7 @@ const gamePlan: GamePlanItem[] = [
       { description: 'Secure the loot and Grow the Dough – Set Up the Treasury', done: true },
       {
         description: 'Bring in the New Blood – Push Out the First Batch of NFTs',
-        done: false,
+        done: true,
       },
     ],
     direction: 'rtl',
