@@ -5,7 +5,7 @@ import React from 'react'
 const gamePlan: GamePlanItem[] = [
   {
     imageUrl: '/images/club.jpg',
-    title: 'Asteroid Hustle: Launching the Gangster Odyseey',
+    title: 'Asteroid Hustle: Launching the Gangster Odyssey',
     intro:
       "Born in the gritty streets of Earth, a crew of hustlers and dreamers gather in a dimly lit hideout amidst the vastness of the ROIDS solar system. Hungry for more outta life, they start stirrin' up trouble. From cookin' up a token to launchin' the IBC Gangsters Collection, they hustle day and night to leave their mark on the world. The ride's just beginning, and they're primed to make waves.",
     steps: [
