@@ -83,8 +83,8 @@ module.exports = {
           backgroundPosition: 'center bottom',
           backgroundSize: 'cover',
         },
-        '.bg-arrivals': {
-          backgroundImage: 'url("/images/arrivals.webp"),url("/images/arrivals.jpg")',
+        '.bg-members': {
+          backgroundImage: 'url("/images/members.webp"),url("/images/members.jpg")',
           backgroundRepeat: 'no-repeat',
           backgroundPosition: 'center',
           backgroundSize: 'cover',

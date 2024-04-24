@@ -5,6 +5,7 @@ import { useMemo } from 'react'
 
 interface Props {
   batchId: string
+  intro?: string
 }
 
 const dates: Record<string, string | undefined> = {
@@ -21,7 +22,7 @@ const inAndExcludes: Record<string, { gone: string[]; replacement: string[] }> =
 export default function Batch(props: Props) {
   // console.log(`### BATCH ${props.batchId} ###`)
 
-  const { batchId } = props
+  const { batchId, intro } = props
 
   const filtered = useMemo(() => {
     const sorted = gangsters.sort((a, b) => {
@@ -45,8 +46,9 @@ export default function Batch(props: Props) {
 
   return (
     <div className='w-full'>
-      <section className='w-full flex flex-col items-center justify-center py-20 px-4 max-w-[1024px] mx-auto relative'>
-        <h1 className='w-full pb-8 text-4xl text-center'>{title}</h1>
+      <section className='w-full flex flex-col items-center justify-center pt-20 px-4 max-w-[1024px] mx-auto relative'>
+        <h2 className='w-full pb-8 text-2xl text-center'>{title}</h2>
+        {intro && <p className='pb-8 text-white/70'>{intro}</p>}
         <section className='min-h-screen'>
           <div className='grid w-full grid-cols-2 gap-4 md:grid-cols-4 lg:grid-cols-5'>
             {filtered.map((gangster) => {

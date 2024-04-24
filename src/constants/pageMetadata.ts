@@ -50,7 +50,7 @@ export const metaData: { [key: string]: Metadata } = {
     },
   },
   manifesto: {
-    title: 'IBC Gangsters Manifesto',
+    title: 'IBC Gangsters - Manifesto',
     metadataBase: new URL('https://ibcgangsters.io'),
     description:
       'Born in the gritty streets of Earth back in 2021, the IBC Gangsters were just faces in the crowd, grinding the 9-5, punching the clock, chasing that green while dreaming of a better life.',
@@ -71,20 +71,20 @@ export const metaData: { [key: string]: Metadata } = {
       locale: 'en_US',
       description:
         'Born in the gritty streets of Earth back in 2021, the IBC Gangsters were just faces in the crowd, grinding the 9-5, punching the clock, chasing that green while dreaming of a better life.',
-      siteName: 'IBC Gangsters',
+      siteName: 'Menifesto',
       images: [
         {
           url: 'https://ibcgangsters.io/banner-manifesto.jpg',
           width: 1500,
           height: 500,
-          alt: 'IBC Gangsters',
+          alt: 'Menifesto',
         },
       ],
     },
     twitter: {
       card: 'summary_large_image',
       site: '@IBC_Gangsters',
-      title: 'IBC Gangsters Manifesto',
+      title: 'IBC Gangsters - Manifesto',
       description:
         'Born in the gritty streets of Earth back in 2021, the IBC Gangsters were just faces in the crowd, grinding the 9-5, punching the clock, chasing that green while dreaming of a better life.',
       images: [
@@ -92,20 +92,20 @@ export const metaData: { [key: string]: Metadata } = {
           url: 'https://ibcgangsters.io/banner-manifesto.jpg',
           width: 1500,
           height: 500,
-          alt: 'IBC Gangsters',
+          alt: 'Manifesto',
         },
       ],
     },
   },
   treasury: {
-    title: 'IBC Gangsters Treasury',
+    title: 'IBC Gangsters - Treasury',
     metadataBase: new URL('https://ibcgangsters.io'),
     description: 'Checkout the stash, the IBC Gangsters aquired over the years.',
     keywords: ['ibc', 'ibc gangsters', 'inscription', 'cosmos hub', 'cosmos', 'nft', 'treasury'],
     openGraph: {
       type: 'website',
       url: 'https://ibcgangsters.io/treasury',
-      title: 'IBC Gangsters Treasury',
+      title: 'IBC Gangsters - Treasury',
       locale: 'en_US',
       description: 'Checkout the stash, the IBC Gangsters aquired over the years.',
       siteName: 'IBC Gangsters',
@@ -114,27 +114,27 @@ export const metaData: { [key: string]: Metadata } = {
           url: 'https://ibcgangsters.io/banner-treasury.jpg',
           width: 1500,
           height: 500,
-          alt: 'IBC Gangsters Treasury',
+          alt: 'Treasury',
         },
       ],
     },
     twitter: {
       card: 'summary_large_image',
       site: '@IBC_Gangsters',
-      title: 'IBC Gangsters Treasury',
+      title: 'Treasury',
       description: 'Checkout the stash, the IBC Gangsters aquired over the years.',
       images: [
         {
           url: 'https://ibcgangsters.io/banner-treasury.jpg',
           width: 1500,
           height: 500,
-          alt: 'IBC Gangsters Treasury',
+          alt: 'Treasury',
         },
       ],
     },
   },
   gamePlan: {
-    title: 'IBC Gangsters Game Plan',
+    title: 'IBC Gangsters - Game Plan',
     metadataBase: new URL('https://ibcgangsters.io'),
     description:
       "The streets are theirs for the takin' and the future's lookin' bright. Only time will tell what adventures lie ahead. But one thing's for sure – they ain't goin' down without a fight.",
@@ -142,7 +142,7 @@ export const metaData: { [key: string]: Metadata } = {
     openGraph: {
       type: 'website',
       url: 'https://ibcgangsters.io/game-plan',
-      title: 'The Road Ahead',
+      title: 'Game Plan',
       locale: 'en_US',
       description:
         "The streets are theirs for the takin' and the future's lookin' bright. Only time will tell what adventures lie ahead. But one thing's for sure – they ain't goin' down without a fight.",
@@ -152,14 +152,14 @@ export const metaData: { [key: string]: Metadata } = {
           url: 'https://ibcgangsters.io/banner-roadmap.jpg',
           width: 1500,
           height: 500,
-          alt: 'IBC Gangsters Game Plan',
+          alt: 'Game Plan',
         },
       ],
     },
     twitter: {
       card: 'summary_large_image',
       site: '@IBC_Gangsters',
-      title: 'The Road Ahead',
+      title: 'Game Plan',
       description:
         "The streets are theirs for the takin' and the future's lookin' bright. Only time will tell what adventures lie ahead. But one thing's for sure – they ain't goin' down without a fight.",
       images: [
@@ -167,16 +167,16 @@ export const metaData: { [key: string]: Metadata } = {
           url: 'https://ibcgangsters.io/banner-roadmap.jpg',
           width: 1500,
           height: 500,
-          alt: 'IBC Gangsters Game Plan',
+          alt: 'Game Plan',
         },
       ],
     },
   },
-  arrivals: {
-    title: 'IBC Gangsters Arrivals',
+  members: {
+    title: 'IBC Gangsters - Members',
     metadataBase: new URL('https://ibcgangsters.io'),
     description:
-      "You thought the IBC Gangsters would take over overnight? Nah, it ain't that easy. Syndicates grow slow and build rep. If you thought it was quick and easy, you're way off.",
+      "Their courage knows no bounds as they step into the unknown, laying the foundation for our gang's legacy. With each step, they carve their mark on the digital landscape, shaping the future of our cosmic enterprise.",
     keywords: [
       'ibc',
       'ibc gangsters',
@@ -185,37 +185,37 @@ export const metaData: { [key: string]: Metadata } = {
       'cosmos',
       'nft',
       'releases',
-      'arrivals',
+      'members',
     ],
     openGraph: {
       type: 'website',
-      url: 'https://ibcgangsters.io/arrivals',
-      title: 'Arrivals',
+      url: 'https://ibcgangsters.io/members',
+      title: 'Members',
       locale: 'en_US',
       description:
-        "You thought the IBC Gangsters would take over overnight? Nah, it ain't that easy. Syndicates grow slow and build rep. If you thought it was quick and easy, you're way off.",
+        "Their courage knows no bounds as they step into the unknown, laying the foundation for our gang's legacy. With each step, they carve their mark on the digital landscape, shaping the future of our cosmic enterprise.",
       siteName: 'IBC Gangsters',
       images: [
         {
-          url: 'https://ibcgangsters.io/banner-arrivals.jpg',
+          url: 'https://ibcgangsters.io/banner-members.jpg',
           width: 1500,
           height: 500,
-          alt: 'IBC Gangsters Arrivals',
+          alt: 'Members',
         },
       ],
     },
     twitter: {
       card: 'summary_large_image',
       site: '@IBC_Gangsters',
-      title: 'Arrivals',
+      title: 'Members',
       description:
-        "You thought the IBC Gangsters would take over overnight? Nah, it ain't that easy. Syndicates grow slow and build rep. If you thought it was quick and easy, you're way off.",
+        "Their courage knows no bounds as they step into the unknown, laying the foundation for our gang's legacy. With each step, they carve their mark on the digital landscape, shaping the future of our cosmic enterprise.",
       images: [
         {
-          url: 'https://ibcgangsters.io/banner-arrivals.jpg',
+          url: 'https://ibcgangsters.io/banner-members.jpg',
           width: 1500,
           height: 500,
-          alt: 'IBC Gangsters Arrivals',
+          alt: 'Members',
         },
       ],
     },
