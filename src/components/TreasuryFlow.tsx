@@ -9,7 +9,7 @@ export default function TreasuryFlow() {
 
   return (
     <div className='relative w-full pt-8 pb-10'>
-      <div className='flex items-center gap-8 pb-6'>
+      <div className='flex items-center max-w-full gap-2 pb-6'>
         <FlowComponent
           title='Market'
           copy='Asteroid Protocol'
@@ -17,11 +17,9 @@ export default function TreasuryFlow() {
           imageUrl='/images/market.jpg'
           href='https://asteroidprotocol.io'
         />
-        <div className='flex flex-wrap flex-grow gap-6'>
+        <div className='flex flex-wrap w-1/3 gap-6'>
           <div className='flex flex-wrap w-full gap-2'>
-            <p className='w-full text-xs text-center break-words md:text-sm'>
-              Inscriptions / CFT-20 Tokens
-            </p>
+            <p className='w-full text-xs text-center break-words md:text-sm'>Art / CFT-20</p>
             <AnimatedBar type='inflow' arrow='right' />
           </div>
 
@@ -59,7 +57,7 @@ export default function TreasuryFlow() {
         </div>
         <div className='flex flex-wrap w-[180px] md:w-[300px] gap-6 origin-top-left rotate-90 items-start -mr-[170px] md:-mr-[180px]'>
           <div className='flex flex-wrap w-full gap-2'>
-            <p className='w-full text-xs text-center md:text-base'>Inscriptions / CFT-20 Tokens</p>
+            <p className='w-full text-xs text-center md:text-base'>Art / CFT-20</p>
             <AnimatedBar type='inflow' arrow='right' />
           </div>
           <div className='flex flex-wrap w-full gap-2'>
