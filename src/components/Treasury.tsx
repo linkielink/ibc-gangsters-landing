@@ -36,7 +36,7 @@ export default function Treasury() {
       </h1>
       <div className='flex flex-wrap justify-center w-full'>
         <button
-          className='px-4 py-2 mb-4 transition-colors duration-500 rounded text-baserrr text-white/80 hover:text-white bg-white/10 hover:bg-white/20'
+          className='px-4 py-2 mb-4 text-sm text-black transition-colors duration-500 bg-white rounded hover:bg-white/60'
           onClick={() => setTreasuryFlow(!treasuryFlow)}
         >
           {treasuryFlow ? 'Hide Treasury Flow' : 'Show Treasury Flow'}

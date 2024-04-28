@@ -191,7 +191,8 @@ module.exports = {
           boxShadow: `0 0 4px 0 ${theme('colors.done')}`,
         },
         '.glow-flow-item': {
-          boxShadow: `0 0 18px 0 rgba(255, 255, 255, 0.3)`,
+          border: `1px solid ${theme('colors.ibc')}`,
+          boxShadow: `0 0 4px 0 ${theme('colors.ibc')}`,
         },
         '.animated-bar': {
           backgroundImage:
