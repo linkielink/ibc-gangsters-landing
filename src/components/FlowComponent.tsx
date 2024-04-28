@@ -16,7 +16,7 @@ export default function FlowComponent(props: Props) {
     <div
       className={classNames(
         'flex flex-grow-0 flex-shrink-0 flex-wrap h-full transition-colors duration-500 rounded bg-white/10 hover:bg-white/20 glow-flow-item',
-        fullWidth ? 'w-full' : 'w-[90px] md:w-[340px]',
+        fullWidth ? 'w-full' : 'w-[90px] md:w-[200px]',
       )}
     >
       <a

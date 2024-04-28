@@ -41,7 +41,7 @@ export default function TreasuryFlow() {
         />
       </div>
       <div className='flex justify-between w-full h-[180px] md:h-[300px] gap-4 items-start'>
-        <div className='flex flex-wrap w-[180px] md:w-[300px] gap-8 origin-top-left rotate-90 items-start  ml-[100px] md:ml-[220px]'>
+        <div className='flex flex-wrap w-[180px] md:w-[300px] gap-8 origin-top-left rotate-90 items-start  ml-[100px] md:ml-[155px]'>
           <div className='flex flex-wrap w-full gap-2'>
             <p className='w-full text-xs text-center md:text-base'>IBC Gangsters</p>
             <AnimatedBar type='outflow' arrow='left' />
@@ -55,7 +55,7 @@ export default function TreasuryFlow() {
             </p>
           </div>
         </div>
-        <div className='flex flex-wrap w-[180px] md:w-[300px] gap-8 origin-top-left rotate-90 items-start -mr-[170px] md:-mr-[180px]'>
+        <div className='flex flex-wrap w-[180px] md:w-[300px] gap-8 origin-top-left rotate-90 items-start -mr-[170px] md:-mr-[250px]'>
           <div className='flex flex-wrap w-full gap-2'>
             <p className='w-full text-xs text-center md:text-base'>Inscriptions / CFT-20 Tokens</p>
             <AnimatedBar type='inflow' arrow='right' />
