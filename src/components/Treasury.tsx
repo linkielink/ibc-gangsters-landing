@@ -33,19 +33,7 @@ export default function Treasury() {
       <h1 className='w-full pb-8 text-4xl text-center' id='name'>
         IBC Gangsters Treasury
       </h1>
-      <div className='block w-full md:hidden'>
-        <h2 className='w-full px-2 pb-8 text-xl text-center break-words'>
-          Multisig Address:{' '}
-          <a
-            href='https://asteroidprotocol.io/app/wallet/cosmos16xvaqwcr8rhcwawwq40mj6ttqeeydvvv2fm7gp'
-            target='blank'
-            className='hover:underline'
-          >
-            {addresses.multisig}
-          </a>
-        </h2>
-      </div>
-      <div className='flex-wrap justify-center hidden w-full md:flex'>
+      <div className='flex flex-wrap justify-center w-full'>
         <button
           className='px-4 py-2 mb-4 transition-colors duration-500 rounded text-baserrr text-white/80 hover:text-white bg-white/10 hover:bg-white/20'
           onClick={() => setTreasuryFlow(!treasuryFlow)}

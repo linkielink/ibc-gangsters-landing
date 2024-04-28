@@ -11,47 +11,49 @@ export default function TreasuryFlow() {
           imageUrl='/images/market.jpg'
           href='https://asteroidprotocol.io'
         />
-        <div className='flex flex-wrap w-full gap-8'>
+        <div className='flex flex-wrap flex-shrink gap-8'>
           <div className='flex flex-wrap w-full gap-2'>
-            <p className='w-full text-center'>Inscriptions / CFT-20 Tokens</p>
+            <p className='w-full text-xs text-center break-words md:text-base'>
+              Inscriptions / CFT-20 Tokens
+            </p>
             <AnimatedBar type='inflow' arrow='right' />
           </div>
 
           <div className='flex flex-wrap w-full gap-2'>
             <AnimatedBar type='outflow' arrow='left' />
-            <p className='w-full text-center'>ATOM</p>
+            <p className='w-full text-xs text-center md:text-base'>ATOM</p>
           </div>
         </div>
         <FlowComponent
-          title='Hotwallet'
+          title='Wallet'
           subtext='gangsterloot.cosmos'
           imageUrl='/images/hotwallet.jpg'
           href='https://www.mintscan.io/cosmos/address/cosmos1l0xuwxlu8znranhqrtk8wmyazze4h4z236pa5k'
         />
       </div>
-      <div className='flex justify-between w-full h-[300px] gap-4 items-start'>
-        <div className='flex flex-wrap w-[300px] gap-8 origin-top-left rotate-90 items-start ml-[150px]'>
+      <div className='flex justify-between w-full h-[180px] md:h-[300px] gap-4 items-start'>
+        <div className='flex flex-wrap w-[180px] md:w-[300px] gap-8 origin-top-left rotate-90 items-start  ml-[100px] md:ml-[200px]'>
           <div className='flex flex-wrap w-full gap-2'>
-            <p className='w-full text-center'>IBC Gangsters</p>
+            <p className='w-full text-xs text-center md:text-base'>IBC Gangsters</p>
             <AnimatedBar type='outflow' arrow='left' />
           </div>
           <div className='flex flex-wrap w-full gap-2'>
             <AnimatedBar type='inflow' arrow='right' />
-            <p className='w-full text-center'>
+            <p className='w-full text-xs text-center md:text-base'>
               ATOM
               <br />
               (Sales / Royalties)
             </p>
           </div>
         </div>
-        <div className='flex flex-wrap w-[300px] gap-8 origin-top-left rotate-90 items-start -mr-[240px]'>
+        <div className='flex flex-wrap w-[180px] md:w-[300px] gap-8 origin-top-left rotate-90 items-start -mr-[170px] md:-mr-[200px]'>
           <div className='flex flex-wrap w-full gap-2'>
-            <p className='w-full text-center'>Inscriptions / CFT-20 Tokens</p>
+            <p className='w-full text-xs text-center md:text-base'>Inscriptions / CFT-20 Tokens</p>
             <AnimatedBar type='inflow' arrow='right' />
           </div>
           <div className='flex flex-wrap w-full gap-2'>
             <AnimatedBar type='outflow' arrow='left' />
-            <p className='w-full text-center'>ATOM</p>
+            <p className='w-full text-xs text-center md:text-base'>ATOM</p>
           </div>
         </div>
       </div>
