@@ -10,11 +10,12 @@ import { useMemo, useState } from 'react'
 import TreasuryFlow from './TreasuryFlow'
 
 export default function Treasury() {
-  const tokenData = useTokens()
-  const inscriptionData = useInscriptions()
-  const atomBalance = useBalance('uatom')
+  const { data: tokenData } = useTokens()
+  const { data: inscriptionData } = useInscriptions()
+  const { data: treasuryAtomBalance } = useBalance('uatom', addresses.multisig)
   const [treasuryFlow, setTreasuryFlow] = useState<boolean>(true)
   const filteredInscriptions = useMemo(() => {
+    if (!inscriptionData) return { inscription: [] }
     const returnData: Inscription[] = []
     inscriptionData.inscription.forEach((ins) => {
       if (ins.name.includes('IBC Gangsters')) {
@@ -45,28 +46,31 @@ export default function Treasury() {
       <h3 className='w-full pb-4 text-lg'>The IBC Gangsters Stash</h3>
       <section className='min-h-screen'>
         <div className='grid w-full grid-cols-2 gap-4 md:grid-cols-3 lg:grid-cols-4'>
-          {atomBalance && (
+          {treasuryAtomBalance && (
             <ItemCard
               itemName='ATOM'
               href={`https://www.mintscan.io/cosmos/address/${addresses.multisig}`}
               imageUrl='/images/atom.jpg'
               title='ATOM'
               hash='Cosmos Staking Coin'
-              balance={new BigNumber(atomBalance.amount).shiftedBy(-6).toNumber()}
+              balance={new BigNumber(treasuryAtomBalance.amount).shiftedBy(-6).toNumber()}
             />
           )}
           <>
-            {tokenData.token_holder.map((holder) => (
-              <ItemCard
-                key={holder.token.transaction.hash}
-                itemName={`${holder.token.ticker}`}
-                href={`https://asteroidprotocol.io/app/market/${holder.token.ticker}`}
-                imageUrl={holder.token.content_path}
-                title={`Token: ${holder.token.ticker}`}
-                hash={holder.token.transaction.hash}
-                balance={new BigNumber(holder.amount).shiftedBy(-holder.token.decimals).toNumber()}
-              />
-            ))}
+            {tokenData &&
+              tokenData.token_holder.map((holder) => (
+                <ItemCard
+                  key={holder.token.transaction.hash}
+                  itemName={`${holder.token.ticker}`}
+                  href={`https://asteroidprotocol.io/app/market/${holder.token.ticker}`}
+                  imageUrl={holder.token.content_path}
+                  title={`Token: ${holder.token.ticker}`}
+                  hash={holder.token.transaction.hash}
+                  balance={new BigNumber(holder.amount)
+                    .shiftedBy(-holder.token.decimals)
+                    .toNumber()}
+                />
+              ))}
             {filteredInscriptions.inscription.map((ins) => (
               <ItemCard
                 key={ins.id}
