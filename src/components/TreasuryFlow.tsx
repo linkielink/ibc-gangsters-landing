@@ -9,7 +9,7 @@ export default function TreasuryFlow() {
 
   return (
     <div className='relative w-full pt-8 pb-10'>
-      <div className='flex items-center gap-4 pb-8'>
+      <div className='flex items-center gap-8 pb-6'>
         <FlowComponent
           title='Market'
           copy='Asteroid Protocol'
@@ -17,9 +17,9 @@ export default function TreasuryFlow() {
           imageUrl='/images/market.jpg'
           href='https://asteroidprotocol.io'
         />
-        <div className='flex flex-wrap flex-grow gap-8'>
+        <div className='flex flex-wrap flex-grow gap-6'>
           <div className='flex flex-wrap w-full gap-2'>
-            <p className='w-full text-xs text-center break-words md:text-base'>
+            <p className='w-full text-xs text-center break-words md:text-sm'>
               Inscriptions / CFT-20 Tokens
             </p>
             <AnimatedBar type='inflow' arrow='right' />
@@ -27,7 +27,7 @@ export default function TreasuryFlow() {
 
           <div className='flex flex-wrap w-full gap-2'>
             <AnimatedBar type='outflow' arrow='left' />
-            <p className='w-full text-xs text-center md:text-base'>ATOM</p>
+            <p className='w-full text-xs text-center md:text-sm'>ATOM</p>
           </div>
         </div>
         <FlowComponent
@@ -43,21 +43,21 @@ export default function TreasuryFlow() {
         />
       </div>
       <div className='flex justify-between w-full h-[180px] md:h-[300px] gap-4 items-start'>
-        <div className='flex flex-wrap w-[180px] md:w-[300px] gap-8 origin-top-left rotate-90 items-start  ml-[100px] md:ml-[200px]'>
+        <div className='flex flex-wrap w-[180px] md:w-[300px] gap-6 origin-top-left rotate-90 items-start  ml-[100px] md:ml-[210px]'>
           <div className='flex flex-wrap w-full gap-2'>
-            <p className='w-full text-xs text-center md:text-base'>IBC Gangsters</p>
+            <p className='w-full text-xs text-center md:text-sm'>IBC Gangsters</p>
             <AnimatedBar type='outflow' arrow='left' />
           </div>
           <div className='flex flex-wrap w-full gap-2'>
             <AnimatedBar type='inflow' arrow='right' />
-            <p className='w-full text-xs text-center md:text-base'>
+            <p className='w-full text-xs text-center md:text-sm'>
               ATOM
               <br />
               (Sales / Royalties)
             </p>
           </div>
         </div>
-        <div className='flex flex-wrap w-[180px] md:w-[300px] gap-8 origin-top-left rotate-90 items-start -mr-[170px] md:-mr-[190px]'>
+        <div className='flex flex-wrap w-[180px] md:w-[300px] gap-6 origin-top-left rotate-90 items-start -mr-[170px] md:-mr-[180px]'>
           <div className='flex flex-wrap w-full gap-2'>
             <p className='w-full text-xs text-center md:text-base'>Inscriptions / CFT-20 Tokens</p>
             <AnimatedBar type='inflow' arrow='right' />
