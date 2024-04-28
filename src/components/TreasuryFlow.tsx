@@ -13,7 +13,7 @@ export default function TreasuryFlow() {
         <FlowComponent
           title='Market'
           copy='Asteroid Protocol'
-          subtext='Inscriptions / CFT-20 Tokens'
+          subtext=' '
           imageUrl='/images/market.jpg'
           href='https://asteroidprotocol.io'
         />
