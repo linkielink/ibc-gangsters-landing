@@ -9,7 +9,7 @@ export default function TreasuryFlow() {
 
   return (
     <div className='relative w-full pt-8 pb-10'>
-      <div className='flex items-center max-w-full gap-2 pb-6'>
+      <div className='flex items-center max-w-full gap-2 pb-6 md:gap-6'>
         <FlowComponent
           title='Market'
           copy='Asteroid Protocol'
