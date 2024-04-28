@@ -13,7 +13,7 @@ export default function Treasury() {
   const { data: tokenData } = useTokens()
   const { data: inscriptionData } = useInscriptions()
   const { data: treasuryAtomBalance } = useBalance('uatom', addresses.multisig)
-  const [treasuryFlow, setTreasuryFlow] = useState<boolean>(true)
+  const [treasuryFlow, setTreasuryFlow] = useState<boolean>(false)
   const filteredInscriptions = useMemo(() => {
     if (!inscriptionData) return { inscription: [] }
     const returnData: Inscription[] = []
