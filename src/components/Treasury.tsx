@@ -6,13 +6,14 @@ import { addresses } from 'constants/contants'
 import useBalance from 'hooks/useBalance'
 import useInscriptions from 'hooks/useInscriptions'
 import useTokens from 'hooks/useTokens'
-import { useMemo } from 'react'
+import { useMemo, useState } from 'react'
+import TreasuryFlow from './TreasuryFlow'
 
 export default function Treasury() {
   const tokenData = useTokens()
   const inscriptionData = useInscriptions()
   const atomBalance = useBalance('uatom')
-
+  const [treasuryFlow, setTreasuryFlow] = useState<boolean>(true)
   const filteredInscriptions = useMemo(() => {
     const returnData: Inscription[] = []
     inscriptionData.inscription.forEach((ins) => {
@@ -32,16 +33,27 @@ export default function Treasury() {
       <h1 className='w-full pb-8 text-4xl text-center' id='name'>
         IBC Gangsters Treasury
       </h1>
-      <h2 className='w-full px-2 pb-8 text-xl text-center break-words'>
-        Multisig Address:{' '}
-        <a
-          href='https://asteroidprotocol.io/app/wallet/cosmos16xvaqwcr8rhcwawwq40mj6ttqeeydvvv2fm7gp'
-          target='blank'
-          className='hover:underline'
+      <div className='block w-full md:hidden'>
+        <h2 className='w-full px-2 pb-8 text-xl text-center break-words'>
+          Multisig Address:{' '}
+          <a
+            href='https://asteroidprotocol.io/app/wallet/cosmos16xvaqwcr8rhcwawwq40mj6ttqeeydvvv2fm7gp'
+            target='blank'
+            className='hover:underline'
+          >
+            {addresses.multisig}
+          </a>
+        </h2>
+      </div>
+      <div className='flex-wrap justify-center hidden w-full md:flex'>
+        <button
+          className='px-4 py-2 mb-4 transition-colors duration-500 rounded text-baserrr text-white/80 hover:text-white bg-white/10 hover:bg-white/20'
+          onClick={() => setTreasuryFlow(!treasuryFlow)}
         >
-          {addresses.multisig}
-        </a>
-      </h2>
+          {treasuryFlow ? 'Hide Treasury Flow' : 'Show Treasury Flow'}
+        </button>
+        {treasuryFlow && <TreasuryFlow />}
+      </div>
       <h3 className='w-full pb-4 text-lg'>The IBC Gangsters Stash</h3>
       <section className='min-h-screen'>
         <div className='grid w-full grid-cols-2 gap-4 md:grid-cols-3 lg:grid-cols-4'>

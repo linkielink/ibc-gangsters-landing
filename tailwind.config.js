@@ -31,6 +31,20 @@ module.exports = {
   ],
   theme: {
     extend: {
+      animation: {
+        'move-forwards': 'moveForwards 2s linear infinite',
+        'move-backwards': 'moveBackwards 2s linear infinite',
+      },
+      keyframes: {
+        moveForwards: {
+          '0%, 100%': { backgroundPosition: '0 0' },
+          '100%': { backgroundPosition: '10px 10px' },
+        },
+        moveBackwards: {
+          '0%, 100%': { backgroundPosition: '0 0' },
+          '100%': { backgroundPosition: '-10px -10px' },
+        },
+      },
       height: {
         25: '100px',
         150: '600px',
@@ -52,6 +66,8 @@ module.exports = {
         stride: '#9d1d56',
         stargaze: '#69bfae',
         done: '#00bb05',
+        inflow: '#00be03',
+        outflow: '#005cec',
       },
     },
   },
@@ -173,6 +189,14 @@ module.exports = {
         '.glow-done': {
           border: `1px solid ${theme('colors.done')}`,
           boxShadow: `0 0 4px 0 ${theme('colors.done')}`,
+        },
+        '.glow-flow-item': {
+          boxShadow: `0 0 18px 0 rgba(255, 255, 255, 0.3)`,
+        },
+        '.animated-bar': {
+          backgroundImage:
+            'linear-gradient(-45deg, rgba(255, 255, 255, 0.6) 25%, transparent 25%, transparent 50%, rgba(255, 255, 255, 0.6) 50%, rgba(255, 255, 255, 0.6) 75%, transparent 75%, transparent)',
+          backgroundSize: '10px 10px',
         },
       })
     }),
