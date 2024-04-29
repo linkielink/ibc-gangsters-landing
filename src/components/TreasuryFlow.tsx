@@ -15,7 +15,7 @@ export default function TreasuryFlow() {
           copy='Asteroid Protocol'
           subtext=' '
           imageUrl='/images/market.jpg'
-          href='https://asteroidprotocol.io'
+          href='https://asteroidprotocol.io/app/collection/GANGSTERS'
         />
         <div className='flex flex-wrap w-1/3 gap-6'>
           <div className='flex flex-wrap w-full gap-2'>
