@@ -105,6 +105,12 @@ module.exports = {
           backgroundPosition: 'center',
           backgroundSize: 'cover',
         },
+        '.bg-lore': {
+          backgroundImage: 'url("/images/lore.webp"),url("/images/lore.jpg")',
+          backgroundRepeat: 'no-repeat',
+          backgroundPosition: 'center top',
+          backgroundSize: 'cover',
+        },
         '.gradient-ibc': {
           background: 'rgb(30,30,30)',
           background: 'linear-gradient(315deg, rgba(50,50,50,1) 30%, rgba(30,30,30,1) 70%)',
