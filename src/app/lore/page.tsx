@@ -144,7 +144,7 @@ export default function LorePage() {
             when you have this many players with this much ambition, something's gonna give. These
             OGs are like sparks in the wind, and it's only a matter of time before they find
             something to ignite. So keep your eyes open and your ear to the ground. If you think the
-            IBC is wild now, just wait—things are about to get interesting.
+            IBC is wild now, just wait. Things are about to get interesting.
           </p>
         </Chapter>
         <p className='w-full py-20 text-4xl text-center'>To be continued...</p>
