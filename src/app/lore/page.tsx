@@ -113,8 +113,8 @@ export default function LorePage() {
           ]}
         >
           <p className='mb-8 text-justify'>
-            Back in the old days, the IBC was a tight-knit crew. We were the OGs—the original
-            gangsters—running the streets, keeping order in our own rough way. But things change,
+            Back in the old days, the IBC was a tight-knit crew. We were the OGs, the "Original
+            Gangsters" running the streets, keeping order in our own rough way. But things change,
             don't they? We were young and hungry, always looking for the next big score. Some of us
             made it out, some didn't. And the rest? Well, they went their separate ways.
           </p>
