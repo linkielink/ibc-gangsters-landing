@@ -36,7 +36,8 @@ export default function LorePage() {
             and a lot wiser, watching the city from the sidelines. I decided to write a book, 'cause
             you don't grow old in the IBC without earning some stories. So consider me your guide
             through this neon jungle, where the streets are as dangerous as they are vibrant.
-            <br />
+          </p>
+          <p className='my-8 text-justify'>
             The IBC, the Inter Blockchain County that is, and it ain't like any place you've been
             before. It's a sprawling mess of syndicates, each claiming their piece of turf and
             fighting tooth and nail to keep it.
