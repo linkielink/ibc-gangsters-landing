@@ -128,8 +128,8 @@ export default function LorePage() {
             See, some of the OGs thought they could strike gold by joining other syndicates. The
             streets got crazier, the lights got flashier, and everyone was chasing that paper. These
             guys spread out across the IBC, looking for their come-up, their shot at the high life.
-            A few of 'em I still talk to. You know, old friends like &apos;Scotty B.&apos;,
-            &apos;Bones&apos; and &apos;Iron Mike&apos;. They're solid folks.
+            A few of 'em I still talk to. You know, old friends like "Scotty B.", "Bones" and "Iron
+            Mike". They're solid folks.
           </p>
           <p className='my-8 text-justify'>
             But it ain't all sunshine and rainbows. When you've got that many old-school toughs
