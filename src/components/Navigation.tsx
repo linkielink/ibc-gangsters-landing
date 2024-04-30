@@ -89,7 +89,7 @@ export default function Navigation() {
     { name: 'Collection', link: '/' },
     { name: 'Manifesto', link: '/manifesto' },
     { name: 'Game Plan', link: '/game-plan' },
-    { name: 'Lore', link: '/lore' },
+    { name: 'Members', link: '/members' },
     { name: 'Treasury', link: '/treasury' },
   ]
   const barClasses = 'w-5 h-0.5 bg-white my-1 transition-all duration-500'
