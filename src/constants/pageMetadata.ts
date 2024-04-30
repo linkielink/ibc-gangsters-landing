@@ -220,4 +220,52 @@ export const metaData: { [key: string]: Metadata } = {
       ],
     },
   },
+  lore: {
+    title: 'The Story of the IBC',
+    metadataBase: new URL('https://ibcgangsters.io'),
+    description:
+      "Their courage knows no bounds as they step into the unknown, laying the foundation for our gang's legacy. With each step, they carve their mark on the digital landscape, shaping the future of our cosmic enterprise.",
+    keywords: [
+      'ibc',
+      'ibc gangsters',
+      'inscription',
+      'cosmos hub',
+      'cosmos',
+      'nft',
+      'releases',
+      'lore',
+    ],
+    openGraph: {
+      type: 'website',
+      url: 'https://ibcgangsters.io/lore',
+      title: 'Inter Blockchain County',
+      locale: 'en_US',
+      description:
+        "The IBC, the Inter Blockchain County that is, and it ain't like any place you've been before. It's a sprawling mess of syndicates, each claiming their piece of turf and fighting tooth and nail to keep it.",
+      siteName: 'IBC Gangsters',
+      images: [
+        {
+          url: 'https://ibcgangsters.io/banner-lore.jpg',
+          width: 1500,
+          height: 500,
+          alt: 'Inter Blockchain County',
+        },
+      ],
+    },
+    twitter: {
+      card: 'summary_large_image',
+      site: '@IBC_Gangsters',
+      title: 'Inter Blockchain County',
+      description:
+        "The IBC, the Inter Blockchain County that is, and it ain't like any place you've been before. It's a sprawling mess of syndicates, each claiming their piece of turf and fighting tooth and nail to keep it.",
+      images: [
+        {
+          url: 'https://ibcgangsters.io/banner-lore.jpg',
+          width: 1500,
+          height: 500,
+          alt: 'Inter Blockchain County',
+        },
+      ],
+    },
+  },
 }
