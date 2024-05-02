@@ -108,7 +108,7 @@ module.exports = {
         '.bg-lore': {
           backgroundImage: 'url("/images/lore.webp"),url("/images/lore.jpg")',
           backgroundRepeat: 'no-repeat',
-          backgroundPosition: 'left 35%',
+          backgroundPosition: 'left center',
           backgroundSize: 'cover',
         },
         '.gradient-ibc': {
