@@ -23,8 +23,8 @@ export default function LorePage() {
         >
           <Image
             src='/images/lore/the-ibc.jpg'
-            width={819}
-            height={620}
+            width={820}
+            height={600}
             className='border-white border-[5px] float-right w-full md:w-[500px] lg:w-[600px] md:ml-8 mb-4 mt-2'
             alt='Welcome to the IBC'
           />
