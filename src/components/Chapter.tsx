@@ -3,17 +3,19 @@ import { gangsters } from 'data/gangsters'
 
 interface Props {
   chapterName: string
-  anchor: string
   named?: string[]
   misc?: string[]
   children: React.ReactNode | React.ReactNode[]
 }
 
 export default function Chapter(props: Props) {
-  const { chapterName, anchor, named, misc, children } = props
+  const { chapterName, named, misc, children } = props
   return (
-    <article className='pb-12'>
-      <h2 className='w-full pb-4 text-3xl' id={anchor}>
+    <article>
+      <h2
+        className='w-full pt-20 pb-4 text-3xl md:pt-30'
+        id={chapterName.toLocaleLowerCase().replaceAll(' ', '-')}
+      >
         {chapterName}
       </h2>
       {children}

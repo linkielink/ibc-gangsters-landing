@@ -1,24 +1,27 @@
 import Chapter from 'components/Chapter'
 import Hero from 'components/Hero'
+import SideNav from 'components/SideNav'
 import { metaData } from 'constants/pageMetadata'
 import Image from 'next/image'
 
 export const metadata = metaData.lore
 
+const chapters = ['The Godfather', 'A New Era']
+
 export default function LorePage() {
   return (
     <>
       <Hero backgroundClass='bg-lore' />
+      <SideNav articles={chapters} />
       <section className='w-full flex flex-col items-center justify-center py-20 px-4 max-w-[1024px] mx-auto relative'>
-        <div className='flex flex-wrap gap-2 pb-12'>
+        <div className='flex flex-wrap gap-2 -mb-12'>
           <h1 className='w-full text-4xl text-center'>The Story of the IBC</h1>
           <h2 className='w-full text-xl text-center text-white/60'>
             Welcome to the Inter Blockchain County
           </h2>
         </div>
         <Chapter
-          chapterName='The Godfather'
-          anchor='intro'
+          chapterName={chapters[0]}
           named={['2CC3C9DCE60B212E83E7F8E096034443BBB9588F30431079D5E828F2A78F04BE']}
         >
           <Image
@@ -55,8 +58,7 @@ export default function LorePage() {
           </p>
         </Chapter>
         <Chapter
-          chapterName='A New Era'
-          anchor='chapter-1'
+          chapterName={chapters[1]}
           named={[
             'DEA33D3691F15BBD4E3E1DE83847878DE33D1772F5313BE3372CE45FE1D5F591',
             'A8E95007C9DE7EB6DDE61A4EFAD48E0255FD1EF2EDF441B4BAFD8D0B729268E1',

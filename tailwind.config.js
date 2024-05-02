@@ -53,6 +53,7 @@ module.exports = {
         22: '88px',
         25: '100px',
         28: '112px',
+        30: '120px',
       },
       colors: {
         ibc: '#666666',
