@@ -11,7 +11,7 @@ export default function SideNav(props: Props) {
   const [activeId, setActiveId] = useState<string | null>(null)
 
   useEffect(() => {
-    if (!document) return
+    if (typeof document === 'undefined') return
     const navElement = document.getElementById('index') ?? null
     if (navElement === null) return
 
@@ -49,7 +49,7 @@ export default function SideNav(props: Props) {
   }, [articles])
 
   useEffect(() => {
-    if (!document || !location) return
+    if (typeof document === 'undefined' || typeof location === 'undefined') return
     const hash = location.hash
     if (hash) {
       const element = document.getElementById(hash.replace('#', ''))
@@ -57,7 +57,6 @@ export default function SideNav(props: Props) {
     }
   }, [])
 
-  if (!document) return null
   return (
     <div className='relative hidden w-full h-0 lg:block' id='index-wrapper'>
       <nav className='absolute z-30 left-2 top-2 pt-30' id='index'>
@@ -66,6 +65,23 @@ export default function SideNav(props: Props) {
           <ul>
             {articles.map((article) => {
               const articleID = article.toLowerCase().replaceAll(' ', '-')
+
+              if (typeof document === 'undefined')
+                return (
+                  <li key={articleID}>
+                    <a
+                      className={classNames(
+                        'block py-1 pl-2 text-white/60 hover:text-white text-sm',
+                        activeId === articleID && 'text-underline pointer-events-none !text-white',
+                      )}
+                      title={`Scroll to: ${article}`}
+                      href={`#${articleID}`}
+                    >
+                      {article}
+                    </a>
+                  </li>
+                )
+
               const element = document.getElementById(articleID)
               return (
                 <li key={articleID}>
