@@ -13,7 +13,7 @@ export default function LorePage() {
         <div className='flex flex-wrap gap-2 pb-12'>
           <h1 className='w-full text-4xl text-center'>The Story of the IBC</h1>
           <h2 className='w-full text-xl text-center text-white/60'>
-            Welcome to Inter Blockchain County
+            Welcome to the Inter Blockchain County
           </h2>
         </div>
         <Chapter
