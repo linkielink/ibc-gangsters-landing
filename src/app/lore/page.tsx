@@ -12,7 +12,7 @@ export default function LorePage() {
   return (
     <>
       <Hero backgroundClass='bg-lore' />
-      <SideNav articles={chapters} />
+      {typeof window !== 'undefined' && <SideNav articles={chapters} />}
       <section className='w-full flex flex-col items-center justify-center py-20 px-4 max-w-[1024px] mx-auto relative'>
         <div className='flex flex-wrap gap-2 -mb-12'>
           <h1 className='w-full text-4xl text-center'>The Story of the IBC</h1>

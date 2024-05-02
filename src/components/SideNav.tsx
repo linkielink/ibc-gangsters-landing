@@ -11,6 +11,7 @@ export default function SideNav(props: Props) {
   const [activeId, setActiveId] = useState<string | null>(null)
 
   useEffect(() => {
+    if (!document) return
     const navElement = document.getElementById('index') ?? null
     if (navElement === null) return
 
@@ -45,9 +46,10 @@ export default function SideNav(props: Props) {
     window.addEventListener('scroll', onScroll)
 
     return () => window.removeEventListener('scroll', onScroll)
-  }, [])
+  }, [articles])
 
   useEffect(() => {
+    if (!document || !location) return
     const hash = location.hash
     if (hash) {
       const element = document.getElementById(hash.replace('#', ''))
@@ -55,6 +57,7 @@ export default function SideNav(props: Props) {
     }
   }, [])
 
+  if (!document) return null
   return (
     <div className='relative hidden w-full h-0 lg:block' id='index-wrapper'>
       <nav className='absolute z-30 left-2 top-2 pt-30' id='index'>
