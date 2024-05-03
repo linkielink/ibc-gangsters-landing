@@ -94,9 +94,9 @@ export default function LorePage() {
             alt='Nate "Godfather" Brooks - Father of the IBC Cronicles'
           />
           <p className='mb-8 text-justify'>
-            The name's Nate, but folks 'round here know me as "Godfather", a title I earned through
-            years of navigating the treacherous streets with cunning and charisma. I used to run
-            these streets during the infancy of the IBC, when The Big Hub was still finding its
+            The name's Nate Brooks, but folks 'round here know me as "Godfather", a title I earned
+            through years of navigating the treacherous streets with cunning and charisma. I used to
+            run these streets during the infancy of the IBC, when The Big Hub was still finding its
             footing and the notorious IBC Intruders were the only gang around. I was just a kid
             then, learning the ropes, figuring out how to survive in a city where if you weren't the
             hunter, you were the hunted.
