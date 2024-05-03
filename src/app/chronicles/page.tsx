@@ -51,10 +51,9 @@ export default function ChroniclesPage() {
             claim in this untamed frontier.
           </p>
           <p className='my-8 text-justify'>
-            But don't be fooled by the dazzling skyline. The Big Hub is a city of stark contrasts, a
-            place where people from all corners of the galaxy converge to make their mark. It's a
-            melting pot of cultures and species each bringing their unique flair to the bustling
-            streets.
+            But don't be fooled by the dazzling skyline. The Big Hub is a unique place where people
+            from all corners of the galaxy converge to make their mark. It's a melting pot of
+            cultures and species each bringing their own flair to the city’s streets.
           </p>
           <Image
             src='/images/lore/the-big-hub.jpg'
@@ -65,23 +64,20 @@ export default function ChroniclesPage() {
           />
           <p className='my-8 text-justify'>
             By day, The Big Hub buzzes with the sounds of business and chatter, a thriving
-            metropolis where fortunes are made with a single deal. Yet beneath this veneer of
+            metropolis where fortunes are made with a single deal. Yet beneath this facade of
             progress lies a darker side. As night descends, the neon glow illuminates a different
             world - one where syndicates battle for control and vice and corruption are the currency
-            of choice. In the labyrinth of shadowy alleys and hidden corners justice is fleeting,
-            and alliances can shift in the blink of an eye. Here, the city never truly sleeps,
-            survival depends on wits, cunning, and a generous dose of luck. Danger lurks in every
-            shadow, but for those willing to take risks, the rewards can be immense.
+            of choice. In the labyrinth of shadowy alleys and hidden corners justice is fleeting and
+            alliances can shift in the blink of an eye. Here, the city never truly sleeps and
+            survival depends on wits, cunning, and a generous dose of luck.
           </p>
           <p className='my-8 text-justify'>
             Despite the chaos and turmoil, there's an undeniable sense of opportunity in the air.
             The IBC is a place where you can reinvent yourself, where the bold and daring can rise
-            to the top, and where your fate is only limited by your imagination.
-          </p>
-          <p className='my-8 text-justify'>
-            If you want to thrive here, you'll need to be sharp, resourceful, and ready to embrace
-            the unexpected. Welcome to the Inter Blockchain County - where fortunes are made,
-            alliances are broken, and legends are born.
+            to the top, and where your fate is only limited by your imagination. If you want to
+            thrive here, you'll need to be sharp, resourceful, and ready to embrace the unexpected.
+            Welcome to the Inter Blockchain County - where fortunes are made, alliances are broken,
+            and legends are born.
           </p>
         </Chapter>
         <Chapter
