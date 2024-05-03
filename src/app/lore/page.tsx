@@ -190,10 +190,11 @@ export default function LorePage() {
           ]}
         >
           <p className='mb-8 text-justify'>
-            Back in the old days, the IBC was a tight-knit crew. We were the OGs, the "Original
-            Gangsters" running the streets, keeping order in our own rough way. But things change,
-            don't they? We were young and hungry, always looking for the next big score. Some of us
-            made it out, some didn't. And the rest? Well, they went their separate ways.
+            Back in the old days, the IBC Intruders was a tight-knit crew. We were the OGs - the
+            “Original Gangsters” - running the streets, keeping order in our own rough way. But
+            things change, don't they? We were young and hungry, always looking for the next big
+            score. Some of us made it out, some didn't. And the rest? Well, they went their separate
+            ways.
           </p>
           <Image
             src='/images/lore/a-new-era.jpg'
@@ -203,11 +204,12 @@ export default function LorePage() {
             alt='A new chapter in the IBC has just begun.'
           />
           <p className='my-8 text-justify'>
-            See, some of the OGs thought they could strike gold by joining other syndicates. The
-            streets got crazier, the lights got flashier, and everyone was chasing that paper. These
-            guys spread out across the IBC, looking for their come-up, their shot at the high life.
-            A few of 'em I still talk to. You know, old friends like "Scotty B.", "Bones" and "Iron
-            Mike". They're solid folks.
+            Some of the OGs figured they could hit the jackpot by linking up with other syndicates.
+            The streets got wilder, the lights got flashier, and everyone was out there hustling for
+            that paper. These folks scattered across the IBC, most heading to The Big Hub, chasing
+            their come-up, trying to get a taste of the high life. A few of them still keep in
+            touch. You know, old friends like "Scotty B.", "Bones", and "Iron Mike". They're solid
+            folks.
           </p>
           <p className='my-8 text-justify'>
             But it ain't all sunshine and rainbows. When you've got that many old-school toughs
@@ -221,7 +223,7 @@ export default function LorePage() {
             when you have this many players with this much ambition, something's gonna give. These
             OGs are like sparks in the wind, and it's only a matter of time before they find
             something to ignite. So keep your eyes open and your ear to the ground. If you think the
-            IBC is wild now, just wait. Things are about to get interesting.
+            IBC is wild now, just wait—things are about to get interesting.
           </p>
         </Chapter>
         <p className='w-full py-20 text-4xl text-center'>To be continued...</p>
