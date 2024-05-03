@@ -108,7 +108,7 @@ export default function LorePage() {
           </p>
           <p className='my-8 text-justify'>
             Nowadays, I'm a bit older and a lot wiser, watching the city from the sidelines. You
-            don‘t grow old in the IBC, so I decided to preserve these stories and put them to paper
+            don't grow old in the IBC, so I decided to preserve these stories and put them to paper
             for the generations to come. So consider me your guide through this neon jungle, where
             the streets are as dangerous as they are vibrant.
           </p>
