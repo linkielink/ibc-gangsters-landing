@@ -105,7 +105,8 @@ export default function LorePage() {
             I had a solid crew back then. Tight-knit and down for whatever. The kind of folks you
             knew had your back when things got hot. We moved as one, no hesitation, no
             second-guessing. That's how we rolled.
-            <br />
+          </p>
+          <p className='my-8 text-justify'>
             Nowadays, I'm a bit older and a lot wiser, watching the city from the sidelines. You
             don‘t grow old in the IBC, so I decided to preserve these stories and put them to paper
             for the generations to come. So consider me your guide through this neon jungle, where
@@ -115,7 +116,8 @@ export default function LorePage() {
             The IBC, the Inter Blockchain County that is, ain't like any place you've been before.
             It's a sprawling mess of syndicates, each claiming their piece of turf and fighting
             tooth and nail to keep it.
-            <br />
+          </p>
+          <p className='my-8 text-justify'>
             Everything goes down in The Big Hub, the capital city of the IBC. It's a place of bright
             lights and even darker corners, where the night never really ends, and everybody's
             working some kind of hustle. The syndicates are like a deck of cards, each with its own
