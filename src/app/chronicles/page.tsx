@@ -37,7 +37,7 @@ export default function ChroniclesPage() {
             city of the Inter Blockchain County (IBC) - shine like a beacon of hope.
           </p>
           <p className='my-8 text-justify'>
-            The IBC pulses with life and industry. Towering skyscrapers pierce the sky of the Big
+            The IBC pulses with life and industry. Towering skyscrapers pierce the sky of The Big
             Hub, their luminous windows cutting through the surrounding darkness. From space, the
             shimmering glow of this huge city is unmistakable, a testament to the boldness and
             ambition of those who have staked their claim in this untamed frontier.

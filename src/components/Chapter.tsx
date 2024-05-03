@@ -22,7 +22,7 @@ export default function Chapter(props: Props) {
       {(named || misc) && (
         <div className='py-8'>
           <h3 className='w-full py-4 text-lg text-white/60'>{`Gangsters featured in "${chapterName}"`}</h3>
-          <div className='grid grid-cols-6 gap-4'>
+          <div className='grid gap-4 grid-cols:4 md:grid-cols-6'>
             {named &&
               named.map((namedGangsterHash) => {
                 const gangster = gangsters.find((g) => g.hash === namedGangsterHash)
