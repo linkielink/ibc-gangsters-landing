@@ -113,7 +113,14 @@ export default function ItemCard(props: Props) {
             )}
           >
             <div className='w-full'>
-              <Image src={imageUrl} alt={itemName} width={444} height={578} loading='lazy' />
+              <Image
+                src={imageUrl}
+                alt={itemName}
+                width={444}
+                height={578}
+                className='w-full'
+                loading='lazy'
+              />
             </div>
             {title && (
               <p className='w-full text-white'>

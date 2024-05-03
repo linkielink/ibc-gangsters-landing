@@ -26,55 +26,57 @@ export default function ChroniclesPage() {
             src='/images/lore/cft-20.jpg'
             width={820}
             height={820}
-            className='border-white border-[5px] float-right w-full md:w-[500px] md:ml-8 mb-4 mt-2'
+            className='border-white border-[5px] float-right w-full md:w-[400px] lg:w-[520px] md:ml-8 mb-4 mt-2'
             alt='CFT-20 an earthlike dwarf planet'
           />
           <p className='mb-8 text-justify'>
-            Welcome to CFT-20, an earthlike dwarf planet nestled within the asteroid belt of the
-            ROIDS solar system in the expansive Cosmoverse. As you approach this celestial oasis,
-            the swirling mass of colossal asteroids encircling it creates an awe-inspiring backdrop.
-            Yet even amid these cosmic sentinels, the vibrant lights of The Big Hub - the capital
-            city of the Inter Blockchain County (IBC) - shine like a beacon of hope.
+            As you are approaching CFT-20, an earthlike dwarf planet nestled within the asteroid
+            belt of the ROIDS solar system in the expansive Cosmoverse, you're greeted by its rugged
+            beauty. As you get closer to this celestial oasis, the swirling mass of colossal
+            asteroids encircling it creates an awe-inspiring backdrop, but also poses a formidable
+            challenge to any traveler attempting to navigate through the dense asteroid belt to
+            reach the planet.
+          </p>
+          <p className='my-8 text-justify'> You have clearly come a long way!</p>
+          <p className='my-8 text-justify'>
+            Looking down from above, you grasp the true expanse of the populated region on this
+            planet, known as the Inter Blockchain County (IBC). Even amidst the colossal asteroids
+            encircling CFT-20, the radiant lights of The Big Hub - the bustling capital city of the
+            IBC - gleam like a beacon of hope.
           </p>
           <p className='my-8 text-justify'>
-            The IBC pulses with life and industry. Towering skyscrapers pierce the sky of The Big
-            Hub, their luminous windows cutting through the surrounding darkness. From space, the
-            shimmering glow of this huge city is unmistakable, a testament to the boldness and
-            ambition of those who have staked their claim in this untamed frontier.
+            Towering skyscrapers pierce the sky of the Big Hub, their luminous windows cutting
+            through the surrounding darkness. From space, the shimmering glow of this huge city is
+            unmistakable, a testament to the boldness and ambition of those who have staked their
+            claim in this untamed frontier.
           </p>
           <p className='my-8 text-justify'>
             But don't be fooled by the dazzling skyline. The Big Hub is a city of stark contrasts, a
             place where people from all corners of the galaxy converge to make their mark. It's a
-            melting pot of cultures, species, and even androids, each bringing their unique flair to
-            the bustling streets.
+            melting pot of cultures and species each bringing their unique flair to the bustling
+            streets.
           </p>
           <Image
             src='/images/lore/the-big-hub.jpg'
             width={820}
             height={600}
-            className='border-white border-[5px] float-left w-full md:w-[500px] lg:w-[600px] md:mr-8 mb-4 mt-2'
+            className='border-white border-[5px] float-left w-full md:w-[450px] lg:w-[563px] md:mr-8 mb-4 mt-2'
             alt='The Big Hub - Capital of the IBC'
           />
           <p className='my-8 text-justify'>
-            By day, The Big Hub buzzes with the sounds of commerce and conversation, a thriving
+            By day, The Big Hub buzzes with the sounds of business and chatter, a thriving
             metropolis where fortunes are made with a single deal. Yet beneath this veneer of
             progress lies a darker side. As night descends, the neon glow illuminates a different
-            world - one where syndicates battle for control, and vice and corruption are the
-            currency of choice.
-          </p>
-          <p className='my-8 text-justify'>
-            By night, The Big Hub becomes a labyrinth of shadowy alleys and hidden corners, where
-            justice is fleeting, and alliances can shift in the blink of an eye. Here, the city
-            never truly sleeps, and survival depends on wits, cunning, and a generous dose of luck.
-            Danger lurks in every shadow, but for those willing to take risks, the rewards can be
-            immense.
+            world - one where syndicates battle for control and vice and corruption are the currency
+            of choice. In the labyrinth of shadowy alleys and hidden corners justice is fleeting,
+            and alliances can shift in the blink of an eye. Here, the city never truly sleeps,
+            survival depends on wits, cunning, and a generous dose of luck. Danger lurks in every
+            shadow, but for those willing to take risks, the rewards can be immense.
           </p>
           <p className='my-8 text-justify'>
             Despite the chaos and turmoil, there's an undeniable sense of opportunity in the air.
             The IBC is a place where you can reinvent yourself, where the bold and daring can rise
-            to the top, and where your fate is only limited by your imagination. The ethereal glow
-            that surrounds CFT-20, casting an otherworldly aura over the entire county, adds to the
-            mystique of this unique place in the Cosmoverse.
+            to the top, and where your fate is only limited by your imagination.
           </p>
           <p className='my-8 text-justify'>
             If you want to thrive here, you'll need to be sharp, resourceful, and ready to embrace
@@ -200,7 +202,7 @@ export default function ChroniclesPage() {
             src='/images/lore/a-new-era.jpg'
             width={820}
             height={420}
-            className='border-white border-[5px] float-left w-full md:w-[500px] lg:w-[620px] md:mr-8 mb-4 mt-2'
+            className='border-white border-[5px] float-left w-full md:w-[500px] lg:w-[595px] md:mr-8 mb-4 mt-2'
             alt='A new chapter in the IBC has just begun.'
           />
           <p className='my-8 text-justify'>
@@ -223,7 +225,7 @@ export default function ChroniclesPage() {
             when you have this many players with this much ambition, something's gonna give. These
             OGs are like sparks in the wind, and it's only a matter of time before they find
             something to ignite. So keep your eyes open and your ear to the ground. If you think the
-            IBC is wild now, just wait—things are about to get interesting.
+            IBC is wild now, just wait — things are about to get interesting.
           </p>
         </Chapter>
         <p className='w-full py-20 text-4xl text-center'>To be continued...</p>

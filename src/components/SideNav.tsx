@@ -6,6 +6,33 @@ interface Props {
   articles: string[]
 }
 
+interface ChapterLink {
+  article: string
+  articleID: string
+  isActive: boolean
+  element: HTMLElement | null
+  onClick?: (e: any) => void
+}
+
+function ChapterLink(props: ChapterLink) {
+  const { article, articleID, element, isActive, onClick } = props
+  return (
+    <li key={articleID}>
+      <a
+        className={classNames(
+          'block py-1 pl-2 text-white/60 hover:text-white text-sm',
+          isActive && 'text-underline pointer-events-none !text-white',
+        )}
+        title={`Scroll to: ${article}`}
+        href={`#${articleID}`}
+        onClick={onClick}
+      >
+        {article}
+      </a>
+    </li>
+  )
+}
+
 export default function SideNav(props: Props) {
   const { articles } = props
   const [activeId, setActiveId] = useState<string | null>(null)
@@ -61,50 +88,40 @@ export default function SideNav(props: Props) {
     <div className='relative hidden w-full h-0 lg:block' id='index-wrapper'>
       <nav className='absolute z-30 left-2 top-2 pt-30' id='index'>
         <div className='flex flex-wrap p-4 bg-black border border-white/50'>
-          <p className='w-full pb-2'>Index</p>
+          <p className='w-full pb-2'>Chapters:</p>
           <ul>
             {articles.map((article) => {
               const articleID = article.toLowerCase().replaceAll(' ', '-')
 
               if (typeof document === 'undefined')
                 return (
-                  <li key={articleID}>
-                    <a
-                      className={classNames(
-                        'block py-1 pl-2 text-white/60 hover:text-white text-sm',
-                        activeId === articleID && 'text-underline pointer-events-none !text-white',
-                      )}
-                      title={`Scroll to: ${article}`}
-                      href={`#${articleID}`}
-                    >
-                      {article}
-                    </a>
-                  </li>
+                  <ChapterLink
+                    key={articleID}
+                    article={article}
+                    articleID={articleID}
+                    isActive={activeId === articleID}
+                    element={null}
+                  />
                 )
 
               const element = document.getElementById(articleID)
               return (
-                <li key={articleID}>
-                  <a
-                    className={classNames(
-                      'block py-1 pl-2 text-white/60 hover:text-white text-sm',
-                      activeId === articleID && 'text-underline pointer-events-none !text-white',
-                    )}
-                    title={`Scroll to: ${article}`}
-                    href={`#${articleID}`}
-                    onClick={(e) => {
-                      e.preventDefault()
-                      if (history.pushState) {
-                        history.pushState(null, '', `#${articleID}`)
-                      } else {
-                        location.hash = `#${articleID}`
-                      }
-                      if (element) element.scrollIntoView({ behavior: 'smooth' })
-                    }}
-                  >
-                    {article}
-                  </a>
-                </li>
+                <ChapterLink
+                  key={articleID}
+                  article={article}
+                  articleID={articleID}
+                  isActive={activeId === articleID}
+                  element={element}
+                  onClick={(e) => {
+                    e.preventDefault()
+                    if (history.pushState) {
+                      history.pushState(null, '', `#${articleID}`)
+                    } else {
+                      location.hash = `#${articleID}`
+                    }
+                    if (element) element.scrollIntoView({ behavior: 'smooth' })
+                  }}
+                />
               )
             })}
           </ul>
