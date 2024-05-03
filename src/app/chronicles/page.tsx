@@ -73,8 +73,8 @@ export default function ChroniclesPage() {
           </p>
           <p className='my-8 text-justify'>
             Despite the chaos and turmoil, there's an undeniable sense of opportunity in the air.
-            The IBC is a place where you can reinvent yourself, where the bold and daring can rise
-            to the top, and where your fate is only limited by your imagination. If you want to
+            The Big Hub is a place where you can reinvent yourself, where the bold and daring can
+            rise to the top, and where your fate is only limited by your imagination. If you want to
             thrive here, you'll need to be sharp, resourceful, and ready to embrace the unexpected.
             Welcome to the Inter Blockchain County - where fortunes are made, alliances are broken,
             and legends are born.
