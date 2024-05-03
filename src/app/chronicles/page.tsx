@@ -124,8 +124,8 @@ export default function ChroniclesPage() {
           </p>
           <p className='my-8 text-justify'>
             So listen up, and I'll tell you what's what. I'll be your eyes and ears on the street,
-            but you gotta keep your wits about you. The IBC's a cutthroat zone where power, loyalty,
-            and betrayal are the real currency. If you're aiming to make it out in one piece, you
+            but you gotta keep your wits about you. The IBC's a cutthroat zone where vice and
+            corruption are the real currency. If you're aiming to make it out in one piece, you
             better know who you can trust and who you need to dodge. Let's just say I've been around
             long enough to know the difference.
           </p>
