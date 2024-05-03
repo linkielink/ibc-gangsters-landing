@@ -6,7 +6,7 @@ import Image from 'next/image'
 
 export const metadata = metaData.lore
 
-const chapters = ['The Godfather', 'A New Era']
+const chapters = ['The Big Hub', 'Godfather', 'A New Era']
 
 export default function LorePage() {
   return (
@@ -15,50 +15,123 @@ export default function LorePage() {
       <SideNav articles={chapters} />
       <section className='w-full flex flex-col items-center justify-center py-20 px-4 max-w-[1024px] mx-auto relative'>
         <div className='flex flex-wrap gap-2 -mb-12'>
-          <h1 className='w-full text-4xl text-center'>The Story of the IBC</h1>
+          <h1 className='w-full text-4xl text-center'>The IBC Chronicles</h1>
           <h2 className='w-full text-xl text-center text-white/60'>
             Welcome to the Inter Blockchain County
           </h2>
         </div>
-        <Chapter
-          chapterName={chapters[0]}
-          named={['2CC3C9DCE60B212E83E7F8E096034443BBB9588F30431079D5E828F2A78F04BE']}
-        >
+
+        <Chapter chapterName={chapters[0]}>
           <Image
-            src='/images/lore/the-ibc.jpg'
+            src='/images/lore/cft-20.jpg'
             width={820}
-            height={600}
-            className='border-white border-[5px] float-right w-full md:w-[500px] lg:w-[600px] md:ml-8 mb-4 mt-2'
-            alt='Welcome to the IBC'
+            height={820}
+            className='border-white border-[5px] float-right w-full md:w-[500px] md:ml-8 mb-4 mt-2'
+            alt='CFT-20 an earthlike dwarf planet'
           />
           <p className='mb-8 text-justify'>
-            The name's Nate, but folks 'round here know me as "Godfather". I used to run these
-            streets back in the day, when the IBC was still young and the only gang in town was the
-            IBC Intruders. I was just a kid then, learning the ropes, figuring out how to survive in
-            a city where if you weren't the hunter, you were the hunted. Nowadays, I'm a bit older
-            and a lot wiser, watching the city from the sidelines. I decided to write a book, 'cause
-            you don't grow old in the IBC without earning some stories. So consider me your guide
-            through this neon jungle, where the streets are as dangerous as they are vibrant.
+            Welcome to CFT-20, an earthlike dwarf planet nestled within the asteroid belt of the
+            ROIDS solar system in the expansive Cosmoverse. As you approach this celestial oasis,
+            the swirling mass of colossal asteroids encircling it creates an awe-inspiring backdrop.
+            Yet even amid these cosmic sentinels, the vibrant lights of The Big Hub - the capital
+            city of the Inter Blockchain County (IBC) - shine like a beacon of hope.
           </p>
           <p className='my-8 text-justify'>
-            The IBC, the Inter Blockchain County that is, and it ain't like any place you've been
-            before. It's a sprawling mess of syndicates, each claiming their piece of turf and
-            fighting tooth and nail to keep it.
-            <br />
-            It's a city of bright lights and dark corners, where the night never really ends, and
-            everyone has an angle. The syndicates are like a deck of cards, each with its own suit,
-            but they're all playing the same game: power, respect, and cold hard cash. Step out of
-            line, and you'll find yourself in a world of trouble.
+            The IBC pulses with life and industry. Towering skyscrapers pierce the sky of the Big
+            Hub, their luminous windows cutting through the surrounding darkness. From space, the
+            shimmering glow of this huge city is unmistakable, a testament to the boldness and
+            ambition of those who have staked their claim in this untamed frontier.
           </p>
           <p className='my-8 text-justify'>
-            So listen up, and I'll tell you what's what. I'll be your eyes and ears on the street,
-            but you gotta keep your wits about you. The IBC's a dangerous place, and if you want to
-            make it out in one piece, you'll need to know who to trust and who to steer clear of.
-            Let's just say I've been around long enough to know the difference.
+            But don't be fooled by the dazzling skyline. The Big Hub is a city of stark contrasts, a
+            place where people from all corners of the galaxy converge to make their mark. It's a
+            melting pot of cultures, species, and even androids, each bringing their unique flair to
+            the bustling streets.
+          </p>
+          <Image
+            src='/images/lore/the-big-hub.jpg'
+            width={820}
+            height={600}
+            className='border-white border-[5px] float-left w-full md:w-[500px] lg:w-[600px] md:mr-8 mb-4 mt-2'
+            alt='The Big Hub - Capital of the IBC'
+          />
+          <p className='my-8 text-justify'>
+            By day, The Big Hub buzzes with the sounds of commerce and conversation, a thriving
+            metropolis where fortunes are made with a single deal. Yet beneath this veneer of
+            progress lies a darker side. As night descends, the neon glow illuminates a different
+            world - one where syndicates battle for control, and vice and corruption are the
+            currency of choice.
+          </p>
+          <p className='my-8 text-justify'>
+            By night, The Big Hub becomes a labyrinth of shadowy alleys and hidden corners, where
+            justice is fleeting, and alliances can shift in the blink of an eye. Here, the city
+            never truly sleeps, and survival depends on wits, cunning, and a generous dose of luck.
+            Danger lurks in every shadow, but for those willing to take risks, the rewards can be
+            immense.
+          </p>
+          <p className='my-8 text-justify'>
+            Despite the chaos and turmoil, there's an undeniable sense of opportunity in the air.
+            The IBC is a place where you can reinvent yourself, where the bold and daring can rise
+            to the top, and where your fate is only limited by your imagination. The ethereal glow
+            that surrounds CFT-20, casting an otherworldly aura over the entire county, adds to the
+            mystique of this unique place in the Cosmoverse.
+          </p>
+          <p className='my-8 text-justify'>
+            If you want to thrive here, you'll need to be sharp, resourceful, and ready to embrace
+            the unexpected. Welcome to the Inter Blockchain County - where fortunes are made,
+            alliances are broken, and legends are born.
           </p>
         </Chapter>
         <Chapter
           chapterName={chapters[1]}
+          named={['2CC3C9DCE60B212E83E7F8E096034443BBB9588F30431079D5E828F2A78F04BE']}
+        >
+          <Image
+            src='/images/lore/godfather.jpg'
+            width={820}
+            height={820}
+            className='border-white border-[5px] float-right w-full md:w-[500px] lg:w-[600px] md:ml-8 mb-4 mt-2'
+            alt='Nate "Godfather" Brooks - Father of the IBC Cronicles'
+          />
+          <p className='mb-8 text-justify'>
+            The name's Nate, but folks 'round here know me as "Godfather", a title I earned through
+            years of navigating the treacherous streets with cunning and charisma. I used to run
+            these streets during the infancy of the IBC, when The Big Hub was still finding its
+            footing and the notorious IBC Intruders were the only gang around. I was just a kid
+            then, learning the ropes, figuring out how to survive in a city where if you weren't the
+            hunter, you were the hunted.
+          </p>
+          <p className='my-8 text-justify'>
+            I had a solid crew back then. Tight-knit and down for whatever. The kind of folks you
+            knew had your back when things got hot. We moved as one, no hesitation, no
+            second-guessing. That's how we rolled.
+            <br />
+            Nowadays, I'm a bit older and a lot wiser, watching the city from the sidelines. You
+            don‘t grow old in the IBC, so I decided to preserve these stories and put them to paper
+            for the generations to come. So consider me your guide through this neon jungle, where
+            the streets are as dangerous as they are vibrant.
+          </p>
+          <p className='my-8 text-justify'>
+            The IBC, the Inter Blockchain County that is, ain't like any place you've been before.
+            It's a sprawling mess of syndicates, each claiming their piece of turf and fighting
+            tooth and nail to keep it.
+            <br />
+            Everything goes down in The Big Hub, the capital city of the IBC. It's a place of bright
+            lights and even darker corners, where the night never really ends, and everybody's
+            working some kind of hustle. The syndicates are like a deck of cards, each with its own
+            suit, but they're all playing the same game: power, respect, and cold hard cash. Step
+            out of line, and you'll find yourself in a world of trouble.
+          </p>
+          <p className='my-8 text-justify'>
+            So listen up, and I'll tell you what's what. I'll be your eyes and ears on the street,
+            but you gotta keep your wits about you. The IBC's a cutthroat zone where power, loyalty,
+            and betrayal are the real currency. If you're aiming to make it out in one piece, you
+            better know who you can trust and who you need to dodge. Let's just say I've been around
+            long enough to know the difference.
+          </p>
+        </Chapter>
+        <Chapter
+          chapterName={chapters[2]}
           named={[
             'DEA33D3691F15BBD4E3E1DE83847878DE33D1772F5313BE3372CE45FE1D5F591',
             'A8E95007C9DE7EB6DDE61A4EFAD48E0255FD1EF2EDF441B4BAFD8D0B729268E1',

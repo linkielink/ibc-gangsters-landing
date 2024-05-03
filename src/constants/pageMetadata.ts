@@ -221,10 +221,10 @@ export const metaData: { [key: string]: Metadata } = {
     },
   },
   lore: {
-    title: 'The Story of the IBC',
+    title: 'IBC Gangsters - Lore',
     metadataBase: new URL('https://ibcgangsters.io'),
     description:
-      "Their courage knows no bounds as they step into the unknown, laying the foundation for our gang's legacy. With each step, they carve their mark on the digital landscape, shaping the future of our cosmic enterprise.",
+      "The IBC, the Inter Blockchain County that is, ain't like any place you've been before. It's a sprawling mess of syndicates, each claiming their piece of turf and fighting tooth and nail to keep it.",
     keywords: [
       'ibc',
       'ibc gangsters',
@@ -241,7 +241,7 @@ export const metaData: { [key: string]: Metadata } = {
       title: 'Inter Blockchain County',
       locale: 'en_US',
       description:
-        "The IBC, the Inter Blockchain County that is, and it ain't like any place you've been before. It's a sprawling mess of syndicates, each claiming their piece of turf and fighting tooth and nail to keep it.",
+        "The IBC, the Inter Blockchain County that is, ain't like any place you've been before. It's a sprawling mess of syndicates, each claiming their piece of turf and fighting tooth and nail to keep it.",
       siteName: 'IBC Gangsters',
       images: [
         {
