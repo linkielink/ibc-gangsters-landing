@@ -50,7 +50,7 @@ export const metaData: { [key: string]: Metadata } = {
     },
   },
   manifesto: {
-    title: 'IBC Gangsters - Manifesto',
+    title: 'IBC Gangsters Manifesto',
     metadataBase: new URL('https://ibcgangsters.io'),
     description:
       'Born in the gritty streets of Earth back in 2021, the IBC Gangsters were just faces in the crowd, grinding the 9-5, punching the clock, chasing that green while dreaming of a better life.',
@@ -84,7 +84,7 @@ export const metaData: { [key: string]: Metadata } = {
     twitter: {
       card: 'summary_large_image',
       site: '@IBC_Gangsters',
-      title: 'IBC Gangsters - Manifesto',
+      title: 'IBC Gangsters Manifesto',
       description:
         'Born in the gritty streets of Earth back in 2021, the IBC Gangsters were just faces in the crowd, grinding the 9-5, punching the clock, chasing that green while dreaming of a better life.',
       images: [
@@ -98,14 +98,14 @@ export const metaData: { [key: string]: Metadata } = {
     },
   },
   treasury: {
-    title: 'IBC Gangsters - Treasury',
+    title: 'IBC Gangsters Treasury',
     metadataBase: new URL('https://ibcgangsters.io'),
     description: 'Checkout the stash, the IBC Gangsters aquired over the years.',
     keywords: ['ibc', 'ibc gangsters', 'inscription', 'cosmos hub', 'cosmos', 'nft', 'treasury'],
     openGraph: {
       type: 'website',
       url: 'https://ibcgangsters.io/treasury',
-      title: 'IBC Gangsters - Treasury',
+      title: 'IBC Gangsters Treasury',
       locale: 'en_US',
       description: 'Checkout the stash, the IBC Gangsters aquired over the years.',
       siteName: 'IBC Gangsters',
@@ -121,7 +121,7 @@ export const metaData: { [key: string]: Metadata } = {
     twitter: {
       card: 'summary_large_image',
       site: '@IBC_Gangsters',
-      title: 'Treasury',
+      title: 'IBC Gangsters Treasury',
       description: 'Checkout the stash, the IBC Gangsters aquired over the years.',
       images: [
         {
@@ -134,7 +134,7 @@ export const metaData: { [key: string]: Metadata } = {
     },
   },
   gamePlan: {
-    title: 'IBC Gangsters - Game Plan',
+    title: 'IBC Gangsters Game Plan',
     metadataBase: new URL('https://ibcgangsters.io'),
     description:
       "The streets are theirs for the takin' and the future's lookin' bright. Only time will tell what adventures lie ahead. But one thing's for sure – they ain't goin' down without a fight.",
@@ -142,7 +142,7 @@ export const metaData: { [key: string]: Metadata } = {
     openGraph: {
       type: 'website',
       url: 'https://ibcgangsters.io/game-plan',
-      title: 'Game Plan',
+      title: 'IBC Gangsters Game Plan',
       locale: 'en_US',
       description:
         "The streets are theirs for the takin' and the future's lookin' bright. Only time will tell what adventures lie ahead. But one thing's for sure – they ain't goin' down without a fight.",
@@ -159,7 +159,7 @@ export const metaData: { [key: string]: Metadata } = {
     twitter: {
       card: 'summary_large_image',
       site: '@IBC_Gangsters',
-      title: 'Game Plan',
+      title: 'IBC Gangsters Game Plan',
       description:
         "The streets are theirs for the takin' and the future's lookin' bright. Only time will tell what adventures lie ahead. But one thing's for sure – they ain't goin' down without a fight.",
       images: [
@@ -173,7 +173,7 @@ export const metaData: { [key: string]: Metadata } = {
     },
   },
   members: {
-    title: 'IBC Gangsters - Members',
+    title: 'IBC Gangsters Members',
     metadataBase: new URL('https://ibcgangsters.io'),
     description:
       "Their courage knows no bounds as they step into the unknown, laying the foundation for our gang's legacy. With each step, they carve their mark on the digital landscape, shaping the future of our cosmic enterprise.",
@@ -190,7 +190,7 @@ export const metaData: { [key: string]: Metadata } = {
     openGraph: {
       type: 'website',
       url: 'https://ibcgangsters.io/members',
-      title: 'Members',
+      title: 'IBC Gangsters Members',
       locale: 'en_US',
       description:
         "Their courage knows no bounds as they step into the unknown, laying the foundation for our gang's legacy. With each step, they carve their mark on the digital landscape, shaping the future of our cosmic enterprise.",
@@ -207,7 +207,7 @@ export const metaData: { [key: string]: Metadata } = {
     twitter: {
       card: 'summary_large_image',
       site: '@IBC_Gangsters',
-      title: 'Members',
+      title: 'IBC Gangsters Members',
       description:
         "Their courage knows no bounds as they step into the unknown, laying the foundation for our gang's legacy. With each step, they carve their mark on the digital landscape, shaping the future of our cosmic enterprise.",
       images: [
@@ -220,8 +220,8 @@ export const metaData: { [key: string]: Metadata } = {
       ],
     },
   },
-  lore: {
-    title: 'IBC Gangsters - Lore',
+  chronicles: {
+    title: 'IBC Gangsters Chronicles',
     metadataBase: new URL('https://ibcgangsters.io'),
     description:
       "The IBC, the Inter Blockchain County that is, ain't like any place you've been before. It's a sprawling mess of syndicates, each claiming their piece of turf and fighting tooth and nail to keep it.",
@@ -238,7 +238,7 @@ export const metaData: { [key: string]: Metadata } = {
     openGraph: {
       type: 'website',
       url: 'https://ibcgangsters.io/lore',
-      title: 'Inter Blockchain County',
+      title: 'IBC Gangsters Chronicles',
       locale: 'en_US',
       description:
         "The IBC, the Inter Blockchain County that is, ain't like any place you've been before. It's a sprawling mess of syndicates, each claiming their piece of turf and fighting tooth and nail to keep it.",
@@ -255,7 +255,7 @@ export const metaData: { [key: string]: Metadata } = {
     twitter: {
       card: 'summary_large_image',
       site: '@IBC_Gangsters',
-      title: 'Inter Blockchain County',
+      title: 'IBC Gangsters Chronicles',
       description:
         "The IBC, the Inter Blockchain County that is, and it ain't like any place you've been before. It's a sprawling mess of syndicates, each claiming their piece of turf and fighting tooth and nail to keep it.",
       images: [

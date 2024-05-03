@@ -4,11 +4,11 @@ import SideNav from 'components/SideNav'
 import { metaData } from 'constants/pageMetadata'
 import Image from 'next/image'
 
-export const metadata = metaData.lore
+export const metadata = metaData.chronicles
 
 const chapters = ['The Big Hub', 'Godfather', 'A New Era']
 
-export default function LorePage() {
+export default function ChroniclesPage() {
   return (
     <>
       <Hero backgroundClass='bg-lore' />
@@ -88,9 +88,9 @@ export default function LorePage() {
         >
           <Image
             src='/images/lore/godfather.jpg'
-            width={820}
-            height={820}
-            className='border-white border-[5px] float-right w-full md:w-[500px] lg:w-[600px] md:ml-8 mb-4 mt-2'
+            width={440}
+            height={440}
+            className='border-white border-[5px] float-right w-full md:w-[230px] lg:w-[320px] md:ml-8 mb-4 mt-2'
             alt='Nate "Godfather" Brooks - Father of the IBC Cronicles'
           />
           <p className='mb-8 text-justify'>

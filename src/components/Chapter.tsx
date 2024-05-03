@@ -27,7 +27,7 @@ export default function Chapter(props: Props) {
               named.map((namedGangsterHash) => {
                 const gangster = gangsters.find((g) => g.hash === namedGangsterHash)
                 return gangster ? (
-                  <div className='col-span-2 row-span-2'>
+                  <div className='col-span-2 row-span-2' key={namedGangsterHash}>
                     <ItemCard
                       key={gangster.id}
                       href={`https://asteroidprotocol.io/app/inscription/${gangster.hash}`}
@@ -42,7 +42,7 @@ export default function Chapter(props: Props) {
               misc.map((miscGangsterHash) => {
                 const gangster = gangsters.find((g) => g.hash === miscGangsterHash)
                 return gangster ? (
-                  <div>
+                  <div key={miscGangsterHash}>
                     <ItemCard
                       key={gangster.id}
                       href={`https://asteroidprotocol.io/app/inscription/${gangster.hash}`}
