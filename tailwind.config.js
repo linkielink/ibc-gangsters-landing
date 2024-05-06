@@ -28,6 +28,26 @@ module.exports = {
     'glow-akash',
     'glow-stride',
     'glow-stargaze',
+    'md:width-230',
+    'md:width-320',
+    'md:width-400',
+    'md:width-420',
+    'md:width-450',
+    'md:width-500',
+    'md:width-520',
+    'md:width-563',
+    'md:width-595',
+    'lg:width-230',
+    'lg:width-320',
+    'lg:width-400',
+    'lg:width-420',
+    'lg:width-450',
+    'lg:width-500',
+    'lg:width-520',
+    'lg:width-563',
+    'lg:width-595',
+    'mb-8',
+    'my-8',
   ],
   theme: {
     extend: {
@@ -205,6 +225,33 @@ module.exports = {
           backgroundImage:
             'linear-gradient(-45deg, rgba(255, 255, 255, 0.6) 25%, transparent 25%, transparent 50%, rgba(255, 255, 255, 0.6) 50%, rgba(255, 255, 255, 0.6) 75%, transparent 75%, transparent)',
           backgroundSize: '10px 10px',
+        },
+        '.width-230': {
+          width: '230px',
+        },
+        '.width-320': {
+          width: '320px',
+        },
+        '.width-400': {
+          width: '400px',
+        },
+        '.width-420': {
+          width: '420px',
+        },
+        '.width-450': {
+          width: '450px',
+        },
+        '.width-500': {
+          width: '500px',
+        },
+        '.width-520': {
+          width: '520px',
+        },
+        '.width-563': {
+          width: '563px',
+        },
+        '.width-595': {
+          width: '595px',
         },
       })
     }),
