@@ -6,7 +6,7 @@ import Image from 'next/image'
 
 export const metadata = metaData.chronicles
 
-const chapters = ['The Big Hub', 'Godfather', 'A New Era']
+const chapters = ['The Big Hub', 'Godfather', 'A New Era', 'A True Sin']
 
 export default function ChroniclesPage() {
   return (
@@ -222,6 +222,47 @@ export default function ChroniclesPage() {
             OGs are like sparks in the wind, and it's only a matter of time before they find
             something to ignite. So keep your eyes open and your ear to the ground. If you think the
             IBC is wild now, just wait — things are about to get interesting.
+          </p>
+        </Chapter>
+        <Chapter
+          chapterName={chapters[3]}
+          named={['AA930BCD90E2247798302D44A98CA5FFB760785115D8F96043CFB1918CDD1278']}
+        >
+          <Image
+            src='/images/lore/true-sin.jpg'
+            width={440}
+            height={770}
+            className='border-white border-[5px] float-right w-full md:w-[320px] lg:w-[420px] md:ml-8 mb-4 mt-2'
+            alt='Hard to get... impossible to forget.'
+          />
+          <p className='mb-8 text-justify'>
+            Yo, homie, do you know Lana? Nah? Maybe you know her by her street name, "True Sin."
+            Yeah, that's more like it. Everybody and their grandma knows Lana. Even those uptight
+            suits in the Upper East get all starry-eyed just hearing about her. But here's the
+            thing, she's got a rep for being hard to get. Like, she's not some princess or anything,
+            but she's got standards, you feel me? And her big bro, 8-Ball, he ain't letting nobody
+            near her. Dude's like a guard dog, and he ain't too fond of our kind. No sir, he'd
+            rather see us six feet under than hanging with his sis.
+          </p>
+          <p className='my-8 text-justify'>
+            But check this out - I heard 8-Ball and his IBC Intruders got nabbed on their last
+            heist. They're locked up in the pen and unless they've got some Houdini tricks up their
+            sleeves, they're gonna be there a while. I ain't crying over 8-Ball, dude had it coming.
+            But Lana, man, she's all alone now. She might need some... comforting, if you catch my
+            drift.
+          </p>
+          <p className='my-8 text-justify'>
+            But don't go rushing in like a headless chicken. Lana's got a thing for flashy, and she
+            ain't gonna give you the time of day if you're broke.
+          </p>
+          <p className='my-8 text-justify'>
+            You gotta step up your game, get some cash flowing and show her you're worth her time.
+            'Cause she's the kinda girl who'll turn you down just for wearing the wrong kicks. So if
+            you're gonna make a move, make sure you do it right.
+          </p>
+          <p className='my-8 text-justify'>
+            Alright, that's the lowdown. Good luck, homie. And remember, play it cool and don't let
+            8-Ball catch you sniffing around.
           </p>
         </Chapter>
         <p className='w-full py-20 text-4xl text-center'>To be continued...</p>
