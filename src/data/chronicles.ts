@@ -206,4 +206,61 @@ export const chronicles: Chronicle[] = [
       },
     ],
   },
+  {
+    title: 'No Messing Around',
+    named: [
+      'FA5CA30E6D436FB0130EF07717652A2D8E56CE178C2A09BBE92AA2ACDD63A0B7',
+      'F0E1364EABCC58338EE9E27916729E55C341613ED315A1C8F4543456F3F8D93A',
+    ],
+    misc: [
+      'E9F69F39CF89A6202FFD6C17258FA2559275D15824F577743BC7ACD0DF0F96BC',
+      '63BC1C27B7E3BCE9E5959BD4D2030A8621832237572E93F82A2609286FFF5D64',
+      '8215C4B77F9BAA2B6D329E8BDEF097381BE811ECEB1A4C7693C7C5B25D8F1E36',
+      '2FCBCAAEA74872DA42D439FAE4BE40B9E0943722B5AC7AB8A7EA0E34A3EBCE85',
+    ],
+    content: [
+      {
+        type: 'text',
+        text: "Locked up tight in the depths of IBC Penitentiary, there was 8-Ball, sweatin' bullets over rumors flyin' 'bout his sister, Lana. They say she's gettin' cozy with some slick cat they call “Crypto Pimp“. Now, that kind of talk? It don't sit right with a man like 8-Ball, not one bit.",
+      },
+      {
+        type: 'image',
+        src: 'prophet.jpg',
+        width: 419,
+        height: 468,
+        widths: 'md:width-230, lg:width-320',
+        position: 'left',
+        alt: 'Prophet mastered the code of law.',
+      },
+      {
+        type: 'text',
+        text: "So, there he was, brains cookin' up a storm of a plan, when it hits him - Prophet. Yeah, you heard right, the legal eagle from them fancy Saga Saints. Man's slicker than oil on water, with enough tricks up his sleeve to make a magician cry. One call to Prophet, and bam! It's like Houdini worked his magic; 8-Ball's out faster than you can blink, breathin' the free air like it's sweet perfume.",
+      },
+      {
+        type: 'text',
+        text: "But that ain't the whole show, no sir. 8-Ball wasn't about to hit the streets solo. Nope, he brought his crew along for the ride, all sprung from the pen thanks to Prophet's fancy footwork. Four tough nuts, each one as loyal to 8-Ball as the next, all hungry for a bit of action after their time behind bars.",
+      },
+      {
+        type: 'text',
+        text: "Together, they're a force to reckon with, stormin' through the city like a pack of wolves on the prowl. Everybody's lookin' over their shoulders, 'cause when 8-Ball and his boys are on the hunt, you best believe the city feels it.",
+      },
+      {
+        type: 'image',
+        src: '8-ball.jpg',
+        width: 800,
+        height: 562,
+        widths: 'md:width-500, lg:width-595',
+        position: 'right',
+        alt: 'Better lay low - 8-Ball is back in town.',
+      },
+      {
+        type: 'text',
+        text: "Crypto Pimp, meanwhile, is keepin' his cool, staying sharp and watchful. He knows the streets like the back of his hand, and while 8-Ball's name carries weight, Pimp's got his own moves to play. With 8-Ball and his crew back on the scene, it's only a matter of time before paths cross and sparks fly.",
+      },
+      {
+        type: 'text',
+        text: "So, if you're not rollin' with the IBC Intruders or just caught in the crossfire, keep your head down and your affairs in order. 'Cause when 8-Ball's on the warpath, ain't no one safe from the storm about to break.",
+      },
+    ],
+  },
 ]

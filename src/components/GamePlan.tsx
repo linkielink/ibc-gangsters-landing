@@ -48,7 +48,7 @@ const gamePlan: GamePlanItem[] = [
       },
       {
         description: 'Demand your cut and collect the royalties – Royalty Roundup',
-        done: false,
+        done: true,
       },
       {
         description: 'Scout out fresh streams of cash flow within the game – Hustle for Expansion',
@@ -56,7 +56,7 @@ const gamePlan: GamePlanItem[] = [
       },
       {
         description: 'Greet fresh blood to the gang – Launch the next wave of Inscriptions',
-        done: false,
+        done: true,
       },
     ],
     direction: 'ltr',
