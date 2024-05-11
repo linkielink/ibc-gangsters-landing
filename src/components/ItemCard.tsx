@@ -12,6 +12,7 @@ interface Props {
   getHighlightedText?: (text: string, highlight: string) => JSX.Element
   balance?: number
   traits?: Traits
+  className?: string
 }
 
 function KeyValue({
@@ -58,6 +59,7 @@ export default function ItemCard(props: Props) {
     getHighlightedText,
     balance,
     traits,
+    className,
   } = props
 
   const formattedBalance = balance
@@ -69,7 +71,7 @@ export default function ItemCard(props: Props) {
 
   const syndicate = traits ? traits.syndicate.split(' ')[0].toLowerCase() : ''
   return (
-    <a title={title} href={href} className='w-full' target='_blank'>
+    <a title={title} href={href} className={classNames('w-full', className)} target='_blank'>
       <div
         className={classNames(
           'w-full flex h-full items-center',
@@ -78,7 +80,7 @@ export default function ItemCard(props: Props) {
       >
         <div
           className={classNames(
-            'relative flex w-full overflow-hidden rounded-lg md:transition-all md:duration-500',
+            'relative flex w-full h-full overflow-hidden rounded-lg md:transition-all md:duration-500',
             traits &&
               `[transform-style:preserve-3d] group-hover:[transform:rotateY(180deg)] glow-${syndicate}`,
             !traits && 'hover:bg-white/20',

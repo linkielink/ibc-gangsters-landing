@@ -57,3 +57,21 @@ interface ImageContent {
   position: 'left' | 'right'
   alt: string
 }
+
+interface TreasuryItem {
+  id: number
+  name: string
+  type: 'asset' | 'token' | 'inscription'
+  href: string
+  title: string
+  hash: string
+  description?: string
+  balance?: number
+  current_owner?: string
+  content_path: string
+  content_size_bytes?: number
+  date_created?: string
+  mime?: string
+}
+
+type SortDirection = 'id desc' | 'id asc' | 'name desc' | 'name asc'

@@ -13,6 +13,7 @@ export default async function getTokens(): Promise<TokenData | undefined> {
             where: { address: { _eq: ${addresses.multisig} } }
           ) {
             token {
+              id
               ticker
               content_path
               max_supply

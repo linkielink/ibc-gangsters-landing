@@ -4,6 +4,7 @@ interface TokenData {
 
 interface TokenHolder {
   token: {
+    id: number
     ticker: string
     content_path: string
     max_supply: number
