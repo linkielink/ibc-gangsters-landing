@@ -22,7 +22,7 @@ export default function TreasuryFilter(props: Props) {
   useEffect(() => {
     if (!isLoaded) return
     updateItems(['assets', 'tokens', 'purchases'], 'id asc')
-  }, [isLoaded, updateItems])
+  }, [isLoaded])
 
   return (
     <div className='w-full flex flex-wrap gap-4 pb-8 items-center max-w-[1024px] mx-auto'>
