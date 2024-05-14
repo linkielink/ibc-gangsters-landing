@@ -35,7 +35,7 @@ export default function Treasury() {
       })
       setItems(sortedItems)
     },
-    [filter, assets, tokens, purchases, gangsters, miscellaneous],
+    [assets, tokens, purchases, gangsters, miscellaneous],
   )
 
   const isLoaded = useMemo(() => {
