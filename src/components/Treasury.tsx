@@ -9,7 +9,7 @@ import useTreasuryTokens from 'hooks/treasury/useTreasuryTokens'
 import { useCallback, useMemo, useState } from 'react'
 
 export default function Treasury() {
-  const { inscriptions, gangsters, gifts } = useTreasuryInscriptions()
+  const { purchases, gangsters, miscellaneous } = useTreasuryInscriptions()
   const tokens = useTreasuryTokens()
   const assets = useTreasuryAssets()
   const [treasuryFlow, setTreasuryFlow] = useState<boolean>(false)
@@ -22,8 +22,8 @@ export default function Treasury() {
       const newItems = [] as TreasuryItem[]
       if (filter.includes('assets')) newItems.push(...assets)
       if (filter.includes('tokens')) newItems.push(...tokens)
-      if (filter.includes('inscriptions')) newItems.push(...inscriptions)
-      if (filter.includes('gifts')) newItems.push(...gifts)
+      if (filter.includes('purchases')) newItems.push(...purchases)
+      if (filter.includes('miscellaneous')) newItems.push(...miscellaneous)
       if (filter.includes('gangsters')) newItems.push(...gangsters)
 
       const sortedItems = newItems.sort((a, b) => {
@@ -35,12 +35,12 @@ export default function Treasury() {
       })
       setItems(sortedItems)
     },
-    [filter, assets, tokens, inscriptions, gangsters, gifts],
+    [filter, assets, tokens, purchases, gangsters, miscellaneous],
   )
 
   const isLoaded = useMemo(() => {
-    return assets.length > 0 && tokens.length > 0 && inscriptions.length > 0
-  }, [assets, tokens, inscriptions])
+    return assets.length > 0 && tokens.length > 0 && purchases.length > 0
+  }, [assets, tokens, purchases])
 
   return (
     <section className='w-full flex flex-col items-center justify-center py-20 px-4 max-w-[1024px] mx-auto relative'>

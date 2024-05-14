@@ -10,8 +10,8 @@ interface Props {
 const availableFilter = [
   { name: 'assets', label: 'Assets' },
   { name: 'tokens', label: 'Tokens' },
-  { name: 'inscriptions', label: 'Inscriptions' },
-  { name: 'gifts', label: 'Gifts' },
+  { name: 'purchases', label: 'Purchases' },
+  { name: 'miscellaneous', label: 'Collabs & Gifts' },
   { name: 'gangsters', label: 'IBC Gangsters' },
 ]
 
@@ -21,7 +21,7 @@ export default function TreasuryFilter(props: Props) {
 
   useEffect(() => {
     if (!isLoaded) return
-    updateItems(['assets', 'tokens', 'inscriptions'], 'id asc')
+    updateItems(['assets', 'tokens', 'purchases'], 'id asc')
   }, [isLoaded])
 
   return (

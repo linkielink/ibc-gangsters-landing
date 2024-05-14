@@ -263,4 +263,56 @@ export const chronicles: Chronicle[] = [
       },
     ],
   },
+  {
+    title: 'Tensions',
+    named: ['210E91EA13137ED7A88C6C44C1238BB0E7ECA1DB57C8199CED8EE19F4E933917'],
+    misc: [
+      '0882A6B467B5BC79025871774ED3CCA067F4F1372E337DFAFAC8AFF9B8089729',
+      '68E8E2DB0FEB9213B41F38454E27EEA062984444273CF9A7CEBF3CCF5D719CC8',
+      'D3C42A19A8800EF7B60C2A2D88467E03E68B189F1778CAAE1DF18EDC2D02370A',
+    ],
+    content: [
+      {
+        type: 'text',
+        text: "Out front of the Enclave, Crypto Pimp was holding court, cool as ice, flanked by his top three heavy-hitters. The joint was buzzing, a neon palace that drew the city's slickest cats like moths to a flame. Lit up with flashy signs and pumping out the latest beats, it was the playground of the high rollers and hustlers. Standing there, the pimp made it clear he ain't sweating nobody - not even 8-Ball.",
+      },
+      {
+        type: 'text',
+        text: "Word on the street was hot, buzzing that 8-Ball was back in the game, hunting him because of some cozy rumors with Lana. But Crypto Pimp ain't no rookie; never stepping out without his muscle, especially not when the city's eyes were glued to him in such a hotspot.",
+      },
+      {
+        type: 'text',
+        text: 'As the night rolled on, the air got thick, charged up with the vibe that 8-Ball and his posse were about to make their move. And sure enough, here came the IBC Intruders, fresh off the pen, strutting into the scene like they owned it. 8-Ball, riding high on rage, was leading the pack, eyeing the pimp like a hawk.',
+      },
+      {
+        type: 'image',
+        src: 'tensions.jpg',
+        width: 1324,
+        height: 887,
+        widths: 'md:width-500, lg:width-595',
+        position: 'left',
+        alt: 'You could feel the heat...',
+      },
+      {
+        type: 'text',
+        text: 'The standoff was tight, the kind that promised trouble with any wrong move. The crowd around them felt it too, the fun of the night dimmed by the crackling tension, everyone packed in tight, the thumping music from inside the Enclave barely drowning out the raw pulse of the standoff.',
+      },
+      {
+        type: 'text',
+        text: 'But just when things looked like they were about to blow up, in steps Lana, smooth as silk. She moved with purpose, threading her way between these towering figures of her brother and the pimp. Her words were sharp, slicing through the static, cooling heads before things could go south.',
+      },
+      {
+        type: 'text',
+        text: 'Her stepping in dialed down the heat, at least for the moment. Folks watched her pull 8-Ball back, her voice lingering in the air, a stark reminder of the thin line of peace she just drew.',
+      },
+      {
+        type: 'text',
+        text: "But peace? That's just a pretty word in the IBC. As Lana and 8-Ball faded back, the Osmosis Outlaws, Crypto Pimp's allies, shifted their weight, a silent vow of backup if things escalated.",
+      },
+      {
+        type: 'text',
+        text: 'As the night pulled on, the shadows grew deeper, every nod and whisper loaded, ready to set off the next big bang. The whole city was holding its breath, watching the fuse get short, knowing full well when it blew, it was gonna be one for the books.',
+      },
+    ],
+  },
 ]
