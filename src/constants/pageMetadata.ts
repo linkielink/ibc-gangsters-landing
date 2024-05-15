@@ -27,8 +27,8 @@ export const metaData: { [key: string]: Metadata } = {
       images: [
         {
           url: 'https://ibcgangsters.io/banner.jpg',
-          width: 1500,
-          height: 500,
+          width: 520,
+          height: 275,
           alt: 'IBC Gangsters',
         },
       ],
@@ -42,8 +42,8 @@ export const metaData: { [key: string]: Metadata } = {
       images: [
         {
           url: 'https://ibcgangsters.io/banner.jpg',
-          width: 1500,
-          height: 500,
+          width: 520,
+          height: 275,
           alt: 'IBC Gangsters',
         },
       ],
@@ -75,8 +75,8 @@ export const metaData: { [key: string]: Metadata } = {
       images: [
         {
           url: 'https://ibcgangsters.io/banner-manifesto.jpg',
-          width: 1500,
-          height: 500,
+          width: 520,
+          height: 275,
           alt: 'Menifesto',
         },
       ],
@@ -90,8 +90,8 @@ export const metaData: { [key: string]: Metadata } = {
       images: [
         {
           url: 'https://ibcgangsters.io/banner-manifesto.jpg',
-          width: 1500,
-          height: 500,
+          width: 520,
+          height: 275,
           alt: 'Manifesto',
         },
       ],
@@ -112,8 +112,8 @@ export const metaData: { [key: string]: Metadata } = {
       images: [
         {
           url: 'https://ibcgangsters.io/banner-treasury.jpg',
-          width: 1500,
-          height: 500,
+          width: 520,
+          height: 275,
           alt: 'Treasury',
         },
       ],
@@ -126,8 +126,8 @@ export const metaData: { [key: string]: Metadata } = {
       images: [
         {
           url: 'https://ibcgangsters.io/banner-treasury.jpg',
-          width: 1500,
-          height: 500,
+          width: 520,
+          height: 275,
           alt: 'Treasury',
         },
       ],
@@ -150,8 +150,8 @@ export const metaData: { [key: string]: Metadata } = {
       images: [
         {
           url: 'https://ibcgangsters.io/banner-roadmap.jpg',
-          width: 1500,
-          height: 500,
+          width: 520,
+          height: 275,
           alt: 'Game Plan',
         },
       ],
@@ -165,8 +165,8 @@ export const metaData: { [key: string]: Metadata } = {
       images: [
         {
           url: 'https://ibcgangsters.io/banner-roadmap.jpg',
-          width: 1500,
-          height: 500,
+          width: 520,
+          height: 275,
           alt: 'Game Plan',
         },
       ],
@@ -198,8 +198,8 @@ export const metaData: { [key: string]: Metadata } = {
       images: [
         {
           url: 'https://ibcgangsters.io/banner-members.jpg',
-          width: 1500,
-          height: 500,
+          width: 520,
+          height: 275,
           alt: 'Members',
         },
       ],
@@ -213,8 +213,8 @@ export const metaData: { [key: string]: Metadata } = {
       images: [
         {
           url: 'https://ibcgangsters.io/banner-members.jpg',
-          width: 1500,
-          height: 500,
+          width: 520,
+          height: 275,
           alt: 'Members',
         },
       ],
@@ -246,8 +246,8 @@ export const metaData: { [key: string]: Metadata } = {
       images: [
         {
           url: 'https://ibcgangsters.io/banner-lore.jpg',
-          width: 1500,
-          height: 500,
+          width: 520,
+          height: 275,
           alt: 'Inter Blockchain County',
         },
       ],
@@ -260,7 +260,7 @@ export const metaData: { [key: string]: Metadata } = {
         "The IBC, the Inter Blockchain County that is, and it ain't like any place you've been before. It's a sprawling mess of syndicates, each claiming their piece of turf and fighting tooth and nail to keep it.",
       images: [
         {
-          url: 'https://ibcgangsters.io/banner-lore-twitter.jpg',
+          url: 'https://ibcgangsters.io/banner-lore.jpg',
           width: 520,
           height: 275,
           alt: 'Inter Blockchain County',
