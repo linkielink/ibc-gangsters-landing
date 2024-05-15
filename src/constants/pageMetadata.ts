@@ -260,9 +260,9 @@ export const metaData: { [key: string]: Metadata } = {
         "The IBC, the Inter Blockchain County that is, and it ain't like any place you've been before. It's a sprawling mess of syndicates, each claiming their piece of turf and fighting tooth and nail to keep it.",
       images: [
         {
-          url: 'https://ibcgangsters.io/banner-lore.jpg',
-          width: 1500,
-          height: 500,
+          url: 'https://ibcgangsters.io/banner-lore-twitter.jpg',
+          width: 520,
+          height: 275,
           alt: 'Inter Blockchain County',
         },
       ],
