@@ -60,7 +60,6 @@ export const chronicles: Chronicle[] = [
         position: 'right',
         alt: 'Nate "Godfather" Brooks - Father of the IBC Cronicles',
       },
-
       {
         type: 'text',
         text: "The name's Nate Brooks, but folks 'round here know me as “Godfather“, a title I earned through years of navigating the treacherous streets with cunning and charisma. I used to run these streets during the infancy of the IBC, when The Big Hub was still finding its footing and the notorious IBC Intruders were the only gang around. I was just a kid then, learning the ropes, figuring out how to survive in a city where if you weren't the hunter, you were the hunted.",
@@ -312,6 +311,45 @@ export const chronicles: Chronicle[] = [
       {
         type: 'text',
         text: 'As the night pulled on, the shadows grew deeper, every nod and whisper loaded, ready to set off the next big bang. The whole city was holding its breath, watching the fuse get short, knowing full well when it blew, it was gonna be one for the books.',
+      },
+    ],
+  },
+  {
+    title: 'A Strange Guy',
+    named: ['F4F17B97A84131EBC262A0A1F76AC0635739B4C0D610325788B73429DDC367CF'],
+    content: [
+      {
+        type: 'text',
+        text: "It's another day in the IBC, but things are starting to get a little... strange. I mean, there's always weird stuff going down in The Big Hub, but this one's got everyone talking.",
+      },
+      {
+        type: 'text',
+        text: "Word is, there's this new dude in town, calls himself “Dante the Wizard“. Yeah, sounds like a stage name, right? But don't be fooled, 'cause this guy ain't pulling rabbits out of hats or sawing people in half for laughs. Nah, he's on a whole other level.",
+      },
+      {
+        type: 'image',
+        src: 'dante.jpg',
+        width: 1154,
+        height: 1160,
+        widths: 'md:width-400, lg:width-450',
+        position: 'right',
+        alt: 'Nobody knows where Dante came from or how powerful he really is...',
+      },
+      {
+        type: 'text',
+        text: "You hear stories, like the one about him walking into a back-alley card game and straight-up making everyone's cash disappear - literally. Dude just waved his hand, and poof, all the bills went up in smoke, like they were never there. He left the place with his pockets full, while the rest of them were left picking their jaws off the floor. Or that one time he got into a bar fight, and the bottles and chairs started flying without anyone touching them. Freaky, right?",
+      },
+      {
+        type: 'text',
+        text: "But here's the kicker. People say Dante's not just some street performer with a few tricks up his sleeve. They say he's got connections, deep connections. Like, he might be playing both sides of the gang war between the IBC Intruders and the Osmosis Outlaws. He's moving in the shadows, whispering in ears, and nobody knows whose side he's really on. You cross him, and you might end up cursed - or worse.",
+      },
+      {
+        type: 'text',
+        text: "So, if you happen to run into Dante the Wizard, watch yourself. Don't let his smooth talk and flashy moves fool you. He's got plans, and you don't wanna be part of them unless you're sure you know what you're getting into.",
+      },
+      {
+        type: 'text',
+        text: "Anyway, keep your head down and your ears open. This place was already a powder keg, and now it's got a wizard running around. Who knows what’s gonna happen next? Stay sharp, homie.",
       },
     ],
   },
