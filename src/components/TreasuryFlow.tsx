@@ -70,7 +70,7 @@ export default function TreasuryFlow() {
         <FlowComponent
           title='Treasury'
           copy='IBC Multisig'
-          subtext='cosmos16xvaqwcr8rhcwawwq40mj6ttqeeydvvv2fm7gp'
+          subtext='ibcgangsters.cosmos'
           imageUrl='/images/treasury.jpg'
           href='https://asteroidprotocol.io/app/wallet/cosmos16xvaqwcr8rhcwawwq40mj6ttqeeydvvv2fm7gp'
           fullWidth
