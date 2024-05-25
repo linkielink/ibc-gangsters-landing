@@ -349,7 +349,57 @@ export const chronicles: Chronicle[] = [
       },
       {
         type: 'text',
-        text: "Anyway, keep your head down and your ears open. This place was already a powder keg, and now it's got a wizard running around. Who knows what’s gonna happen next? Stay sharp, homie.",
+        text: "Anyway, keep your head down and your ears open. This place was already a powder keg, and now it's got a wizard running around. Who knows what's gonna happen next? Stay sharp, homie.",
+      },
+    ],
+  },
+  {
+    title: 'Night out with the Crips',
+    named: ['07659DD4643E130C5EB23B7978E16F8D71AE3D1068F4D8C693E9C31262294F99'],
+    misc: [
+      '0765D25619C732C75E282741AEC612817B4E4B7C2391CA6C28E1492D7A3CC043',
+      '3AA45E4CAB9BEE80DA5D2ED0860E6924B60FD9EB9F4359C4F53B20293E6CA6D0',
+      '5E9C3F3A23C44784B167D803FF3D7F8BBBF8D52256B6A86789D144AC76508F0A',
+      '55D974C69750123FC56B5598A3788F4487817046AD49B533CE9DADBE6A5FB630',
+    ],
+    content: [
+      {
+        type: 'image',
+        src: 'enclave.jpg',
+        width: 1310,
+        height: 503,
+        widths: '',
+        position: 'left',
+        alt: 'The Enclave was buzzing!',
+      },
+      {
+        type: 'text',
+        text: 'Friday night, and The Big Hub got that buzz - the kind that makes every club pulse with energy. Folks are ready to let loose, and no place does it better than the Enclave, where DJ Wood is spinning the latest beats, and MC Icon is on the mic, hyping up the crowd.',
+      },
+      {
+        type: 'text',
+        text: "But tonight's different. There's this new face in the club, and he doesn't blend in. It's “Dante the Wizard“. He walks in like he owns the place with a staff in hand that glows with a strange electric light. He's got this aura that makes the music feel like background noise. He saunters to the bar, and the bartender can't help but glance at the staff. Dante orders a drink, and when the glass slides down the bar, he stops it with a touch of his staff - just a tap, but enough to make everyone watching shiver. The Cosmos Crips, who usually run this joint, are eyeing him from across the room. They're not used to strangers stepping in and acting like they belong.",
+      },
+      {
+        type: 'text',
+        text: "Dante makes his way to the stage, and that's when things get tense. DJ Wood is in the zone, headphones on, mixing tracks. But Dante leans over and whispers something in his ear. Whatever he says, it doesn't sit right with Wood. The DJ shoves him back, but Dante's grin just widens. He taps his staff on the turntables, and a spark of electricity arcs through the equipment, sending a sharp crackle through the speakers. ",
+      },
+      {
+        type: 'image',
+        src: 'mc-icon.jpg',
+        width: 830,
+        height: 683,
+        widths: 'md:width-400, lg:width-500',
+        position: 'left',
+        alt: 'The second MC Icon saw Dante approaching the stage, he knew this guy would be trouble.',
+      },
+      {
+        type: 'text',
+        text: "MC Icon jumps in, trying to defuse the situation, but Dante's got other plans. He swings his staff around, pointing it at the Cosmos Crips. One of them lunges at him, but before he can even touch Dante, the wizard disappears in a flash of electric light, leaving behind a puff of smoke and a room full of confusion.",
+      },
+      {
+        type: 'text',
+        text: "The Crips are left fuming, DJ Wood's gear is fried, and MC Icon is scrambling to keep the party from turning into a riot. The Stargaze Sorcerers, Dante's crew, are watching from the shadows, ready to back him up. Now the beef is real, and everyone's wondering if Dante's going to show up again - or if he's already planning his next move.",
       },
     ],
   },
