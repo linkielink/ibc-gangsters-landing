@@ -48,6 +48,8 @@ export default function Chapter(props: Props) {
                       href={`https://asteroidprotocol.io/app/inscription/${gangster.hash}`}
                       itemName={gangster.name}
                       imageUrl={gangster.imageUrl}
+                      traits={gangster.traits}
+                      disableFlip
                     />
                   </div>
                 ) : null

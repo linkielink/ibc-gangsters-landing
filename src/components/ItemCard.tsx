@@ -13,6 +13,7 @@ interface Props {
   balance?: number
   traits?: Traits
   className?: string
+  disableFlip?: boolean
 }
 
 function KeyValue({
@@ -34,19 +35,6 @@ function KeyValue({
   )
 }
 
-const cardBackgrounds: Record<string, string> = {
-  ibc: 'ibc',
-  luna: 'luna',
-  saga: 'saga',
-  cosmos: 'cosmos',
-  juno: 'juno',
-  osmosis: 'osmosis',
-  migaloo: 'migaloo',
-  akash: 'akash',
-  stride: 'stride',
-  stargaze: 'stargaze',
-}
-
 export default function ItemCard(props: Props) {
   const {
     id,
@@ -60,6 +48,7 @@ export default function ItemCard(props: Props) {
     balance,
     traits,
     className,
+    disableFlip,
   } = props
 
   const formattedBalance = balance
@@ -75,18 +64,20 @@ export default function ItemCard(props: Props) {
       <div
         className={classNames(
           'w-full flex h-full items-center',
-          traits && 'group [perspective:1000px]',
+          traits && !disableFlip && 'group [perspective:1000px]',
         )}
       >
         <div
           className={classNames(
             'relative flex w-full h-full overflow-hidden rounded-lg md:transition-all md:duration-500',
+            traits && `glow-${syndicate}`,
             traits &&
-              `[transform-style:preserve-3d] group-hover:[transform:rotateY(180deg)] glow-${syndicate}`,
-            !traits && 'hover:bg-white/20',
+              !disableFlip &&
+              '[transform-style:preserve-3d] group-hover:[transform:rotateY(180deg)]',
+            disableFlip && 'hover:bg-white/20',
           )}
         >
-          {traits && (
+          {traits && !disableFlip && (
             <div
               className={classNames(
                 'absolute flex flex-col gap-3 p-2 py-4 opacity-0 inset-0 w-full h-full',
