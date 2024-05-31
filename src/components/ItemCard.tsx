@@ -74,7 +74,7 @@ export default function ItemCard(props: Props) {
             traits &&
               !disableFlip &&
               '[transform-style:preserve-3d] group-hover:[transform:rotateY(180deg)]',
-            disableFlip && 'hover:bg-white/20',
+            disableFlip && `hover:bg-${syndicate}/20`,
           )}
         >
           {traits && !disableFlip && (
