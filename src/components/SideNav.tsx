@@ -88,7 +88,8 @@ export default function SideNav(props: Props) {
     <div className='relative hidden w-full h-0 lg:block' id='index-wrapper'>
       <nav className='absolute z-30 left-2 top-2 pt-30' id='index'>
         <div className='flex flex-wrap p-4 bg-black border border-white/50'>
-          <p className='w-full pb-2'>Chapters:</p>
+          <p className='w-full pb-2 text-lg'>Index:</p>
+          <p className='w-full'>CHAPTER I</p>
           <ul>
             {articles.map((article) => {
               const articleID = article.toLowerCase().replaceAll(' ', '-')
