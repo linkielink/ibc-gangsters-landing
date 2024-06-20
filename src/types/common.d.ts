@@ -36,6 +36,7 @@ interface GamePlanStep {
 
 interface Chronicle {
   title: string
+  chapter: number
   named?: string[]
   misc?: string[]
   content: Content[]

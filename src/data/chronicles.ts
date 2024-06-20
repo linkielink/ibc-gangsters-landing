@@ -1,6 +1,8 @@
 export const chronicles: Chronicle[] = [
+  /* CHAPTER 1 */
   {
     title: 'The Big Hub',
+    chapter: 1,
     content: [
       {
         type: 'image',
@@ -50,6 +52,7 @@ export const chronicles: Chronicle[] = [
   {
     title: 'Godfather',
     named: ['2CC3C9DCE60B212E83E7F8E096034443BBB9588F30431079D5E828F2A78F04BE'],
+    chapter: 1,
     content: [
       {
         type: 'image',
@@ -142,6 +145,7 @@ export const chronicles: Chronicle[] = [
       '504BB32BED1F4855DE18DE841B95533EB42FDFE89FC46D92E5188871A4EE53CD',
       '53BC83014B9D8F05919E2E722E9E2948DFB05757024D6155A9E5508DA4CE5750',
     ],
+    chapter: 1,
     content: [
       {
         type: 'text',
@@ -173,6 +177,7 @@ export const chronicles: Chronicle[] = [
   {
     title: 'A True Sin',
     named: ['AA930BCD90E2247798302D44A98CA5FFB760785115D8F96043CFB1918CDD1278'],
+    chapter: 1,
     content: [
       {
         type: 'image',
@@ -217,6 +222,7 @@ export const chronicles: Chronicle[] = [
       '8215C4B77F9BAA2B6D329E8BDEF097381BE811ECEB1A4C7693C7C5B25D8F1E36',
       '2FCBCAAEA74872DA42D439FAE4BE40B9E0943722B5AC7AB8A7EA0E34A3EBCE85',
     ],
+    chapter: 1,
     content: [
       {
         type: 'text',
@@ -270,6 +276,7 @@ export const chronicles: Chronicle[] = [
       '68E8E2DB0FEB9213B41F38454E27EEA062984444273CF9A7CEBF3CCF5D719CC8',
       'D3C42A19A8800EF7B60C2A2D88467E03E68B189F1778CAAE1DF18EDC2D02370A',
     ],
+    chapter: 1,
     content: [
       {
         type: 'text',
@@ -317,6 +324,7 @@ export const chronicles: Chronicle[] = [
   {
     title: 'A Strange Guy',
     named: ['F4F17B97A84131EBC262A0A1F76AC0635739B4C0D610325788B73429DDC367CF'],
+    chapter: 1,
     content: [
       {
         type: 'text',
@@ -362,6 +370,7 @@ export const chronicles: Chronicle[] = [
       '5E9C3F3A23C44784B167D803FF3D7F8BBBF8D52256B6A86789D144AC76508F0A',
       '55D974C69750123FC56B5598A3788F4487817046AD49B533CE9DADBE6A5FB630',
     ],
+    chapter: 1,
     content: [
       {
         type: 'image',
@@ -468,6 +477,7 @@ export const chronicles: Chronicle[] = [
       '95CD056CFEA8C8E8D46A250FD6B7E97AE49B722BC5B095F36096981A318CCB4C',
       '33E780726E1A10A12DC5813D1127107198CBDC4178C5415CBB0C2121D1D4CFDA',
     ],
+    chapter: 1,
     content: [
       {
         type: 'image',
@@ -530,7 +540,95 @@ export const chronicles: Chronicle[] = [
       },
       {
         type: 'text',
-        text: 'This night had all the makings of a legend, but legends aren’t always pretty, and nobody was sure how this one would end. Chaos sparked, when the first shot got fired and suddenly hell broke loose...',
+        text: "This night had all the makings of a legend, but legends aren't always pretty, and nobody was sure how this one would end. Chaos sparked, when the first shot got fired and suddenly hell broke loose...",
+      },
+    ],
+  },
+  /* CHAPTER 2 */
+  {
+    title: 'Shifting Sands',
+    chapter: 2,
+    content: [
+      {
+        type: 'image',
+        src: 'post-coincidence.jpg',
+        width: 1310,
+        height: 503,
+        widths: '',
+        position: 'left',
+        alt: 'The Big Hub is a different place after the day of "The Big Coincidence"',
+      },
+      {
+        type: 'text',
+        text: "The Central Square turned into a warzone after one guy lost his temper. It was like watchin' a row of dominoes fall, but way bloodier. After this fateful day - that went down in history as “The Big Coincidence“  -  the IBC ain't what it used to be. The four gangs - IBC Intruders, Osmosis Outlaws, Cosmos Crips, and the Stargaze Sorcerers - took a major hit and The Big Hub grew quiet.",
+      },
+      {
+        type: 'text',
+        text: 'While the Saga Saints, a slick crew with a taste for the high life and connections that run deep, sat pretty in the upper east, the Migaloo Misfits kept hustling their business down in the slums, scrappy and ready to claw their way to the top. And drawn by the chaos "The Big Coincidence" created, two new crews emerged...',
+      },
+      {
+        type: 'image',
+        src: 'akash-assassins.jpg',
+        width: 1280,
+        height: 958,
+        widths: 'md:width-450, lg:width-595',
+        position: 'right',
+        alt: 'The Akash Assassins emerged after the pradigm of the IBC shifted',
+      },
+      {
+        type: 'text',
+        text: "The Akash Assassins, heavily armed and deadly, started rolling downtown. They wore their irons out for everyone to see, striking fear into the hearts, daring anyone to step up. Although making moves with preciscion and discipline they didn't seem interested in control or turf; they were just making it clear - a new paradigm had started in the IBC: survival of the fittest.",
+      },
+      {
+        type: 'text',
+        text: "The second crew flowed into the city like someone opened the floodgates. Rocking yellow gear or bandanas, the Luna Legion rolled in. Didn't take long before they took over the Enclave, marking their territory like stray dogs. Some of them looked like they came from far away. Swear I even saw some androids and dudes hooked up with biotech.",
+      },
+      {
+        type: 'text',
+        text: "The IBC's a different beast now and the old big four couldn't do much about it. Licking their wounds they fell silent. The Legion rules with an iron fist, dealing with trouble quick and dirty. There's a shaky peace between them and the Assassins; maybe they cut a deal behind closed doors. But something feels off. Feels like someone else is pulling the strings, but I can't be sure.",
+      },
+      {
+        type: 'text',
+        text: "The sands of power are shifting and I knew this was coming. Too many players, too many agendas in a city too small for that much heat - it was bound to explode. I'm keepin' it low, watchin' from the shadows, glad to be breathin' another day.  I am curious to see where this new “Game of Power“ leads us to. I'll keep my eyes and ears open for ya!",
+      },
+    ],
+  },
+  {
+    title: 'The Luna Legion',
+    misc: [
+      '003DF74686887600F332F1528F3FBCF9FDEE29CE57E790E8EAEA0F09B3B5C66D',
+      '383A910E86748EC644BBCC96502775CB021B23A9AE958251DA917EB453E9A1BA',
+      'BCC83D4A062A5BAA094FCBF5431ACF8553EFAF5490C7DD070F4BF588B207FA77',
+      'EEFD4AA087CCD4F4075216AA512D261606A353D5F05F3A34715931E238894E83',
+      'EE00CD77F7957F6AD6B73898B2D0334972C2CCEB4C5428835057E36643797C79',
+      '32DF3A477566565FCBBE8E8CBC6FD41E14E9741AFA7012ED04E3047612B6F6AB',
+      '5D7C86F20B6AFE59CC3FC2410126BE47BE4D737785E553D72A33D27CDF094FC8',
+      '7FF3FEFD669CC88296350AD62CD3F41759B84102D61FD2029D9A567CADCAE097',
+      '188DAE9E1DE411EF6B2BE05B16928170A3692B12E2E10DBC735115F38606E999',
+      '4714A613EA9BA8583E4667E4E44B4A74A3F5A5B19085B15014DC0881D7733E81',
+    ],
+    chapter: 2,
+    content: [
+      {
+        type: 'text',
+        text: "The Luna Legion came up fast and hard. Their rise was ruthless, rolling through the streets like a pack of wolves with no clear leader and no fixed rules. You'd hear their manic laughter before you saw them, and by then, it was already too late. They hit nightclubs, street races, and any spot they could mark. In no time, they had a big slice of the underground locked down.",
+      },
+      {
+        type: 'image',
+        src: 'luna-legion.jpg',
+        width: 1100,
+        height: 717,
+        widths: 'md:width-450, lg:width-500',
+        position: 'left',
+        alt: 'The Luna Legion runs these streets now. Remember to keep your head down whenever you cross their path.',
+      },
+      {
+        type: 'text',
+        text: 'The Luna Legion became the new face of the IBC, not playing by the old rules. The other gangs noticed, but they were too busy dealing with their own problems to stop them. The Central Square shootout changed the game, and the Luna Legion made sure everyone knew it.',
+      },
+      {
+        type: 'text',
+        text: "If you ever cross paths with the Luna Legion, you better fall in line with their rules. Word is, they came from far away, fleeing when their home planet went up in smoke. Someone got greedy, dug too deep, and built on a shaky foundation - hollow ground. These thugs never forgot the menace of greed, but they ain't planning to change their ways; same story, different place. These guys look like trouble...",
       },
     ],
   },

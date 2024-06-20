@@ -2,26 +2,26 @@ import ItemCard from 'components/ItemCard'
 import { gangsters } from 'data/gangsters'
 
 interface Props {
-  chapterName: string
+  storyName: string
   named?: string[]
   misc?: string[]
   children: React.ReactNode | React.ReactNode[]
 }
 
-export default function Chapter(props: Props) {
-  const { chapterName, named, misc, children } = props
+export default function Story(props: Props) {
+  const { storyName, named, misc, children } = props
   return (
     <article>
       <h2
         className='w-full pt-20 pb-4 text-3xl md:pt-30'
-        id={chapterName.toLocaleLowerCase().replaceAll(' ', '-')}
+        id={storyName.toLocaleLowerCase().replaceAll(' ', '-')}
       >
-        {chapterName}
+        {storyName}
       </h2>
       {children}
       {(named || misc) && (
         <div className='py-8'>
-          <h3 className='w-full py-4 text-lg text-white/60'>{`Gangsters featured in "${chapterName}"`}</h3>
+          <h3 className='w-full py-4 text-lg text-white/60'>{`Gangsters featured in "${storyName}"`}</h3>
           <div className='grid gap-4 grid-cols:4 md:grid-cols-6'>
             {named &&
               named.map((namedGangsterHash) => {
