@@ -1,8 +1,8 @@
 'use client'
 
+import SideNav from 'components/SideNav'
 import { chronicles } from 'data/chronicles'
 import { useParams } from 'next/navigation'
-import SideNav from './SideNav'
 
 export default function ChroniclesPagination() {
   const params = useParams()

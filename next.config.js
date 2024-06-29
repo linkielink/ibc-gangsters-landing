@@ -9,6 +9,10 @@ const nextConfig = {
         protocol: 'https',
         hostname: 'asteroids-mainnet.ams3.digitaloceanspaces.com',
       },
+      {
+        protocol: 'https',
+        hostname: 'asteroid.ams3.digitaloceanspaces.com',
+      },
     ],
   },
   async headers() {

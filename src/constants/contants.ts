@@ -1,5 +1,5 @@
 export const endpoints = {
-  gql: 'https://api-lb.asteroidprotocol.io/v1/graphql',
+  gql: 'https://new-api.asteroidprotocol.io/v1/graphql',
 }
 
 export const addresses = {
