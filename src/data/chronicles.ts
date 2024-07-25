@@ -632,4 +632,62 @@ export const chronicles: Chronicle[] = [
       },
     ],
   },
+  {
+    title: 'Fallen Saints',
+    named: [
+      '33C6AECE900F37238DE346DC0498E539C11CDF6DEB51012BF5B2E25CE2D7A7AB',
+      '383F7C170A1034BE6ECA4D0B3E27F2FA231FFF8F4B0E2AF996CDC3DBB92E23D7',
+    ],
+    misc: [
+      'ACAD8905D0CAD4A95A41C3195928ACDE8A881084A83D04AD5E0590820E20C983',
+      'E48BC4BCBF6BC6342694DC02043B1F2AB8B7E3D207F78C392BE55ABF5C7BC3F3',
+      'E8793AF724FEE56D15C5DF32B6ABE85991238B5305F4420EDD40716F9226BC6B',
+      '00F4F71B8914122FB431DA2D2D9440887F2FF392846105F86EA9573C2C874DD2',
+      'D92C821BEC5ABBEAC7D56289E2BB0FA179994FEFAD238A1E35E216A14FEFA13D',
+      'C88E6BE9376F9C9BF1839FF99C9A38F0B48CFB5287C80D51109C37EF78024555',
+      '8FB42F59B27886A7AC024A77C1552B968BFEE4D618D2A0E9914DDC5CB543B1DA',
+      '9C282A3D1BEF6DC98B3755C5702C554981C2682241ECA1AD8A86A63375273891',
+    ],
+    chapter: 2,
+    content: [
+      {
+        type: 'image',
+        src: 'firestarter.jpg',
+        width: 1024,
+        height: 1024,
+        widths: 'md:width-450, lg:width-500',
+        position: 'left',
+        alt: 'Firestarter joined the Misfits because he wanted nothing to do with the Luna Legion Lunatics.',
+      },
+      {
+        type: 'text',
+        text: "With the Luna Legion occupying the streets of the Big Hub, the landscape has changed. Those maniacs have taken over, but not everyone's down with their game. My cousin Firestarter, he isn't one for following the rules of those lunatics. So, he rolled with the Migaloo Misfits instead. The Misfits, they're holding the upper hand in the suburban parts of the IBC, keeping things under control where the Legion's chaos doesn't reach.",
+      },
+      {
+        type: 'text',
+        text: "Firestarter joined the Misfits because he wanted nothing to do with the Luna Legion Lunatics. Those Misfits, they run the back alleys and keep the underground supplied with all sorts of contraband. But the stuff they're pushing? It does more than mess with your mind - it gives some of them freaky strength, like they're hitting the gym twenty-four-seven. But the downside? Some guys end up with strangely glowing eyes and a skin that's got a nasty green tint.",
+      },
+      {
+        type: 'image',
+        src: 'sasha-grey.jpg',
+        width: 1232,
+        height: 1246,
+        widths: 'md:width-450, lg:width-500',
+        position: 'right',
+        alt: 'Do not let her looks fool you. Sasha Grey is a ruthless leader and does not like sharing power',
+      },
+      {
+        type: 'text',
+        text: "Anyway, Firestarter has been telling me that the Migaloo Misfits are keeping an eye on the upper Eastside. Word is, a new syndicate moved in - goes by the name of Saga Saints. These folks are fancy, decked out in black and white suits like they're heading to a ball. They have a real hottie in their ranks, a woman called Sasha Grey. Don't let her looks fool you, though. She is just as ruthless as the rest of the saints. And they're not happy with the Migaloo Misfits pushing their goods around. Rumor has it, the Saga Saints are trying to cut off the Misfits' supply lines by flooding the streets with their own special product.",
+      },
+      {
+        type: 'text',
+        text: "Now the Misfits aren't the type to sit back and let that slide. Firestarter says it's only a matter of time before things get ugly. He's seen the Saints making moves, scoping out the Misfits' territory, and trying to turn suppliers. It's like a ticking time bomb, and when it goes off, the streets are gonna be a war zone.",
+      },
+      {
+        type: 'text',
+        text: "Firestarter is worried, and I don't blame him. When the Misfits and the Saints clash, you know it's gonna be bad for everyone in the middle. These syndicates don't take prisoners, and they don't back down. Things are about to get hotter than this damn summer already is.",
+      },
+    ],
+  },
 ]
