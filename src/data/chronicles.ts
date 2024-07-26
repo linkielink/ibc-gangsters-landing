@@ -657,7 +657,7 @@ export const chronicles: Chronicle[] = [
         height: 1024,
         widths: 'md:width-450, lg:width-500',
         position: 'left',
-        alt: 'Firestarter joined the Misfits because he wanted nothing to do with the Luna Legion Lunatics.',
+        alt: 'Firestarter joined the Misfits because he wanted nothing to do with the Luna Legion.',
       },
       {
         type: 'text',
@@ -665,7 +665,7 @@ export const chronicles: Chronicle[] = [
       },
       {
         type: 'text',
-        text: "Firestarter joined the Misfits because he wanted nothing to do with the Luna Legion Lunatics. Those Misfits, they run the back alleys and keep the underground supplied with all sorts of contraband. But the stuff they're pushing? It does more than mess with your mind - it gives some of them freaky strength, like they're hitting the gym twenty-four-seven. But the downside? Some guys end up with strangely glowing eyes and a skin that's got a nasty green tint.",
+        text: "Firestarter joined the Misfits because he wanted nothing to do with the Luna Legion. Those Misfits, they run the back alleys and keep the underground supplied with all sorts of contraband. But the stuff they're pushing? It does more than mess with your mind - it gives some of them freaky strength, like they're hitting the gym twenty-four-seven. But the downside? Some guys end up with strangely glowing eyes and a skin that's got a nasty green tint.",
       },
       {
         type: 'image',
@@ -678,7 +678,7 @@ export const chronicles: Chronicle[] = [
       },
       {
         type: 'text',
-        text: "Anyway, Firestarter has been telling me that the Migaloo Misfits are keeping an eye on the upper Eastside. Word is, a new syndicate moved in - goes by the name of Saga Saints. These folks are fancy, decked out in black and white suits like they're heading to a ball. They have a real hottie in their ranks, a woman called Sasha Grey. Don't let her looks fool you, though. She is just as ruthless as the rest of the saints. And they're not happy with the Migaloo Misfits pushing their goods around. Rumor has it, the Saga Saints are trying to cut off the Misfits' supply lines by flooding the streets with their own special product.",
+        text: "Anyway, Firestarter has been telling me that the Migaloo Misfits are keeping an eye on the upper Eastside. Word is, a new syndicate moved in - goes by the name of Saga Saints. These folks are fancy, decked out in black and white suits like they're heading to a ball. They have a real hottie in their ranks, a woman called Sasha Grey. Don't let her looks fool you, though. She is just as ruthless as the rest of the Saints. And they're not happy with the Migaloo Misfits pushing their goods around. Rumor has it, the Saga Saints are trying to cut off the Misfits' supply lines by flooding the streets with their own special product.",
       },
       {
         type: 'text',
