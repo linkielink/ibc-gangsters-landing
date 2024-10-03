@@ -691,7 +691,7 @@ export const chronicles: Chronicle[] = [
     ],
   },
   {
-    title: 'A redacted Heist ',
+    title: 'A redacted Heist',
     misc: [
       'C5DCBEF3657EA6D61535AA3236B2E183FB061BDA8A721BE65B1853AAAAC152F2',
       'ED66F2E790FABC8A4A06629C19657F81C3F70ED2C2C49C8575983BA09A0073B8',
