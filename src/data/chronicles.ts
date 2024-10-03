@@ -740,7 +740,7 @@ export const chronicles: Chronicle[] = [
       },
       {
         type: 'text',
-        text: "The Jailbirds hit the Big Hub like a bat outta hell, looking for a place to lay low. And these weren't just any crew of screw-ups; they were tight with the Akash Assassins - one of the few crews with the guts to stand up to the Legion. The Assassins offered the Jailbirds safe harbor, thinkin' they could play nice with the Legion. But if the Assassins thought the Legion was just gonna roll over, they were sorely mistaken—the Legion don't negotiate with nobodies who just set their empire on fire. The Legion wanted the Jailbirds out—or better yet, wiped off the map.",
+        text: "The Jailbirds hit the Big Hub like a bat outta hell, looking for a place to lay low. And these weren't just any crew of screw-ups; they were tight with the Akash Assassins - one of the few crews with the guts to stand up to the Legion. The Assassins offered the Jailbirds safe harbor, thinkin' they could play nice with the Legion. But if the Assassins thought the Legion was just gonna roll over, they were sorely mistaken - the Legion don't negotiate with nobodies who just set their empire on fire. The Legion wanted the Jailbirds out - or better yet, wiped off the map.",
       },
       {
         type: 'image',
