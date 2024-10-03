@@ -691,7 +691,7 @@ export const chronicles: Chronicle[] = [
     ],
   },
   {
-    title: 'A failed Heist',
+    title: 'A redacted Heist ',
     misc: [
       'C5DCBEF3657EA6D61535AA3236B2E183FB061BDA8A721BE65B1853AAAAC152F2',
       'ED66F2E790FABC8A4A06629C19657F81C3F70ED2C2C49C8575983BA09A0073B8',
@@ -728,15 +728,19 @@ export const chronicles: Chronicle[] = [
     content: [
       {
         type: 'text',
-        text: "The Big Hub was finally on lockdown, and the Luna Legion was sittin' pretty. Months of clawing, fighting, and scheming had finally paid off. They had the city under their thumb - money flowing, loyalty secured, and rivals either in the ground or too scared to make a move. The Hub was theirs, and they had every intention of keeping it that way.",
+        text: "The Big Hub was finally on lockdown, and the Luna Legion was sittin' pretty. Months of clawing, fighting, and scheming had finally paid off. They ran the streets, money flowed through their fingers, and every last rival was either pushin' daisies or too spooked to show their face. The Hub was theirs, and they had every intention of keeping it that way.",
       },
       {
         type: 'text',
-        text: "But peace? Peace don't last in a city built on dirty deals and back-alley fights. Just when the Legion thought they had the whole game on lock, a new set of players crashed the party: The Juno Jailbirds rolled in, fresh on the CFT-20, with a busted heist story that echoed through the underworld. Word on the street was these roughnecks just tried to pull off the heist of the century, hitting up the Red Bank - a vault so secure even whispers of robbing it were enough to get you buried. The job went south, and the Jailbirds barely escaped with their skins intact, leaving a trail of destruction in their wake.",
+        text: "But peace? Peace don't last in a city built on dirty deals and back-alley fights. Just when the Legion thought they had it all under control, a new set of players crashed the party: The Juno Jailbirds rolled in like a storm, fresh on the CFT-20, with a busted heist story that echoed through the underworld.",
       },
       {
         type: 'text',
-        text: "The Jailbirds hit the Big Hub like a bat outta hell, looking for a place to lay low. And these weren't just any thugs; they had connections, real nasty ones. The Akash Assassins, known for their silent kills and ruthless efficiency, were the Jailbirds' go-to for backup. The Assassins gave them a safe place to hide, thinkin' their alliance could keep the Legion at bay and maybe stir up some chaos to their advantage.",
+        text: "Word on the street was these roughnecks just tried to pull off the heist of the century, hitting up the Red Bank - a vault so secure even thinkin' about crackin' it could get you buried. The job went south big time and the Jailbirds barely escaped with their skins intact, leaving a trail of destruction in their wake.",
+      },
+      {
+        type: 'text',
+        text: "The Jailbirds hit the Big Hub like a bat outta hell, looking for a place to lay low. And these weren't just any crew of screw-ups; they were tight with the Akash Assassins - one of the few crews with the guts to stand up to the Legion. The Assassins offered the Jailbirds safe harbor, thinkin' they could play nice with the Legion. But if the Assassins thought the Legion was just gonna roll over, they were sorely mistaken—the Legion don't negotiate with nobodies who just set their empire on fire. The Legion wanted the Jailbirds out—or better yet, wiped off the map.",
       },
       {
         type: 'image',
@@ -749,19 +753,23 @@ export const chronicles: Chronicle[] = [
       },
       {
         type: 'text',
-        text: "The Luna Legion was fumin'. They'd spent too long fightin' to control the Hub, and now these Jailbirds - tough guys who didn't know how to quit - were disruptin' the order. The Legion didn't need more trouble, especially from a crew that had just tried to rip off the galaxy's tightest bank. And then there were the rumors. Word was, the Jailbirds didn't leave the Red Bank empty-handed. A bag full of high-value tech and credits was now potentially somewhere in the Hub, and that kind of loot makes everybody twitchy.",
+        text: "The Luna Legion was fumin'. They'd spent too long fightin' to control the Hub, and now these Jailbirds - tough guys who didn't know how to quit - were disruptin' the order. The Legion didn't need more trouble, especially from a crew that had just tried to rip off the galaxy's tightest bank. And then there were the rumors. Talk around town was that the Jailbirds didn't leave the Red Bank empty-handed. They'd gotten their hands on somethin' big: access to a digital wallet loaded with $RED, straight from REDACTED, that fancy privacy project every crook in the system was whisperin' about. This wasn't just any score; it was the kind of access that could make a gangster's life a whole lot easier - concealed transactions, untraceable movements, deals done in the shadows without leavin' a single digital fingerprint. Like pullin' off a heist in broad daylight and vanishin' into thin air.",
       },
       {
         type: 'text',
-        text: "The Assassins figured they could play mediator, but they forgot one thing: the Legion don't play games, and they sure as hell don't negotiate with nobodies who just set their empire on fire. The Legion wanted the Jailbirds out - or better yet, wiped off the map.",
+        text: "To the underworld, those $RED weren't just currency; they were power - the key to moving in silence, and every player in the Big Hub craved that kind of leverage. The Luna Legion knew it and also the Jailbirds knew exactly what they were sittin' on. They weren't about to let that kind of control slip through their fingers without a fight.",
       },
       {
         type: 'text',
-        text: "Now, the streets of the Big Hub were simmering. The Legion was watching every corner, every shadow, waiting for the Jailbirds to slip. But the Jailbirds weren't just some scared punks. They were seasoned, smart, and desperate—three things that make a man very dangerous. And with the Assassins in their corner, the odds weren't as one-sided as the Legion thought.",
+        text: "As the Jailbirds and the Legion circled each other, the streets of the Big Hub were simmering. The Legion was watching every corner, every shadow, waiting for the Jailbirds to slip. But the Jailbirds weren't just some scared punks hidin' anymore; they were makin' moves, pushin' back against the Legion's grip, and stirrin' up trouble like only they could. With the Assassins in their corner and flush with that $RED they had the resources to make the Hub their playground.",
       },
       {
         type: 'text',
-        text: "It was only a matter of time before sparks turned into flames. The Luna Legion thought they had it all locked down, but the Hub's got a funny way of flipping the script. Tensions are rising, alliances are cracking, and the city's ready to blow. You know the rules: nobody's safe, and the house always wins… unless someone's crazy enough to burn it down.",
+        text: "They'd been using them to grease palms buy silence, and keep the heat off their backs. Every time they paid off a shady dealer or bought a night's peace in one of the Hub's grimy hotels, more of those RED$ tokens spread into the hands of local gangsters. Suddenly, the IBC Gangsters, who were just mindin' their own, started gettin' a taste of this unexpected windfall. It was like Christmas came early, and everybody wanted a piece.",
+      },
+      {
+        type: 'text',
+        text: "It was only a matter of time before sparks turn into flames. The Luna Legion thought they had it all locked down, but the Hub's got a funny way of flipping the script. Tensions are rising, alliances are cracking, and the city's ready to blow. You know the rules: nobody's safe, and the house always wins… unless someone's crazy enough to burn it down.",
       },
     ],
   },
